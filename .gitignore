@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+test_deepseek_output.log
+
+# Evaluation results
+eval_results*/
+eval_results_lins_full*/
+eval_results_llm_baseline*/
+
+# Evaluation data (datasets)
+evaluate_data/
+
+# Model files
+model/
+!model/retriever/
+
+# Embedded git repo (LINS is also a git repo)
+LINS/
+
+# LINS-main evaluate results
+LINS-main/evaluate/evaluate_results/
+LINS-main/evaluate/search_results/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+venv/
+.venv/
