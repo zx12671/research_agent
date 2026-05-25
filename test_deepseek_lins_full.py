@@ -758,7 +758,7 @@ def test_linkeval(lins, eval_results=None):
 # ============================================================
 MEDQA_US_PATH = "./LINS-main/evaluate/evaluate_data/medqa_us/data/medqa_us_test.json"
 MEDQA_MAINLAND_PATH = "./LINS-main/evaluate/evaluate_data/medqa_mainland/data/medqa_mainland_test.json"
-MEDQA_TEST_SAMPLES = 5
+MEDQA_TEST_SAMPLES = 15
 
 
 def load_medqa_samples(path, num_samples=None, region="us"):
@@ -795,9 +795,9 @@ def load_medqa_samples(path, num_samples=None, region="us"):
 # 第六部分：MEDQA-US 选择题评估
 # ============================================================
 def test_medqa_us_evaluation(lins):
-    """在 MedQA-US 数据集上运行选择题评估（5个样本）"""
+    """在 MedQA-US 数据集上运行选择题评估（15个样本）"""
     print("\n" + "=" * 70)
-    print("【第六部分】MedQA-US 选择题评估 (5个样本)")
+    print("【第六部分】MedQA-US 选择题评估 (15个样本)")
     print("  数据集: MedQA (美国医学执照考试)")
     print("=" * 70)
     
@@ -929,9 +929,9 @@ Please answer with only the option letter (A, B, C, D, E...). Do not include any
 # 第七部分：MEDQA-Mainland 选择题评估
 # ============================================================
 def test_medqa_mainland_evaluation(lins):
-    """在 MedQA-Mainland 数据集上运行选择题评估（5个样本）"""
+    """在 MedQA-Mainland 数据集上运行选择题评估（15个样本）"""
     print("\n" + "=" * 70)
-    print("【第七部分】MedQA-Mainland 选择题评估 (5个样本)")
+    print("【第七部分】MedQA-Mainland 选择题评估 (15个样本)")
     print("  数据集: MedQA (中国大陆医学考试)")
     print("=" * 70)
     
@@ -1096,7 +1096,7 @@ def main():
     """主函数：初始化模型并运行所有测试"""
     print("\n" + "=" * 70)
     print("LINS-LLM 完整框架测试 (DeepSeek)")
-    print("  测试集: PubmedQA(20) + MedQA-US(5) + MedQA-Mainland(5)")
+    print("  测试集: PubmedQA(20) + MedQA-US(15) + MedQA-Mainland(15)")
     print("=" * 70)
     
     # 初始化 LINS 模型
@@ -1120,7 +1120,7 @@ def main():
     eval_results = test_pubmedqa_evaluation(lins)
     test_linkeval(lins, eval_results)
     
-    # MedQA 评估（各5个样本）
+    # MedQA 评估（各15个样本）
     test_medqa_us_evaluation(lins)
     test_medqa_mainland_evaluation(lins)
     summarize_medqa_results()
