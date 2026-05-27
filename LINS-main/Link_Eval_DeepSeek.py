@@ -13,7 +13,7 @@ LinkEval-DeepSeek: 基于 DeepSeek API 的精简引用评估模块
     from Link_Eval_DeepSeek import LinkEvalDeepSeek, convert_to_statements
     
     # 初始化（需要 DEEPSEEK_API_KEY 环境变量）
-    evaluator = LinkEvalDeepSeek(api_key="sk-xxx")
+    evaluator = LinkEvalDeepSeek(api_key="sk-94ccad564a7542228ad52f6b2654e11e")
     
     # 进行完整评估
     metrics = evaluator.evaluate(question, statements, refs, correct_answer=None)

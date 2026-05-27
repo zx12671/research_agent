@@ -1,5 +1,5 @@
 import os
-os.environ['DEEPSEEK_API_KEY'] = 'sk-ed0d07bcdbfe4d9e99f8653760954022'
+os.environ['DEEPSEEK_API_KEY'] = 'sk-94ccad564a7542228ad52f6b2654e11e'
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 import sys
 sys.path.insert(0, os.path.join(os.getcwd(), 'LINS-main'))
