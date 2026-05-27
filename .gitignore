@@ -24,9 +24,9 @@ eval_results_llm_baseline*/
 # Evaluation data (datasets)
 evaluate_data/
 
-# Model files
-model/
-!model/retriever/
+# Model files (only exclude top-level model/, not LINS-main/model/)
+/model/
+# !model/retriever/  # retriever submodule if needed separately
 
 # Embedded git repo (LINS is also a git repo)
 LINS/

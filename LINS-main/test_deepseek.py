@@ -496,10 +496,11 @@ def test_with_retriever():
     print("流程: 对每个 PubmedQA 样本 → MAIRAG 生成回答 → evaluate 评估5项指标 → 汇总")
 
     try:
-        import sys, importlib
+        import sys, importlib, os
         # 确保 LINS-main 在路径中
-        if 'c:\\Users\\duodu\\Desktop\\LINS\\LINS-main' not in sys.path:
-            sys.path.insert(0, 'c:\\Users\\duodu\\Desktop\\LINS\\LINS-main')
+        lins_main_path = os.path.dirname(os.path.abspath(__file__))
+        if lins_main_path not in sys.path:
+            sys.path.insert(0, lins_main_path)
         eval_mod = importlib.import_module('Link_Eval_DeepSeek')
         LinkEvalDeepSeek = eval_mod.LinkEvalDeepSeek
         convert_to_statements = eval_mod.convert_to_statements

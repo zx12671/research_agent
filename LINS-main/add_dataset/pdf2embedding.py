@@ -14,7 +14,7 @@ from model.chat_llms import chatllms
 def load_existing_abstracts(file_path="./add_dataset/guidelines/abstract2path.jsonl"):
     existing_paths = set()
     try:
-        with open('file_path', 'r', encoding='utf-8') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             for line in f:
                 data = json.loads(line)
                 existing_paths.add(data['path'])  # 使用相对路径
