@@ -40,7 +40,9 @@ import httpx
 # ============================================================
 # 1. DeepSeek NLI Entailment 模块
 # ============================================================
-os.environ['DEEPSEEK_API_KEY'] = 'sk-94ccad564a7542228ad52f6b2654e11e'
+# 请通过环境变量 DEEPSEEK_API_KEY 设置你的 API Key
+# 或在创建 LinkEvalDeepSeek 时传入 api_key 参数
+# os.environ['DEEPSEEK_API_KEY'] = 'sk-your-deepseek-api-key'
 class DeepSeekNLI:
     """使用 DeepSeek 进行 NLI 蕴涵判断，替代 T5-11B"""
 
