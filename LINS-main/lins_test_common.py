@@ -288,25 +288,41 @@ def test_ked_retriever(lins):
 # 汇总统计输出
 # ============================================================
 def print_metric_summary(all_metrics, scope_label="有效样本"):
-    """打印评估指标的汇总统计"""
+    """打印评估指标的汇总统计，兼容 LinkEval（原版）和 LinkEvalDeepSeek 两种指标结构"""
     if not all_metrics:
         print("  无有效评估数据")
         return
 
-    metric_names = [
-        'citation_set_precision', 'citation_precision', 'citation_recall',
-        'f1_score', 'statement_correctness', 'statement_fluency', 'overall_score'
-    ]
-    metric_labels_cn = [
-        '引用集精准率(CSP)', '引用精准率(CP)', '引用召回率(CR)',
-        'F1 分数', '陈述正确性(SC)', '陈述流畅度(SF)', '总体评分'
-    ]
+    # 探测第一个样本中的可用指标，确定是 LinkEval 还是 LinkEvalDeepSeek 格式
+    first_metrics = all_metrics[0]['metrics']
+    is_deepseek = 'f1_score' in first_metrics and 'citation_set_precision' not in first_metrics
+
+    if is_deepseek:
+        # LinkEvalDeepSeek 精简版指标
+        metric_names = [
+            'citation_precision', 'citation_recall', 'f1_score',
+            'statement_correctness', 'statement_fluency'
+        ]
+        metric_labels = [
+            '引用精准率(CP)', '引用召回率(CR)', 'F1 分数',
+            '陈述正确性(SC)', '陈述流畅度(SF)'
+        ]
+    else:
+        # 原版 LinkEval 完整指标
+        metric_names = [
+            'citation_set_precision', 'citation_precision', 'citation_recall',
+            'f1_score', 'statement_correctness', 'statement_fluency', 'overall_score'
+        ]
+        metric_labels = [
+            '引用集精准率(CSP)', '引用精准率(CP)', '引用召回率(CR)',
+            'F1 分数', '陈述正确性(SC)', '陈述流畅度(SF)', '总体评分'
+        ]
 
     print(f"  {'指标':<24} {'平均':<8} {'最高':<8} {'最低':<8} {'中位数':<8}")
     print(f"  {'-'*56}")
 
     summary = {}
-    for name, label in zip(metric_names, metric_labels_cn):
+    for name, label in zip(metric_names, metric_labels):
         values = [m['metrics'][name] for m in all_metrics]
         avg_val = sum(values) / len(values)
         max_val = max(values)
@@ -319,23 +335,40 @@ def print_metric_summary(all_metrics, scope_label="有效样本"):
         print(f"  {label:<24} {avg_val:<8.4f} {max_val:<8.4f} {min_val:<8.4f} {median_val:<8.4f}")
 
     # 各样本明细表
+    if is_deepseek:
+        detail_header = f"  {'#':<4} {'PMID':<10} {'CP':<7} {'CR':<7} {'F1':<7} {'SC':<5} {'SF':<7}"
+    else:
+        detail_header = f"  {'#':<4} {'PMID':<10} {'CSP':<7} {'CP':<7} {'CR':<7} {'F1':<7} {'SC':<5} {'SF':<7}"
+
     print(f"\n  {'='*66}")
     print(f"  各样本详细分数:")
     print(f"  {'='*66}")
-    print(f"  {'#':<4} {'PMID':<10} {'CSP':<7} {'CP':<7} {'CR':<7} {'F1':<7} {'SC':<5} {'SF':<7}")
+    print(detail_header)
     print(f"  {'-'*56}")
+
     for i, m in enumerate(all_metrics):
         met = m['metrics']
-        print(f"  {i+1:<4} {m['id']:<10} {met['citation_set_precision']:<7.3f} "
-              f"{met['citation_precision']:<7.3f} {met['citation_recall']:<7.3f} "
-              f"{met['f1_score']:<7.3f} {met['statement_correctness']:<5} "
-              f"{met['statement_fluency']:<7.3f}")
+        pmid = m['id'][:10] if len(str(m['id'])) > 10 else m['id']
+        cp = met.get('citation_precision', 0)
+        cr = met.get('citation_recall', 0)
+        f1 = met.get('f1_score', 0)
+        sc = met.get('statement_correctness', 0)
+        sf = met.get('statement_fluency', 0)
 
-    # Overall Score 分布
+        if is_deepseek:
+            print(f"  {i+1:<4} {pmid:<10} {cp:<7.3f} {cr:<7.3f} {f1:<7.3f} {sc:<5} {sf:<7.3f}")
+        else:
+            csp = met.get('citation_set_precision', 0)
+            print(f"  {i+1:<4} {pmid:<10} {csp:<7.3f} {cp:<7.3f} {cr:<7.3f} "
+                  f"{f1:<7.3f} {sc:<5} {sf:<7.3f}")
+
+    # 分数分布（DeepSeek 版也有 F1 分数可用于分布展示）
+    score_key = 'overall_score' if not is_deepseek else 'f1_score'
+    score_label = 'Overall Score' if not is_deepseek else 'F1 Score'
     print(f"\n  {'='*44}")
-    print(f"  Overall Score 分布:")
+    print(f"  {score_label} 分布:")
     print(f"  {'='*44}")
-    overalls = [m['metrics']['overall_score'] for m in all_metrics]
+    scores = [m['metrics'].get(score_key, m['metrics'].get('f1_score', 0)) for m in all_metrics]
     bins = [
         (0.8, 1.0, '★★★★★ 优秀'),
         (0.6, 0.8, '★★★★  良好'),
@@ -344,17 +377,29 @@ def print_metric_summary(all_metrics, scope_label="有效样本"):
         (0.0, 0.2, '★     很差'),
     ]
     for lo, hi, label in bins:
-        count = sum(1 for v in overalls if lo <= v < hi)
+        count = sum(1 for v in scores if lo <= v < hi)
         bar = '█' * count
         print(f"  {label:<16} [{lo:.1f}-{hi:.1f}): {count:>2} 个 {bar}")
-    count_10 = sum(1 for v in overalls if v == 1.0)
+    count_10 = sum(1 for v in scores if v == 1.0)
     if count_10 > 0:
         print(f"  {'★★★★★ 满分':<16} [1.0-1.0]: {count_10:>2} 个 {'█' * count_10}")
 
     print(f"\n  >>> 模型综合评估结论 <<<")
-    print(f"  总体均分: {summary['overall_score']['avg']:.4f}")
-    print(f"  引用质量均分: {(summary['citation_set_precision']['avg'] + summary['citation_precision']['avg'] + summary['citation_recall']['avg']) / 3:.4f}")
-    print(f"  陈述质量均分: {(summary['statement_correctness']['avg'] + summary['statement_fluency']['avg']) / 2:.4f}")
+    cp_avg = summary.get('citation_precision', {}).get('avg', 0)
+    cr_avg = summary.get('citation_recall', {}).get('avg', 0)
+    sc_avg = summary.get('statement_correctness', {}).get('avg', 0)
+    sf_avg = summary.get('statement_fluency', {}).get('avg', 0)
+
+    if is_deepseek:
+        print(f"  F1 均分: {summary.get('f1_score', {}).get('avg', 0):.4f}")
+        print(f"  引用质量均分: {(cp_avg + cr_avg) / 2:.4f}")
+        print(f"  陈述质量均分: {(sc_avg + sf_avg) / 2:.4f}")
+    else:
+        overall_avg = summary.get('overall_score', {}).get('avg', 0)
+        csp_avg = summary.get('citation_set_precision', {}).get('avg', 0)
+        print(f"  总体均分: {overall_avg:.4f}")
+        print(f"  引用质量均分: {(csp_avg + cp_avg + cr_avg) / 3:.4f}")
+        print(f"  陈述质量均分: {(sc_avg + sf_avg) / 2:.4f}")
 
 
 # ============================================================
@@ -378,13 +423,44 @@ def load_linkeval_data(eval_results, result_dir="./eval_results_lins_full"):
 
 
 def evaluate_single_linkeval_sample(sample_eval, link_eval):
-    """评估单个样本的 LinkEval 指标"""
+    """
+    评估单个样本的 LinkEval 指标。
+    
+    兼容 LinkEvalDeepSeek（LINS-main/Link_Eval_DeepSeek.py）和原版 LinkEval 的 API。
+    
+    LinkEvalDeepSeek.evaluate() 签名:
+        evaluate(question, statements, refs, correct_answer=None, return_details=False)
+    
+    Args:
+        sample_eval: dict，包含 'id', 'question', 'statements', 'references', 'response' 等
+        link_eval: LinkEvalDeepSeek 或兼容的评估器实例
+    
+    Returns:
+        tuple: (metrics_dict, details_dict) 或 None
+    """
     statements_eval = sample_eval.get("statements", [])
     refs_eval = sample_eval.get("references", [])
+    question = sample_eval.get("question", "")
 
     if not statements_eval or not refs_eval:
         return None
 
-    metrics_eval = link_eval.evaluate(statements_eval, refs_eval)
-    details_eval = link_eval.get_detail()
+    # 判断是否为 LinkEvalDeepSeek 类（具有需要 question 参数的 evaluate 接口）
+    evaluator_type = type(link_eval).__name__
+    
+    if evaluator_type == 'LinkEvalDeepSeek':
+        # LinkEvalDeepSeek 的 evaluate() 需要 question 参数
+        metrics_eval, details_eval = link_eval.evaluate(
+            question=question,
+            statements=statements_eval,
+            refs=refs_eval,
+            correct_answer=None,
+            return_details=True
+        )
+    else:
+        # 原版 LinkEval 的 evaluate() 只需要 statements 和 refs
+        metrics_eval = link_eval.evaluate(statements_eval, refs_eval)
+        # 原版通过 get_detail() 获取详细信息
+        details_eval = link_eval.get_detail() if hasattr(link_eval, 'get_detail') else {}
+    
     return metrics_eval, details_eval

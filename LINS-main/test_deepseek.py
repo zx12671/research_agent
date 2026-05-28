@@ -322,19 +322,17 @@ def test_with_retriever():
     total = len(eval_results)
     print(f"\n  PubmedQA 汇总: {correct}/{total} = {correct/max(total,1)*100:.1f}%")
 
-    # ---------- 2.14 LinkEval 引用评估 ----------
+    # ---------- 2.14 LinkEval 引用评估（使用 LinkEval-DeepSeek） ----------
     print("\n" + "=" * 60)
-    print("2.14 LinkEval 引用评估")
+    print("2.14 LinkEval 引用评估（LinkEval-DeepSeek）")
     print("=" * 60)
     try:
-        import importlib
-        sys.path.append(os.path.join(os.path.dirname(__file__), 'metric'))
-        from metric.Link_Eval import LinkEval
+        from Link_Eval_DeepSeek import LinkEvalDeepSeek, convert_to_statements
 
-        link_eval = LinkEval(
-            LLM_name='deepseek-chat',
-            OPENAI_API_KEY=os.environ.get('DEEPSEEK_API_KEY'),
-            base_url="https://api.deepseek.com/v1"
+        link_eval = LinkEvalDeepSeek(
+            api_key=os.environ.get('DEEPSEEK_API_KEY'),
+            model_name='deepseek-chat',
+            verbose=False
         )
 
         all_metrics = []
@@ -343,11 +341,23 @@ def test_with_retriever():
 
         for i, r in enumerate(eval_results):
             print(f"  [{i+1}/{len(eval_results)}] {r['id']}...")
+            
+            # 确保 sample_eval 包含 question 字段（LinkEvalDeepSeek 需要）
             sample_eval = {
                 'id': r['id'],
+                'question': r.get('question', ''),
                 'statements': r.get('statements', []),
                 'references': r.get('references', [])
             }
+            
+            # 如果 statements 为空但 response 不为空，尝试从 response 提取
+            if not sample_eval['statements'] and r.get('mAirag_response'):
+                statements = convert_to_statements(r['mAirag_response'])
+                sample_eval['statements'] = statements
+                # 同时尝试用 passages 作为 references
+                if not sample_eval['references'] and r.get('urls'):
+                    sample_eval['references'] = r.get('urls', [])
+            
             result = evaluate_single_linkeval_sample(sample_eval, link_eval)
             if result:
                 metrics_eval, details_eval = result
@@ -359,21 +369,22 @@ def test_with_retriever():
                     'refs_count': len(sample_eval['references'])
                 })
                 valid_count += 1
-                print(f"      ✓ CSP={metrics_eval['citation_set_precision']:.3f} "
-                      f"CP={metrics_eval['citation_precision']:.3f} "
+                print(f"      ✓ CP={metrics_eval['citation_precision']:.3f} "
                       f"CR={metrics_eval['citation_recall']:.3f} "
+                      f"F1={metrics_eval['f1_score']:.3f} "
                       f"SC={metrics_eval['statement_correctness']} "
                       f"SF={metrics_eval['statement_fluency']:.3f}")
             else:
                 print(f"      ⚠ 跳过（无有效陈述或引用）")
                 skip_count += 1
 
-        print(f"\n  LinkEval: {valid_count} 有效 / {len(eval_results)} 总样本  |  跳过: {skip_count}")
+        print(f"\n  LinkEval-DeepSeek: {valid_count} 有效 / {len(eval_results)} 总样本  |  跳过: {skip_count}")
         if all_metrics:
             print_metric_summary(all_metrics)
 
     except ImportError as e:
         print(f"  ImportError: {e}")
+        print("  请确保 LINS-main/Link_Eval_DeepSeek.py 存在")
         print("  跳过 LinkEval 评估")
     except Exception as e:
         import traceback
