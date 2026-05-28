@@ -1,0 +1,37 @@
+name: Test Imports
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r LINS-main/requirements.txt
+
+      - name: Check core imports (model_LINS)
+        run: |
+          cd LINS-main
+          python -c "import sys; print('Python version:', sys.version); from model.model_LINS import LINS; print('OK: LINS'); from model.retriever_model import Text_embedding_3_large; print('OK: Text_embedding_3_large'); from model.database import Pubmed; print('OK: Pubmed'); from Link_Eval import LinkEval; print('OK: LinkEval'); from metric.evaluator import Evaluator; print('OK: Evaluator'); from metric.scorer import Scorer; print('OK: Scorer'); print('All imports passed!')"
+
+      - name: Check utils import
+        run: |
+          cd LINS-main
+          python -c "import os; os.environ['DEEPSEEK_API_KEY'] = 'test-placeholder'; from utils import *; print('OK: utils')"
