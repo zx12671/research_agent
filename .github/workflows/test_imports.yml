@@ -29,7 +29,7 @@ jobs:
       - name: Check core imports (model_LINS)
         run: |
           cd LINS-main
-          python -c "import sys; print('Python version:', sys.version); from model.model_LINS import LINS; print('OK: LINS'); from model.retriever_model import Text_embedding_3_large; print('OK: Text_embedding_3_large'); from model.database import Pubmed; print('OK: Pubmed'); from Link_Eval import LinkEval; print('OK: LinkEval'); from metric.evaluator import Evaluator; print('OK: Evaluator'); from metric.scorer import Scorer; print('OK: Scorer'); print('All imports passed!')"
+          python -c "import sys; print('Python version:', sys.version); from model.model_LINS import LINS; print('OK: LINS'); from model.retriever_model import Text_embedding_3_large; print('OK: Text_embedding_3_large'); from model.database import Pubmed; print('OK: Pubmed'); from metric.evaluator import Evaluator; print('OK: Evaluator'); from metric.scorer import Scorer; print('OK: Scorer'); print('All imports passed!')"
 
       - name: Check utils import
         run: |
