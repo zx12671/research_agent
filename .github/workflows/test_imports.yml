@@ -29,46 +29,9 @@ jobs:
       - name: Check core imports (model_LINS)
         run: |
           cd LINS-main
-          python -c "
-import sys
-print('Python version:', sys.version)
+          python -c "import sys; print('Python version:', sys.version); from model.model_LINS import LINS; print('OK: LINS'); from model.retriever_model import Retriever; print('OK: Retriever'); from model.database import DataBase; print('OK: DataBase'); from Link_Eval import LinkEval; print('OK: LinkEval'); from metric.evaluator import Evaluator; print('OK: Evaluator'); from metric.scorer import Scorer; print('OK: Scorer'); print('All imports passed!')"
 
-# 测试 model_LINS 核心模块导入
-from model.model_LINS import LINS
-print('✅ model.model_LINS.LINS 导入成功')
-
-# 测试 retriever_model
-from model.retriever_model import Retriever
-print('✅ model.retriever_model.Retriever 导入成功')
-
-# 测试 database
-from model.database import DataBase
-print('✅ model.database.DataBase 导入成功')
-
-# 测试 LinkEval
-from Link_Eval import LinkEval
-print('✅ Link_Eval.LinkEval 导入成功')
-
-# 测试 evaluator / scorer
-from metric.evaluator import Evaluator
-print('✅ metric.evaluator.Evaluator 导入成功')
-
-from metric.scorer import Scorer
-print('✅ metric.scorer.Scorer 导入成功')
-
-print('🎉 所有核心模块导入成功！')
-"
-
-      - name: Check lins_test_common import
+      - name: Check utils import
         run: |
           cd LINS-main
-          python -c "
-import sys
-import os
-# 设置 DEEPSEEK_API_KEY 环境变量（仅用于导入测试）
-os.environ['DEEPSEEK_API_KEY'] = 'test-placeholder'
-
-# 单独测试 lins_test_common 的辅助函数导入
-from utils import *
-print('✅ utils 导入成功')
-"
+          python -c "import os; os.environ['DEEPSEEK_API_KEY'] = 'test-placeholder'; from utils import *; print('OK: utils')"
