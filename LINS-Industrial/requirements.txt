@@ -1,0 +1,49 @@
+# ============================================================
+# LINS-Industrial 项目依赖
+# 结合 LINS-main 核心框架 + LINS-Industrial 工业扩展所需依赖
+# Python 3.11  环境
+# ============================================================
+
+# ---------- LLM / API 调用 ----------
+openai==1.61.1
+httpx>=0.27.0
+google-generativeai==0.8.4        # Gemini（可选）
+
+# ---------- 深度学习 / 嵌入模型 ----------
+# 注意：PyTorch 需按 CUDA 版本单独安装，例如：
+#   pip install torch --index-url https://download.pytorch.org/whl/cu118
+torch>=2.1.0
+transformers==4.40.1
+FlagEmbedding==1.2.11             # BGE-M3 嵌入模型
+peft==0.10.0
+accelerate==1.3.0
+
+# ---------- 数据处理 ----------
+numpy==1.24.1
+pandas==2.2.2
+openpyxl==3.1.2
+pyarrow==14.0.1
+jieba>=0.42.1                     # BM25 中文分词
+datasets==2.12.0
+tqdm==4.66.1
+
+# ---------- 检索 / 知识库 ----------
+scikit_learn==1.3.2
+faiss-cpu>=1.8.0                  # 向量索引（可选；也可用 faiss-gpu）
+
+# ---------- LINS-main 框架依赖（医学检索/数据源） ----------
+beautifulsoup4==4.11.2
+Bio==1.7.1
+biopython==1.83
+chardet==5.1.0
+feedparser==6.0.10
+HTMLParser==0.0.2
+modelscope==1.9.4
+playwright==1.42.0
+ray==2.31.0
+Requests==2.32.3
+rouge_score==0.1.2
+ollama==0.4.7
+
+# ---------- 其它 ----------
+importlib-metadata>=6.0.0
