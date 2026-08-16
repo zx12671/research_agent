@@ -1,0 +1,64 @@
+Algorithm 1: Integrated Hierarchical Evidence Retrieval (IHER)
+Input:
+    q       : input query
+    C       : chunk corpus
+    R       : dense retriever
+    F       : relevance ranker
+    P       : initial retrieval pool size
+    Na      : number of anchor documents
+    Bmax    : maximum expansion budget
+    τ       : expansion relevance threshold
+    k       : final output size
+    wd      : retrieval-prior weight
+    wr      : relevance weight
+    wa      : anchor weight
+
+Output:
+    Y       : ranked top-k evidence chunks
+1:  q' ← KED(q)
+2:  Pq ← R(q', P)
+3:  if Pq = ∅ then
+4:      return ∅
+5:  end if
+6:  // Anchor discovery within the initial evidence pool
+7:  rp ← F(q, Pq)
+8:  Sort Pq in descending order of rp
+9:  A ← ∅
+10: for each c ∈ Pq do
+11:     d ← document_id(c)
+12:     if d ∉ A then
+13:         A ← A ∪ {d}
+14:     end if
+15:     if |A| = Na then
+16:         break
+17:     end if
+18: end for
+19: d* ← document_id(first-ranked chunk in Pq)
+20: // Integrated evidence expansion
+21: B ← ∅
+22: for each c ∈ C do
+23:     if document_id(c) ∈ A
+24:        and c ∉ Pq
+25:        and JT(q, c) ≥ τ then
+26:            B ← B ∪ {c}
+27:     end if
+28: end for
+29: B ← SelectTop(B, Bmax, JT)
+30: U ← Pq ∪ B
+31: // Unified evidence re-ranking
+32: r ← F(q, U)
+33: for each c ∈ U do
+34:     if c ∈ Pq then
+35:         sret(c) ← wd / (60 + rankR(c))
+36:     else
+37:         sret(c) ← wd / (60 + P)
+38:     end if
+39:     if document_id(c) = d* then
+40:         sanc(c) ← wa
+41:     else
+42:         sanc(c) ← 0
+43:     end if
+44:     score(c) ← sret(c) + wr · r(c) + sanc(c)
+45: end for
+46: Y ← TopK(U, score, k)
+47: return Y
