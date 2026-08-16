@@ -1,0 +1,1980 @@
+{
+  "meta": {
+    "samples": 40,
+    "csv": "C:\\Users\\duodu\\Desktop\\LINS\\LINS-Industrial\\data\\industrybench\\huggingface_dataset.csv",
+    "model": "deepseek-chat",
+    "all_rows": 2049,
+    "all_format_dist": {
+      "问答题": 1163,
+      "填空题": 601,
+      "选择题": 252,
+      "计算题": 33
+    },
+    "all_capability_dist": {
+      "选型与替代": 649,
+      "故障诊断与排查": 31,
+      "安全合规与风险控制": 116,
+      "标准规范与术语": 610,
+      "工艺原理与参数影响": 528,
+      "质量计量与检测": 93,
+      "工程计算与估算": 22
+    },
+    "all_heur_format": {
+      "acc": 0.5466,
+      "pred_dist": {
+        "QA": 1961,
+        "Calculation": 87,
+        "MultipleChoice": 1
+      },
+      "cm": {
+        "QA": {
+          "QA": 1112,
+          "Calculation": 50,
+          "MultipleChoice": 1
+        },
+        "FillBlank": {
+          "Calculation": 19,
+          "QA": 582
+        },
+        "MultipleChoice": {
+          "Calculation": 10,
+          "QA": 242
+        },
+        "Calculation": {
+          "QA": 25,
+          "Calculation": 8
+        }
+      }
+    }
+  },
+  "cap2task_truth_proxy": {
+    "选型与替代": "selection",
+    "故障诊断与排查": "diagnosis",
+    "安全合规与风险控制": "procedure",
+    "标准规范与术语": "standard_interpretation",
+    "工艺原理与参数影响": "explanation",
+    "质量计量与检测": "diagnosis",
+    "工程计算与估算": "calculation"
+  },
+  "production_walk": {
+    "n": 40,
+    "task_dist": {
+      "general": 40
+    },
+    "format_dist": {
+      "QA": 37,
+      "Calculation": 3
+    },
+    "mean_confidence": 0.95,
+    "llm_called_any": false,
+    "rows": [
+      {
+        "id": "2044",
+        "question": "在既有建筑玻璃安全防护改造中，若需兼顾高透光性、抗冲击性能及成本效益，应选择何种材料作为防爆膜的主承力结构，并依据哪些性能指标进行选型？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2024",
+        "question": "在高湿度环境或长距离输气管道的应用场景中，为防止水分积聚影响气动工具运行，应采取哪些关键维护措施？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1951",
+        "question": "在使用千斤顶进行车辆升降作业时，为确保操作安全应采取哪些关键措施？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "2049",
+        "question": "依据 GB/T 6543—2008 标准，瓦楞纸箱的耐破强度试验应采用哪种试验方法？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2043",
+        "question": "在餐饮行业清洗厨房织物时，若需高效去除米饭、面食类残渣，应选择含有哪种酶的复配洗涤剂？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2047",
+        "question": "1500型气动喷枪在喷涂不同粘度涂料时，通过什么机制实现涂料输出量的灵活调节，以适应底漆、面漆或防火涂料等不同工艺需求？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1619",
+        "question": "LH-221光学透过率测量仪在评估太阳膜性能时，分别通过哪三个光谱波段的透过率数据来综合判断其功能性表现？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2041",
+        "question": "依据《中低压配电网能效评估导则》（GB/T 31367—2015），开展中低压配电网能效评估时应遵循哪些基本原则？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2048",
+        "question": "在MP500系列四款型号中，哪一款仪器同时具备pH与溶解氧测量功能，并且其溶解氧测量支持浓度与饱和度双模式输出？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2042",
+        "question": "在工业应用中，吐温80常与哪种物质复配以调节乳化剂的HLB值，并适配不同油相的乳化需求？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "2015",
+        "question": "在为一台功率为1500W、工作电压为220V的加热管选型固态电压调节器时，应选择的最小额定电流规格是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "1955",
+        "question": "在制备高球形度、高纯度的铜基合金粉末时，若需避免坩埚引入杂质，应优先考虑哪种雾化工艺？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1973",
+        "question": "在进行500kV特高压环境下带电核相作业时，依据相关标准，操作人员与带电体之间应保持的最小安全距离以及所使用绝缘杆的最小有效绝缘长度分别是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "535",
+        "question": "在桌上型车床选型时，若需加工最大直径为180mm的回转工件，其对应的中心高应至少为多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "1553",
+        "question": "在MBS 3100电源模块中，当输出电流信号低于4 mA时，通常表示什么状态？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2016",
+        "question": "在采用高效液相色谱-质谱法测定纺织染整助剂中烷基苯酚和烷基苯酚聚氧乙烯醚时，辛基苯酚和壬基苯酚聚氧乙烯醚分别应使用哪种离子化检测模式？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2030",
+        "question": "根据GB 34660—2017标准，采用10米法和3米法测试时，车辆在30～75 MHz频段的宽带电磁辐射发射限值分别相差多少dBμV/m？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2007",
+        "question": "根据GB/T 7350—1999标准，若某工业产品在运输过程中可能短时间沉入水面以下，应选择哪种防水包装等级？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2046",
+        "question": "在潮湿环境或人员密集的工作区域使用线盘时，应优先选择哪种类型以提升电气安全性？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "1082",
+        "question": "在对颗粒材料进行质量一致性评价时，若关注的是各物理特性参数组合向量的方向相似性而非大小差异，应优先选择哪种数学计算方法？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1741",
+        "question": "在为50kWh电池容量的电动汽车进行20%至100%充电时，30kW和40kW挂壁式直流充电桩的充电时间相近，但40kW型号在实际充电过程中的优势体现在哪一方面？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "1131",
+        "question": "在静音无油压缩机中，若未正确安装进气口的消音过滤一体式空气过滤器，可能引发哪些具体运行问题？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1618",
+        "question": "在显示仪表中，若第一报警值AL1设为800℃、第一报警回差AH1设为10，报警触发与解除的具体PV值分别是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "2020",
+        "question": "在依据GB/T 33353—2016标准测定电子电气产品中三丁基锡和三苯基锡时，若使用三丁基氯化锡和三苯基氯化锡配制标准储备溶液，应如何根据有机锡阳离子浓度计算其所需称样量？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2002",
+        "question": "卡特彼勒3306型发动机在持续满负荷运行时的额定输出功率和转速分别是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "2038",
+        "question": "在北方寒冷地区进行外墙施工时，应优先选择哪类聚合物胶粉，并依据其哪些性能特点做出该选择？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "1735",
+        "question": "在切削塑性材料如不锈钢或铝合金时，若出现表面鳞片状痕迹和尺寸波动，可能与哪种切刀失效形式有关，应如何通过调整切削参数和刀具选择来应对？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1943",
+        "question": "防爆除尘风机在处理打磨过程中产生的高温火星时，采用什么机制来防止其成为点火源？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "2045",
+        "question": "ZX-II型救生衣在24小时连续浸水后浮力损失率不超过多少，其内部浮力材料具有什么结构特征以保障该性能？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2026",
+        "question": "在空间受限的紧凑型设备中，DFS60编码器可通过哪些轴型选项实现灵活安装？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2037",
+        "question": "再生涤纶纤维的原料来源包括哪些类型，其预处理工艺如何确保最终切片满足纺丝要求？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1587",
+        "question": "在砌体结构工程中，若使用百格网进行砂浆饱满度检测，依据相关规范，砂浆饱满度的最低合格标准是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2029",
+        "question": "根据GB/T 3714—2017标准，碳酸锰矿的一级品与四级品在锰含量、全铁（TFe）含量和氧化镁（MgO）含量三个指标上的具体限值分别是什么？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2036",
+        "question": "在对碳钢进行干磨作业时，若需兼顾磨削效率与砂布使用寿命，应选择以何种磨料为核心的涂附磨具？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2012",
+        "question": "在木屑制棒机生产过程中，原料内部的何种成分在高温高压条件下起到天然粘结作用，使成型棒料无需添加粘结剂即可保持结构稳定？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1995",
+        "question": "在涤氨抓毛布的批量生产中，如何根据其克重和门幅计算每公斤可裁出的布料长度（单位：米）？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "1890",
+        "question": "在冷鲜肉、熟肉制品、新鲜果蔬和即食快餐四类食品中，哪一类在气调包装中使用了最高比例的氧气，且其保鲜气体配比的主要目的与其他三类存在显著差异？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1940",
+        "question": "在燃气轮机润滑油系统中，若主润滑油泵和辅助润滑油泵均失效且交流电源中断，依靠何种配置仍能维持系统必要的压力和流量以保障安全停机？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "34",
+        "question": "在手动位移平台的选型中，若标注行程为6.5mm，用户实际可获得的最大往返移动距离是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "1162",
+        "question": "在使用断管取出器时，如何判断其刃口已成功咬入断管内壁？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      }
+    ]
+  },
+  "landed_analyzer_walk": {
+    "n": 40,
+    "task_dist": {
+      "general": 40
+    },
+    "format_dist": {
+      "QA": 12,
+      "FillBlank": 13,
+      "MultipleChoice": 8,
+      "Calculation": 7
+    },
+    "mean_confidence": 0.95,
+    "llm_called_any": false,
+    "rows": [
+      {
+        "id": "2044",
+        "question": "在既有建筑玻璃安全防护改造中，若需兼顾高透光性、抗冲击性能及成本效益，应选择何种材料作为防爆膜的主承力结构，并依据哪些性能指标进行选型？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2024",
+        "question": "在高湿度环境或长距离输气管道的应用场景中，为防止水分积聚影响气动工具运行，应采取哪些关键维护措施？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1951",
+        "question": "在使用千斤顶进行车辆升降作业时，为确保操作安全应采取哪些关键措施？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "2049",
+        "question": "依据 GB/T 6543—2008 标准，瓦楞纸箱的耐破强度试验应采用哪种试验方法？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2043",
+        "question": "在餐饮行业清洗厨房织物时，若需高效去除米饭、面食类残渣，应选择含有哪种酶的复配洗涤剂？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2047",
+        "question": "1500型气动喷枪在喷涂不同粘度涂料时，通过什么机制实现涂料输出量的灵活调节，以适应底漆、面漆或防火涂料等不同工艺需求？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1619",
+        "question": "LH-221光学透过率测量仪在评估太阳膜性能时，分别通过哪三个光谱波段的透过率数据来综合判断其功能性表现？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2041",
+        "question": "依据《中低压配电网能效评估导则》（GB/T 31367—2015），开展中低压配电网能效评估时应遵循哪些基本原则？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2048",
+        "question": "在MP500系列四款型号中，哪一款仪器同时具备pH与溶解氧测量功能，并且其溶解氧测量支持浓度与饱和度双模式输出？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2042",
+        "question": "在工业应用中，吐温80常与哪种物质复配以调节乳化剂的HLB值，并适配不同油相的乳化需求？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "2015",
+        "question": "在为一台功率为1500W、工作电压为220V的加热管选型固态电压调节器时，应选择的最小额定电流规格是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "1955",
+        "question": "在制备高球形度、高纯度的铜基合金粉末时，若需避免坩埚引入杂质，应优先考虑哪种雾化工艺？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1973",
+        "question": "在进行500kV特高压环境下带电核相作业时，依据相关标准，操作人员与带电体之间应保持的最小安全距离以及所使用绝缘杆的最小有效绝缘长度分别是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "535",
+        "question": "在桌上型车床选型时，若需加工最大直径为180mm的回转工件，其对应的中心高应至少为多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "1553",
+        "question": "在MBS 3100电源模块中，当输出电流信号低于4 mA时，通常表示什么状态？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2016",
+        "question": "在采用高效液相色谱-质谱法测定纺织染整助剂中烷基苯酚和烷基苯酚聚氧乙烯醚时，辛基苯酚和壬基苯酚聚氧乙烯醚分别应使用哪种离子化检测模式？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2030",
+        "question": "根据GB 34660—2017标准，采用10米法和3米法测试时，车辆在30～75 MHz频段的宽带电磁辐射发射限值分别相差多少dBμV/m？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2007",
+        "question": "根据GB/T 7350—1999标准，若某工业产品在运输过程中可能短时间沉入水面以下，应选择哪种防水包装等级？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2046",
+        "question": "在潮湿环境或人员密集的工作区域使用线盘时，应优先选择哪种类型以提升电气安全性？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "1082",
+        "question": "在对颗粒材料进行质量一致性评价时，若关注的是各物理特性参数组合向量的方向相似性而非大小差异，应优先选择哪种数学计算方法？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1741",
+        "question": "在为50kWh电池容量的电动汽车进行20%至100%充电时，30kW和40kW挂壁式直流充电桩的充电时间相近，但40kW型号在实际充电过程中的优势体现在哪一方面？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "1131",
+        "question": "在静音无油压缩机中，若未正确安装进气口的消音过滤一体式空气过滤器，可能引发哪些具体运行问题？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1618",
+        "question": "在显示仪表中，若第一报警值AL1设为800℃、第一报警回差AH1设为10，报警触发与解除的具体PV值分别是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "2020",
+        "question": "在依据GB/T 33353—2016标准测定电子电气产品中三丁基锡和三苯基锡时，若使用三丁基氯化锡和三苯基氯化锡配制标准储备溶液，应如何根据有机锡阳离子浓度计算其所需称样量？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2002",
+        "question": "卡特彼勒3306型发动机在持续满负荷运行时的额定输出功率和转速分别是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "2038",
+        "question": "在北方寒冷地区进行外墙施工时，应优先选择哪类聚合物胶粉，并依据其哪些性能特点做出该选择？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "1735",
+        "question": "在切削塑性材料如不锈钢或铝合金时，若出现表面鳞片状痕迹和尺寸波动，可能与哪种切刀失效形式有关，应如何通过调整切削参数和刀具选择来应对？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "1943",
+        "question": "防爆除尘风机在处理打磨过程中产生的高温火星时，采用什么机制来防止其成为点火源？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "2045",
+        "question": "ZX-II型救生衣在24小时连续浸水后浮力损失率不超过多少，其内部浮力材料具有什么结构特征以保障该性能？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2026",
+        "question": "在空间受限的紧凑型设备中，DFS60编码器可通过哪些轴型选项实现灵活安装？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2037",
+        "question": "再生涤纶纤维的原料来源包括哪些类型，其预处理工艺如何确保最终切片满足纺丝要求？",
+        "analyzer_task": "general",
+        "analyzer_format": "QA",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "QA",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1587",
+        "question": "在砌体结构工程中，若使用百格网进行砂浆饱满度检测，依据相关规范，砂浆饱满度的最低合格标准是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      },
+      {
+        "id": "2029",
+        "question": "根据GB/T 3714—2017标准，碳酸锰矿的一级品与四级品在锰含量、全铁（TFe）含量和氧化镁（MgO）含量三个指标上的具体限值分别是什么？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "standard_interpretation"
+      },
+      {
+        "id": "2036",
+        "question": "在对碳钢进行干磨作业时，若需兼顾磨削效率与砂布使用寿命，应选择以何种磨料为核心的涂附磨具？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "2012",
+        "question": "在木屑制棒机生产过程中，原料内部的何种成分在高温高压条件下起到天然粘结作用，使成型棒料无需添加粘结剂即可保持结构稳定？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1995",
+        "question": "在涤氨抓毛布的批量生产中，如何根据其克重和门幅计算每公斤可裁出的布料长度（单位：米）？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "calculation"
+      },
+      {
+        "id": "1890",
+        "question": "在冷鲜肉、熟肉制品、新鲜果蔬和即食快餐四类食品中，哪一类在气调包装中使用了最高比例的氧气，且其保鲜气体配比的主要目的与其他三类存在显著差异？",
+        "analyzer_task": "general",
+        "analyzer_format": "MultipleChoice",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "MultipleChoice",
+        "true_task_cap2task": "explanation"
+      },
+      {
+        "id": "1940",
+        "question": "在燃气轮机润滑油系统中，若主润滑油泵和辅助润滑油泵均失效且交流电源中断，依靠何种配置仍能维持系统必要的压力和流量以保障安全停机？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "procedure"
+      },
+      {
+        "id": "34",
+        "question": "在手动位移平台的选型中，若标注行程为6.5mm，用户实际可获得的最大往返移动距离是多少？",
+        "analyzer_task": "general",
+        "analyzer_format": "Calculation",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "Calculation",
+        "true_task_cap2task": "selection"
+      },
+      {
+        "id": "1162",
+        "question": "在使用断管取出器时，如何判断其刃口已成功咬入断管内壁？",
+        "analyzer_task": "general",
+        "analyzer_format": "FillBlank",
+        "analyzer_confidence": 0.95,
+        "llm_called": false,
+        "true_format_csv": "FillBlank",
+        "true_task_cap2task": "diagnosis"
+      }
+    ]
+  },
+  "format": {
+    "heur": {
+      "cm": {
+        "QA": {
+          "QA": 11,
+          "Calculation": 1,
+          "FillBlank": 0,
+          "MultipleChoice": 0
+        },
+        "FillBlank": {
+          "QA": 12,
+          "Calculation": 1,
+          "FillBlank": 0,
+          "MultipleChoice": 0
+        },
+        "MultipleChoice": {
+          "QA": 8,
+          "FillBlank": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        },
+        "Calculation": {
+          "Calculation": 1,
+          "QA": 6,
+          "FillBlank": 0,
+          "MultipleChoice": 0
+        }
+      },
+      "metrics": {
+        "acc": 0.3,
+        "weighted_f1": 0.16969387755102042,
+        "per": {
+          "QA": {
+            "n": 12,
+            "prec": 0.297,
+            "rec": 0.917,
+            "f1": 0.449
+          },
+          "FillBlank": {
+            "n": 13,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "MultipleChoice": {
+            "n": 8,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "Calculation": {
+            "n": 7,
+            "prec": 0.333,
+            "rec": 0.143,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    "landed_truth": {
+      "cm": {
+        "QA": {
+          "QA": 12,
+          "FillBlank": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        },
+        "FillBlank": {
+          "FillBlank": 13,
+          "QA": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        },
+        "MultipleChoice": {
+          "MultipleChoice": 8,
+          "QA": 0,
+          "FillBlank": 0,
+          "Calculation": 0
+        },
+        "Calculation": {
+          "Calculation": 7,
+          "QA": 0,
+          "FillBlank": 0,
+          "MultipleChoice": 0
+        }
+      },
+      "metrics": {
+        "acc": 1.0,
+        "weighted_f1": 1.0,
+        "per": {
+          "QA": {
+            "n": 12,
+            "prec": 1.0,
+            "rec": 1.0,
+            "f1": 1.0
+          },
+          "FillBlank": {
+            "n": 13,
+            "prec": 1.0,
+            "rec": 1.0,
+            "f1": 1.0
+          },
+          "MultipleChoice": {
+            "n": 8,
+            "prec": 1.0,
+            "rec": 1.0,
+            "f1": 1.0
+          },
+          "Calculation": {
+            "n": 7,
+            "prec": 1.0,
+            "rec": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "llm": {
+      "cm": {
+        "QA": {
+          "": 12,
+          "QA": 0,
+          "FillBlank": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        },
+        "FillBlank": {
+          "": 13,
+          "QA": 0,
+          "FillBlank": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        },
+        "MultipleChoice": {
+          "": 8,
+          "QA": 0,
+          "FillBlank": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        },
+        "Calculation": {
+          "": 7,
+          "QA": 0,
+          "FillBlank": 0,
+          "MultipleChoice": 0,
+          "Calculation": 0
+        }
+      },
+      "metrics": {
+        "acc": 0.0,
+        "weighted_f1": 0.0,
+        "per": {
+          "QA": {
+            "n": 12,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "FillBlank": {
+            "n": 13,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "MultipleChoice": {
+            "n": 8,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "Calculation": {
+            "n": 7,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  },
+  "task": {
+    "prod_general": {
+      "cm": {
+        "selection": {
+          "general": 8,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0
+        },
+        "diagnosis": {
+          "general": 10,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0
+        },
+        "procedure": {
+          "general": 5,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0
+        },
+        "standard_interpretation": {
+          "general": 6,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0
+        },
+        "explanation": {
+          "general": 7,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0
+        },
+        "calculation": {
+          "general": 4,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0
+        },
+        "comparison": {
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "general": {
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        }
+      },
+      "metrics": {
+        "acc": 0.0,
+        "weighted_f1": 0.0,
+        "per": {
+          "comparison": {
+            "n": 0,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "diagnosis": {
+            "n": 10,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "selection": {
+            "n": 8,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "calculation": {
+            "n": 4,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "standard_interpretation": {
+            "n": 6,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "procedure": {
+            "n": 5,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "explanation": {
+            "n": 7,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "general": {
+            "n": 0,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    "llm": {
+      "cm": {
+        "selection": {
+          "": 8,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "diagnosis": {
+          "": 10,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "procedure": {
+          "": 5,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "standard_interpretation": {
+          "": 6,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "explanation": {
+          "": 7,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "calculation": {
+          "": 4,
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "comparison": {
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        },
+        "general": {
+          "comparison": 0,
+          "diagnosis": 0,
+          "selection": 0,
+          "calculation": 0,
+          "standard_interpretation": 0,
+          "procedure": 0,
+          "explanation": 0,
+          "general": 0
+        }
+      },
+      "metrics": {
+        "acc": 0.0,
+        "weighted_f1": 0.0,
+        "per": {
+          "comparison": {
+            "n": 0,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "diagnosis": {
+            "n": 10,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "selection": {
+            "n": 8,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "calculation": {
+            "n": 4,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "standard_interpretation": {
+            "n": 6,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "procedure": {
+            "n": 5,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "explanation": {
+            "n": 7,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          },
+          "general": {
+            "n": 0,
+            "prec": 0.0,
+            "rec": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  },
+  "layer_acc_heur_fmt": {
+    "选型与替代": 0.25,
+    "故障诊断与排查": 0.4,
+    "安全合规与风险控制": 0.4,
+    "标准规范与术语": 0.333,
+    "工艺原理与参数影响": 0.286,
+    "质量计量与检测": 0.2,
+    "工程计算与估算": 0.25,
+    "diff:medium": 0.5,
+    "diff:hard": 0.154,
+    "diff:easy": 0.111
+  },
+  "layer_acc_llm_fmt": {},
+  "layer_acc_landed_fmt": {
+    "选型与替代": 1.0,
+    "故障诊断与排查": 1.0,
+    "安全合规与风险控制": 1.0,
+    "标准规范与术语": 1.0,
+    "工艺原理与参数影响": 1.0,
+    "质量计量与检测": 1.0,
+    "工程计算与估算": 1.0,
+    "diff:medium": 1.0,
+    "diff:hard": 1.0,
+    "diff:easy": 1.0
+  },
+  "rows": [
+    {
+      "id": "2044",
+      "question": "在既有建筑玻璃安全防护改造中，若需兼顾高透光性、抗冲击性能及成本效益，应选择何种材料作为防爆膜的主承力结构，并依据哪些性能指标进行选型？",
+      "capability": "选型与替代",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2024",
+      "question": "在高湿度环境或长距离输气管道的应用场景中，为防止水分积聚影响气动工具运行，应采取哪些关键维护措施？",
+      "capability": "故障诊断与排查",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1951",
+      "question": "在使用千斤顶进行车辆升降作业时，为确保操作安全应采取哪些关键措施？",
+      "capability": "安全合规与风险控制",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "procedure",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2049",
+      "question": "依据 GB/T 6543—2008 标准，瓦楞纸箱的耐破强度试验应采用哪种试验方法？",
+      "capability": "标准规范与术语",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "standard_interpretation",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2043",
+      "question": "在餐饮行业清洗厨房织物时，若需高效去除米饭、面食类残渣，应选择含有哪种酶的复配洗涤剂？",
+      "capability": "选型与替代",
+      "difficulty": "medium",
+      "true_format": "FillBlank",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2047",
+      "question": "1500型气动喷枪在喷涂不同粘度涂料时，通过什么机制实现涂料输出量的灵活调节，以适应底漆、面漆或防火涂料等不同工艺需求？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1619",
+      "question": "LH-221光学透过率测量仪在评估太阳膜性能时，分别通过哪三个光谱波段的透过率数据来综合判断其功能性表现？",
+      "capability": "质量计量与检测",
+      "difficulty": "medium",
+      "true_format": "FillBlank",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2041",
+      "question": "依据《中低压配电网能效评估导则》（GB/T 31367—2015），开展中低压配电网能效评估时应遵循哪些基本原则？",
+      "capability": "标准规范与术语",
+      "difficulty": "hard",
+      "true_format": "FillBlank",
+      "true_task": "standard_interpretation",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2048",
+      "question": "在MP500系列四款型号中，哪一款仪器同时具备pH与溶解氧测量功能，并且其溶解氧测量支持浓度与饱和度双模式输出？",
+      "capability": "选型与替代",
+      "difficulty": "hard",
+      "true_format": "MultipleChoice",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2042",
+      "question": "在工业应用中，吐温80常与哪种物质复配以调节乳化剂的HLB值，并适配不同油相的乳化需求？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "easy",
+      "true_format": "FillBlank",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2015",
+      "question": "在为一台功率为1500W、工作电压为220V的加热管选型固态电压调节器时，应选择的最小额定电流规格是多少？",
+      "capability": "工程计算与估算",
+      "difficulty": "hard",
+      "true_format": "Calculation",
+      "true_task": "calculation",
+      "heur_format": "Calculation",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1955",
+      "question": "在制备高球形度、高纯度的铜基合金粉末时，若需避免坩埚引入杂质，应优先考虑哪种雾化工艺？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "hard",
+      "true_format": "MultipleChoice",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1973",
+      "question": "在进行500kV特高压环境下带电核相作业时，依据相关标准，操作人员与带电体之间应保持的最小安全距离以及所使用绝缘杆的最小有效绝缘长度分别是多少？",
+      "capability": "安全合规与风险控制",
+      "difficulty": "hard",
+      "true_format": "FillBlank",
+      "true_task": "procedure",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "535",
+      "question": "在桌上型车床选型时，若需加工最大直径为180mm的回转工件，其对应的中心高应至少为多少？",
+      "capability": "选型与替代",
+      "difficulty": "easy",
+      "true_format": "Calculation",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1553",
+      "question": "在MBS 3100电源模块中，当输出电流信号低于4 mA时，通常表示什么状态？",
+      "capability": "故障诊断与排查",
+      "difficulty": "easy",
+      "true_format": "FillBlank",
+      "true_task": "diagnosis",
+      "heur_format": "Calculation",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2016",
+      "question": "在采用高效液相色谱-质谱法测定纺织染整助剂中烷基苯酚和烷基苯酚聚氧乙烯醚时，辛基苯酚和壬基苯酚聚氧乙烯醚分别应使用哪种离子化检测模式？",
+      "capability": "质量计量与检测",
+      "difficulty": "hard",
+      "true_format": "QA",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2030",
+      "question": "根据GB 34660—2017标准，采用10米法和3米法测试时，车辆在30～75 MHz频段的宽带电磁辐射发射限值分别相差多少dBμV/m？",
+      "capability": "标准规范与术语",
+      "difficulty": "hard",
+      "true_format": "Calculation",
+      "true_task": "standard_interpretation",
+      "heur_format": "QA",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2007",
+      "question": "根据GB/T 7350—1999标准，若某工业产品在运输过程中可能短时间沉入水面以下，应选择哪种防水包装等级？",
+      "capability": "标准规范与术语",
+      "difficulty": "hard",
+      "true_format": "MultipleChoice",
+      "true_task": "standard_interpretation",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2046",
+      "question": "在潮湿环境或人员密集的工作区域使用线盘时，应优先选择哪种类型以提升电气安全性？",
+      "capability": "安全合规与风险控制",
+      "difficulty": "medium",
+      "true_format": "MultipleChoice",
+      "true_task": "procedure",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1082",
+      "question": "在对颗粒材料进行质量一致性评价时，若关注的是各物理特性参数组合向量的方向相似性而非大小差异，应优先选择哪种数学计算方法？",
+      "capability": "质量计量与检测",
+      "difficulty": "easy",
+      "true_format": "MultipleChoice",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1741",
+      "question": "在为50kWh电池容量的电动汽车进行20%至100%充电时，30kW和40kW挂壁式直流充电桩的充电时间相近，但40kW型号在实际充电过程中的优势体现在哪一方面？",
+      "capability": "工程计算与估算",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "calculation",
+      "heur_format": "Calculation",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1131",
+      "question": "在静音无油压缩机中，若未正确安装进气口的消音过滤一体式空气过滤器，可能引发哪些具体运行问题？",
+      "capability": "故障诊断与排查",
+      "difficulty": "hard",
+      "true_format": "MultipleChoice",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1618",
+      "question": "在显示仪表中，若第一报警值AL1设为800℃、第一报警回差AH1设为10，报警触发与解除的具体PV值分别是多少？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "medium",
+      "true_format": "Calculation",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2020",
+      "question": "在依据GB/T 33353—2016标准测定电子电气产品中三丁基锡和三苯基锡时，若使用三丁基氯化锡和三苯基氯化锡配制标准储备溶液，应如何根据有机锡阳离子浓度计算其所需称样量？",
+      "capability": "质量计量与检测",
+      "difficulty": "medium",
+      "true_format": "Calculation",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2002",
+      "question": "卡特彼勒3306型发动机在持续满负荷运行时的额定输出功率和转速分别是多少？",
+      "capability": "工程计算与估算",
+      "difficulty": "hard",
+      "true_format": "FillBlank",
+      "true_task": "calculation",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2038",
+      "question": "在北方寒冷地区进行外墙施工时，应优先选择哪类聚合物胶粉，并依据其哪些性能特点做出该选择？",
+      "capability": "选型与替代",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1735",
+      "question": "在切削塑性材料如不锈钢或铝合金时，若出现表面鳞片状痕迹和尺寸波动，可能与哪种切刀失效形式有关，应如何通过调整切削参数和刀具选择来应对？",
+      "capability": "故障诊断与排查",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1943",
+      "question": "防爆除尘风机在处理打磨过程中产生的高温火星时，采用什么机制来防止其成为点火源？",
+      "capability": "安全合规与风险控制",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "procedure",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2045",
+      "question": "ZX-II型救生衣在24小时连续浸水后浮力损失率不超过多少，其内部浮力材料具有什么结构特征以保障该性能？",
+      "capability": "标准规范与术语",
+      "difficulty": "medium",
+      "true_format": "QA",
+      "true_task": "standard_interpretation",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2026",
+      "question": "在空间受限的紧凑型设备中，DFS60编码器可通过哪些轴型选项实现灵活安装？",
+      "capability": "选型与替代",
+      "difficulty": "hard",
+      "true_format": "FillBlank",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2037",
+      "question": "再生涤纶纤维的原料来源包括哪些类型，其预处理工艺如何确保最终切片满足纺丝要求？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "easy",
+      "true_format": "QA",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "QA",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1587",
+      "question": "在砌体结构工程中，若使用百格网进行砂浆饱满度检测，依据相关规范，砂浆饱满度的最低合格标准是多少？",
+      "capability": "质量计量与检测",
+      "difficulty": "easy",
+      "true_format": "FillBlank",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2029",
+      "question": "根据GB/T 3714—2017标准，碳酸锰矿的一级品与四级品在锰含量、全铁（TFe）含量和氧化镁（MgO）含量三个指标上的具体限值分别是什么？",
+      "capability": "标准规范与术语",
+      "difficulty": "hard",
+      "true_format": "FillBlank",
+      "true_task": "standard_interpretation",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2036",
+      "question": "在对碳钢进行干磨作业时，若需兼顾磨削效率与砂布使用寿命，应选择以何种磨料为核心的涂附磨具？",
+      "capability": "选型与替代",
+      "difficulty": "hard",
+      "true_format": "MultipleChoice",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "2012",
+      "question": "在木屑制棒机生产过程中，原料内部的何种成分在高温高压条件下起到天然粘结作用，使成型棒料无需添加粘结剂即可保持结构稳定？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "easy",
+      "true_format": "FillBlank",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1995",
+      "question": "在涤氨抓毛布的批量生产中，如何根据其克重和门幅计算每公斤可裁出的布料长度（单位：米）？",
+      "capability": "工程计算与估算",
+      "difficulty": "easy",
+      "true_format": "Calculation",
+      "true_task": "calculation",
+      "heur_format": "QA",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1890",
+      "question": "在冷鲜肉、熟肉制品、新鲜果蔬和即食快餐四类食品中，哪一类在气调包装中使用了最高比例的氧气，且其保鲜气体配比的主要目的与其他三类存在显著差异？",
+      "capability": "工艺原理与参数影响",
+      "difficulty": "easy",
+      "true_format": "MultipleChoice",
+      "true_task": "explanation",
+      "heur_format": "QA",
+      "landed_format": "MultipleChoice",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1940",
+      "question": "在燃气轮机润滑油系统中，若主润滑油泵和辅助润滑油泵均失效且交流电源中断，依靠何种配置仍能维持系统必要的压力和流量以保障安全停机？",
+      "capability": "安全合规与风险控制",
+      "difficulty": "medium",
+      "true_format": "FillBlank",
+      "true_task": "procedure",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "34",
+      "question": "在手动位移平台的选型中，若标注行程为6.5mm，用户实际可获得的最大往返移动距离是多少？",
+      "capability": "选型与替代",
+      "difficulty": "medium",
+      "true_format": "Calculation",
+      "true_task": "selection",
+      "heur_format": "QA",
+      "landed_format": "Calculation",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    },
+    {
+      "id": "1162",
+      "question": "在使用断管取出器时，如何判断其刃口已成功咬入断管内壁？",
+      "capability": "故障诊断与排查",
+      "difficulty": "medium",
+      "true_format": "FillBlank",
+      "true_task": "diagnosis",
+      "heur_format": "QA",
+      "landed_format": "FillBlank",
+      "llm_format": "",
+      "llm_fmt_conf": 0.0,
+      "llm_task": "",
+      "llm_task_conf": 0.0,
+      "prod_task": "general"
+    }
+  ]
+}

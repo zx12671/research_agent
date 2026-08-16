@@ -37,6 +37,12 @@ LINS-main/evaluate/search_results/
 
 # IDE
 .vscode/
+
+# LINS-Industrial large model / binary files (excluded to avoid GitHub 100MB limit)
+LINS-Industrial/model/retriever/bge/bge-m3/
+LINS-Industrial/LINS-main/model/retriever/bge/bge-m3/
+LINS-Industrial/knowledge_corpus/embeddings/
+LINS-Industrial/knowledge_corpus/index/
 .idea/
 
 # OS

@@ -1,0 +1,34 @@
+{
+  "问答题": {
+    "n": 1163,
+    "ends_qmark": 1161,
+    "has_underscore": 0,
+    "has_option_letter": 0,
+    "has_calc_mark": 33,
+    "avg_len": 50.9
+  },
+  "填空题": {
+    "n": 601,
+    "ends_qmark": 601,
+    "has_underscore": 0,
+    "has_option_letter": 0,
+    "has_calc_mark": 75,
+    "avg_len": 51.1
+  },
+  "选择题": {
+    "n": 252,
+    "ends_qmark": 252,
+    "has_underscore": 0,
+    "has_option_letter": 0,
+    "has_calc_mark": 1,
+    "avg_len": 51.6
+  },
+  "计算题": {
+    "n": 33,
+    "ends_qmark": 33,
+    "has_underscore": 0,
+    "has_option_letter": 0,
+    "has_calc_mark": 21,
+    "avg_len": 60.8
+  }
+}

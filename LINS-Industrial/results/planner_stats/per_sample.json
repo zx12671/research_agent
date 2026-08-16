@@ -1,0 +1,862 @@
+[
+  {
+    "sample_id": "1",
+    "question": "在冶金轧机这类高负载工艺中，若需超过单台SIMOREG DC Master 6R",
+    "difficulty": "easy",
+    "capability": "选型与替代",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 6,
+      "reached_types": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1
+      },
+      "n_retrieve_exec": 2,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "retrieve",
+          "id": "retrieve_2"
+        },
+        {
+          "type": "merge",
+          "id": "merge_1"
+        }
+      ]
+    },
+    "answer_len": 1249,
+    "scores": {
+      "raw": 1,
+      "adjusted": 1.0,
+      "adjusted_num": 1.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  },
+  {
+    "sample_id": "2",
+    "question": "在需要频繁插拔或固定安装的影音系统中，应优先选用哪种类型的HDMI接口，并说明其",
+    "difficulty": "medium",
+    "capability": "选型与替代",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 6,
+      "n_ids": 6,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 5,
+      "reached_types": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1
+      },
+      "n_retrieve_exec": 2,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "retrieve",
+          "id": "retrieve_2"
+        }
+      ]
+    },
+    "answer_len": 1170,
+    "scores": {
+      "raw": 1,
+      "adjusted": 1.0,
+      "adjusted_num": 1.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 6
+  },
+  {
+    "sample_id": "3",
+    "question": "在液压系统维护中，若未彻底清除旧油残留物就直接补充新油，可能引发哪些具体问题？",
+    "difficulty": "easy",
+    "capability": "故障诊断与排查",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 5,
+      "reached_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "end": 1
+      },
+      "n_retrieve_exec": 1,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "end",
+          "id": "end"
+        }
+      ]
+    },
+    "answer_len": 1171,
+    "scores": {
+      "raw": 1,
+      "adjusted": 1.0,
+      "adjusted_num": 1.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  },
+  {
+    "sample_id": "4",
+    "question": "在升降式高杆照明装置中，若采用单根主钢丝绳作为升降系统的上绳，除需满足设计安全系",
+    "difficulty": "medium",
+    "capability": "安全合规与风险控制",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 5,
+      "reached_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "end": 1
+      },
+      "n_retrieve_exec": 1,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "end",
+          "id": "end"
+        }
+      ]
+    },
+    "answer_len": 1107,
+    "scores": {
+      "raw": 3,
+      "adjusted": 3.0,
+      "adjusted_num": 3.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  },
+  {
+    "sample_id": "5",
+    "question": "根据GB/T 19862—2016标准，A级和S级电能质量监测设备在谐波测量能力",
+    "difficulty": "hard",
+    "capability": "标准规范与术语",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 6,
+      "reached_types": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1
+      },
+      "n_retrieve_exec": 2,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "retrieve",
+          "id": "retrieve_2"
+        },
+        {
+          "type": "merge",
+          "id": "merge_1"
+        }
+      ]
+    },
+    "answer_len": 608,
+    "scores": {
+      "raw": 1,
+      "adjusted": 1.0,
+      "adjusted_num": 1.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  },
+  {
+    "sample_id": "6",
+    "question": "在功率密度极大的场合中，哪种金属材料常被用于高端散热解决方案以提供更优的热导率？",
+    "difficulty": "easy",
+    "capability": "选型与替代",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 6,
+      "reached_types": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1
+      },
+      "n_retrieve_exec": 2,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "retrieve",
+          "id": "retrieve_2"
+        },
+        {
+          "type": "merge",
+          "id": "merge_1"
+        }
+      ]
+    },
+    "answer_len": 315,
+    "scores": {
+      "raw": 0,
+      "adjusted": 0.0,
+      "adjusted_num": 0.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  },
+  {
+    "sample_id": "7",
+    "question": "在工业涂料、粘合剂和医用高分子材料三大应用领域中，甲基丙烯酸羟乙酯分别通过哪些分",
+    "difficulty": "easy",
+    "capability": "工艺原理与参数影响",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 6,
+      "reached_types": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1
+      },
+      "n_retrieve_exec": 2,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "retrieve",
+          "id": "retrieve_2"
+        },
+        {
+          "type": "merge",
+          "id": "merge_1"
+        }
+      ]
+    },
+    "answer_len": 1584,
+    "scores": {
+      "raw": 1,
+      "adjusted": 1.0,
+      "adjusted_num": 1.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  },
+  {
+    "sample_id": "8",
+    "question": "在高湿或盐雾环境中长期使用3Cr13不锈钢刀片的折叠刀，可能面临哪些材料性能方面",
+    "difficulty": "easy",
+    "capability": "故障诊断与排查",
+    "task_analysis.task": "general",
+    "graph": {
+      "node_count_planned": 7,
+      "n_ids": 7,
+      "type_counter": {
+        "retrieve": 2,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "merge": 1,
+        "end": 1
+      },
+      "id2type": {
+        "retrieve_1": "retrieve",
+        "organize_1": "organize",
+        "reason_1": "reason",
+        "verify_1": "verify",
+        "retrieve_2": "retrieve",
+        "merge_1": "merge",
+        "end": "end"
+      },
+      "node_types_raw": [
+        "retrieve",
+        "verify",
+        "reason",
+        "organize",
+        "merge",
+        "end"
+      ],
+      "n_retrieve": 2,
+      "n_organize": 1,
+      "n_reason": 1,
+      "n_decide": 0,
+      "n_verify": 1,
+      "n_end": 1,
+      "has_advanced": true,
+      "has_conditional_branching": true,
+      "has_multi_hop_retrieval": true,
+      "has_verification": true,
+      "task": "general",
+      "entry_points": [
+        "retrieve_1"
+      ],
+      "is_fallback_shape": false,
+      "graph_keys": [
+        "task",
+        "num_nodes",
+        "entry_points",
+        "node_types",
+        "node_summary",
+        "has_conditional_branching",
+        "has_multi_hop_retrieval",
+        "has_verification",
+        "task_specific_hints"
+      ]
+    },
+    "execution": {
+      "n_log": 5,
+      "reached_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "verify": 1,
+        "end": 1
+      },
+      "n_retrieve_exec": 1,
+      "types": [
+        {
+          "type": "retrieve",
+          "id": "retrieve_1"
+        },
+        {
+          "type": "organize",
+          "id": "organize_1"
+        },
+        {
+          "type": "reason",
+          "id": "reason_1"
+        },
+        {
+          "type": "verify",
+          "id": "verify_1"
+        },
+        {
+          "type": "end",
+          "id": "end"
+        }
+      ]
+    },
+    "answer_len": 1617,
+    "scores": {
+      "raw": 2,
+      "adjusted": 2.0,
+      "adjusted_num": 2.0,
+      "has_violation": false
+    },
+    "planned_advanced_flag": true,
+    "planned_fallback_shape": false,
+    "second_retrieve_planned": 2,
+    "node_count_planned": 7
+  }
+]

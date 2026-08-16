@@ -1,0 +1,131 @@
+[
+  {
+    "index": 1,
+    "question": "在冶金轧机这类高负载工艺中，若需超过单台SIMOREG DC Master 6RA70装置的输出能力，应采取何种运行方式来满足需求？",
+    "reference": "",
+    "knowledge_text": "SIMOREG DC Master 6RA70 系列是一类全数字化直流调速装置，专为大范围功率和电流调节场合设计，单台覆盖从6 kW到2500 kW的输出功率。该系列在额定状态下可提供15 A至3000 A的电机电流，同时具备3 A至85 A的励磁电流输出，能够稳定驱动各类中、大型直流电机。当多台装置采用整流并联运行时，其输出能力可进一步叠加，满足冶金轧机、大型起重机、电解槽驱动等高负载工艺的需求",
+    "task_type": "general",
+    "v1": {
+      "answer": "Based on the provided evidence, I cannot answer this question. The retrieved evidence sections are all empty (score values are present, but the actual text content is missing).\n\n**To provide a technically accurate answer, I would need evidence containing information such as:**\n\n- Specifications or application notes for the **SIMOREC DC Master 6RA70** drive system.\n- Documentation on **parallel operation** (also known as \"master-slave\" or \"load sharing\" configurations) for high-power DC drives.\n-",
+      "answer_length": 1021,
+      "time_seconds": 27.83,
+      "score": {
+        "raw_score": 0,
+        "adjusted_score": 0.0,
+        "has_violation": false,
+        "violation_detail": "",
+        "explanation": "rule-based coverage score"
+      },
+      "evidence": {
+        "doc_count": 10,
+        "group_count": 1,
+        "evidence_length": 242,
+        "organization_method": "pass_through_v1"
+      }
+    },
+    "v2": {
+      "answer": "Based on the provided evidence, there is **no information** available to answer the question.\n\nThe retrieved evidence is empty, and therefore I cannot determine the specific operating mode (such as parallel operation, cross-connected armature circuits, or master-slave configurations) required to exceed the output capacity of a single SIMOREG DC Master 6RA70 unit in high-load applications like a rolling mill.\n\n**To provide a technically accurate answer, the following information is needed:**\n\n1. ",
+      "answer_length": 994,
+      "time_seconds": 12.63,
+      "score": {
+        "raw_score": 0,
+        "adjusted_score": 0.0,
+        "has_violation": false,
+        "violation_detail": "",
+        "explanation": "rule-based coverage score"
+      },
+      "evidence": {
+        "doc_count": 0,
+        "group_count": 0,
+        "evidence_length": 0,
+        "organization_method": "evidence_organizer_v2"
+      }
+    }
+  },
+  {
+    "index": 2,
+    "question": "在需要频繁插拔或固定安装的影音系统中，应优先选用哪种类型的HDMI接口，并说明其物理尺寸和结构优势？",
+    "reference": "",
+    "knowledge_text": "HDMI高清多媒体接口线是一种专用于传输数字音视频信号的电缆产品，其两端均采用全尺寸标准型HDMI插头，物理接插件外形尺寸约为14毫米宽、4.5毫米高。这种全尺寸接口广泛应用于台式计算机显卡、液晶电视、投影机、蓝光播放机及部分游戏主机等设备，能够在单根线缆内同时传送未经压缩的高清视频信号与多声道音频信号，确保画面与声音的同步与高保真。\n\n标准HDMI接口相较于Mini HDMI和Micro HDM",
+    "task_type": "general",
+    "v1": {
+      "answer": "根据提供的检索证据，所有条目均为空（[]），未包含任何关于HDMI接口类型、物理尺寸或结构优势的技术信息。因此，无法基于现有证据回答该问题。\n\n**所需补充信息：**\n- HDMI接口的具体类型（如标准HDMI、Mini HDMI、Micro HDMI、HDMI Type A/C/D等）及其适用场景（频繁插拔或固定安装）。\n- 各类型接口的物理尺寸（长、宽、高）及引脚定义。\n- 结构优势（如锁紧机制、抗拉拔设计、屏蔽性能等）的对比数据或标准规范（如HDMI Licensing Administrator, Inc. 的规格书）。\n\n建议查阅HDMI官方规范或相关工业标准（如IEC 62680-1-3）以获取准确信息。",
+      "answer_length": 312,
+      "time_seconds": 9.66,
+      "score": {
+        "raw_score": 0,
+        "adjusted_score": 0.0,
+        "has_violation": false,
+        "violation_detail": "",
+        "explanation": "rule-based coverage score"
+      },
+      "evidence": {
+        "doc_count": 10,
+        "group_count": 1,
+        "evidence_length": 242,
+        "organization_method": "pass_through_v1"
+      }
+    },
+    "v2": {
+      "answer": "Based on the provided evidence, there is **no information** available to answer the question regarding HDMI interface types for frequent plugging/unplugging or fixed installation in audio-visual systems.\n\n**Required Additional Information:**\nTo provide a technically accurate recommendation, the following evidence is needed:\n- Specifications for **HDMI Type A** (Standard), **Type C** (Mini), and **Type D** (Micro) connectors.\n- Mechanical durability ratings (e.g., mating cycle life) for each type",
+      "answer_length": 913,
+      "time_seconds": 8.15,
+      "score": {
+        "raw_score": 0,
+        "adjusted_score": 0.0,
+        "has_violation": false,
+        "violation_detail": "",
+        "explanation": "rule-based coverage score"
+      },
+      "evidence": {
+        "doc_count": 0,
+        "group_count": 0,
+        "evidence_length": 0,
+        "organization_method": "evidence_organizer_v2"
+      }
+    }
+  },
+  {
+    "index": 3,
+    "question": "在液压系统维护中，若未彻底清除旧油残留物就直接补充新油，可能引发哪些具体问题？",
+    "reference": "",
+    "knowledge_text": "液压油在液压传动系统中承担动力传递、润滑保护、散热冷却与防锈封存四大核心功能，其典型工况寿命普遍维持在3至6个月之间。一旦超出该周期，油品会因氧化劣化、水分侵入、颗粒污染及添加剂衰减导致粘度下降、抗泡性恶化、液压响应迟滞等问题，致使系统运行效率降低20%以上，此时必须彻底更换新油，不得通过补油方式延续使用。\n\n液压油的更换操作需遵循严格规程：必须先将油箱、管路、工作台及油槽中的残留废油、油泥与金属",
+    "task_type": "general",
+    "v1": {
+      "answer": "Based on the provided evidence, I cannot answer this question. The retrieved evidence sections are all empty (showing only \"[]\" and score values with no text content). \n\n**What is needed:** To provide a technically accurate answer regarding the consequences of mixing old hydraulic fluid residues with new oil, the evidence should contain information on:\n- Chemical incompatibility between degraded and fresh hydraulic oils\n- Formation of sludge, varnish, or deposits\n- Accelerated oxidation and addi",
+      "answer_length": 1007,
+      "time_seconds": 9.14,
+      "score": {
+        "raw_score": 0,
+        "adjusted_score": 0.0,
+        "has_violation": false,
+        "violation_detail": "",
+        "explanation": "rule-based coverage score"
+      },
+      "evidence": {
+        "doc_count": 10,
+        "group_count": 1,
+        "evidence_length": 242,
+        "organization_method": "pass_through_v1"
+      }
+    },
+    "v2": {
+      "answer": "根据提供的检索证据，**未提供任何具体内容**。因此，无法基于现有证据给出准确答案。以下是根据工业液压系统维护的通用知识，对您问题的系统性诊断（症状→原因→纠正措施），但请注意这些内容**并非基于您提供的证据**，而是基于行业常识。\n\n### 可能引发的具体问题（基于通用工业知识）\n\n- **症状：** 系统响应迟缓、执行元件动作不稳定、油温异常升高、滤芯频繁堵塞、泵或阀件出现异常磨损或卡滞。\n- **原因：** 旧油残留物（如氧化胶质、磨损颗粒、水分、酸性物质）与新油混合，导致：\n  - **污染加速：** 残留颗粒物作为“晶核”加速新油中添加剂消耗和油液氧化。\n  - **添加剂冲突：** 不同品牌或类型液压油的添加剂（如抗磨剂、防锈剂）可能发生化学反应，降低性能。\n  - **粘度变化：** 残留物改变新油粘度，影响润滑和密封效果。\n  - **乳化与腐蚀：** 残留水分或酸性物质导致新油乳化，腐蚀金属表面。\n- **纠正措施：**\n  - **彻底清洗：** 排放旧油后，使用与目标新油相容的清洗油或专用冲洗液循环冲洗系统（尤其管路、油缸、阀块）。\n  - **更换滤芯：** 冲",
+      "answer_length": 697,
+      "time_seconds": 11.25,
+      "score": {
+        "raw_score": 0,
+        "adjusted_score": 0.0,
+        "has_violation": false,
+        "violation_detail": "",
+        "explanation": "rule-based coverage score"
+      },
+      "evidence": {
+        "doc_count": 0,
+        "group_count": 0,
+        "evidence_length": 0,
+        "organization_method": "evidence_organizer_v2"
+      }
+    }
+  }
+]

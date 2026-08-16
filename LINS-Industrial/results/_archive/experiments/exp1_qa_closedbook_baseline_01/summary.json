@@ -1,0 +1,37 @@
+{
+  "experiment": "exp1_qa",
+  "mode": "closed_book",
+  "mode_info": {
+    "name": "闭卷 (Closed-Book)",
+    "desc": "无外部知识，仅依赖模型内部知识，下界参考。",
+    "topk": 1,
+    "use_retriever": false,
+    "if_PRA": false,
+    "if_SKA": false,
+    "if_QDA": false,
+    "if_PCA": false,
+    "recall_top_k": 1,
+    "prompt_extra": ""
+  },
+  "num_samples": 100,
+  "num_errors": 0,
+  "qa_metrics": {
+    "avg_raw_score": 1.29,
+    "avg_adjusted_score": 1.29,
+    "sv_count": 0,
+    "sv_rate": 0.0,
+    "score_distribution": {
+      "1": 59,
+      "0": 9,
+      "2": 26,
+      "3": 6
+    }
+  },
+  "retrieval_metrics": {},
+  "format_distribution": {
+    "问答题": 58,
+    "填空题": 32,
+    "选择题": 7,
+    "计算题": 3
+  }
+}

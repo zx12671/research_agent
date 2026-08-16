@@ -1,0 +1,30 @@
+# LINS-Industrial 工业场景配置文件
+
+# 模型配置
+model:
+  LLM_name: "deepseek-chat"
+  assistant_LLM_name: "deepseek-chat"
+  retriever_name: "BGE"
+  database_name: "pubmed"  # 后续可替换为工业知识库
+
+# 检索配置
+retrieval:
+  topk: 5
+  recall_top_k: 50
+
+# 多智能体配置
+agents:
+  if_PRA: true   # 启用 Passage Relevant Agent
+  if_SKA: false  # 禁用 Self-Knowledge Agent
+  if_QDA: false  # 禁用 Question Decomposition Agent
+  if_PCA: false  # 禁用 Passage Coherence Agent
+
+# 工业数据集配置
+datasets:
+  industrybench_path: "./data/industrybench"
+  factorywave_path: "./data/factorywave"
+
+# 输出配置
+output:
+  results_dir: "./results"
+  log_level: "INFO"

@@ -1,0 +1,354 @@
+[recheck] STEP 1/2 base (EvidenceOrganizer) 30 题 ...
+
+======================================================================
+  🏭 Exp1 Agentic RAG
+  Mode: Agentic RAG (Task-Aware, 本实验)
+  Run ID: recheck_base
+  Samples: 30
+======================================================================
+
+📂 加载数据集...
+[INFO] 加载了 30 个问题样本 (格式分布: 问答题=20, 填空题=7, 选择题=2, 计算题=1)
+
+🤖 初始化 Agentic RAG Engine...
+[AgenticRAGEngine] External retriever (Stable Knowledge Interface) ready
+📊 初始化评分器 (mode=rule)...
+
+──────────────────────────────────────────────────────────────────────
+📝 开始评估 (30 样本)
+──────────────────────────────────────────────────────────────────────
+
+[1/30] 在冶金轧机这类高负载工艺中，若需超过单台SIMOREG DC Master 6RA70装置的输出能力，应采取何种运行方式来满足需求？...
+[INFO] IndustrialRetriever 就绪: 55095 chunks (含 0 篇噪声/干扰文档)
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 41.2s | ✅
+
+[2/30] 在需要频繁插拔或固定安装的影音系统中，应优先选用哪种类型的HDMI接口，并说明其物理尺寸和结构优势？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 15.4s | ✅
+
+[3/30] 在液压系统维护中，若未彻底清除旧油残留物就直接补充新油，可能引发哪些具体问题？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 20.3s | ✅
+
+[4/30] 在升降式高杆照明装置中，若采用单根主钢丝绳作为升降系统的上绳，除需满足设计安全系数不小于8外，还应设置哪些安全装置以防止灯盘意外坠落？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 15.8s | ✅
+
+[5/30] 根据GB/T 19862—2016标准，A级和S级电能质量监测设备在谐波测量能力上有什么具体差异？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 12.1s | ✅
+
+[6/30] 在功率密度极大的场合中，哪种金属材料常被用于高端散热解决方案以提供更优的热导率？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 8.9s | ✅
+
+[7/30] 在工业涂料、粘合剂和医用高分子材料三大应用领域中，甲基丙烯酸羟乙酯分别通过哪些分子结构特性实现其功能价值？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 25.3s | ✅
+
+[8/30] 在高湿或盐雾环境中长期使用3Cr13不锈钢刀片的折叠刀，可能面临哪些材料性能方面的风险，应采取什么维护措施？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 17.2s | ✅
+
+[9/30] 在塑料破碎清洗系统中，为确保破碎机安全稳定运行，启动前应执行什么关键操作？该操作的作用是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 13.7s | ✅
+
+[10/30] 在园林绿化作业中，为何采用四冲程风冷式小型汽油发动机的篱笆剪比常见二冲程机型更适合长时间间歇性作业？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 13.9s | ✅
+
+[11/30] 在采用蒸馏-硝酸钍容量法测定氟化锂中氟含量时，用于标定硝酸钍标准溶液的基准物质是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 10.0s | ✅
+
+[12/30] 在电动机保护用断路器中，哪种附件能够区分人为分闸与故障跳闸，并在多电机系统中提升排障效率？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 12.6s | ✅
+
+[13/30] 在中空玻璃密封体系中，聚异丁烯作为第一道密封材料的主要功能及其优势是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 16.2s | ✅
+
+[14/30] 在需要材料在-70℃下仍保持良好力学性能、且用于制造柔软袋体或拉伸缠绕膜的应用场景中，ULDPE、ABS和POM三种材料中哪一种最适用？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 21.3s | ✅
+
+[15/30] 在高速电机应用中，保持架通常选用哪种材质，其优势是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 10.6s | ✅
+
+[16/30] 在工业电动工具选型中，为何仅参考空载转速或空载往复频率不足以判断角磨机或马刀锯的实际作业性能？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 18.1s | ✅
+
+[17/30] 在基于光学干涉的MEMS微结构应变梯度测量中，若微悬臂梁发生向下弯曲变形，应变梯度的数值应如何表示？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 9.8s | ✅
+
+[18/30] 在储存密度为1.84 g/cm³的浓硫酸时，若需容纳1吨物料，应选择标称容积约为多少升的塑料桶？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 18.2s | ✅
+
+[19/30] 在住宅建筑中，用于展示同层排水系统施工工艺的样板与用于展示砌体抹灰全流程工艺的样板，哪一种更侧重于体现不同基材交界处的防裂处理措施？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 10.8s | ✅
+
+[20/30] 在医用放射防护工程中，为确保铅板接缝处不发生射线泄漏，通常采用哪些结构和材料处理方式？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 19.3s | ✅
+
+[21/30] 根据GB/T 33733—2017标准，哪些类型的水嘴可以通过非肢体接触方式实现启闭和流量控制，并且其中哪些属于恒温控制类型？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 10.7s | ✅
+
+[22/30] 根据GB/T 26467—2011标准，当泄漏介质的毒性危害程度达到什么级别时，生产单位需填写带压密封工程施工安全评估报告并提供相应安全防护措施？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 12.2s | ✅
+
+[23/30] 根据国家标准GB/T 42802—2023，适用于36个月及以下婴童的沐浴座椅必须配备何种类型的束缚系统？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 11.5s | ✅
+
+[24/30] 在潮湿、水汽或化学介质环境中，为提升微型轴承的防水防锈能力，应优先选择哪些材料或结构设计？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 19.9s | ✅
+
+[25/30] 在电路板破碎分选设备中，哪些环节分别利用了物料的密度差异和导电性差异来实现金属与非金属的分离？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 21.4s | ✅
+
+[26/30] 在数据中心资源利用的术语体系中，哪些能源类型属于可再生能源，且其定义强调了在自然过程中可再生的特性？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 12.2s | ✅
+
+[27/30] O-III窄带天文滤镜在光污染环境下能有效提升观测对比度，其核心透射的波长及其对应的天体类型是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 16.5s | ✅
+
+[28/30] 根据国家标准GB/T 20476—2006，松木包装材料采用热处理时，若其厚度为12厘米，应满足怎样的温度和时间要求？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 11.7s | ✅
+
+[29/30] 在安装压力变送器时，若被测介质具有腐蚀性，应采取哪些措施以确保设备正常运行和测量准确性？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 22.2s | ✅
+
+[30/30] 在铁锹的材料选择中，高碳钢相较于普通碳钢或低碳钢在性能上有哪些具体优势使其适用于多石或板结土壤作业？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 15.6s | ✅
+
+======================================================================
+  📊 实验结果汇总
+======================================================================
+  模式: Agentic RAG (Task-Aware, 本实验)
+  运行 ID: recheck_base
+  样本数: 30
+  总分 (raw): 50/90 = 55.56%
+  总分 (adjusted): 50.0/90 = 55.56%
+  平均分 (raw): 1.67/3.0
+  平均分 (adjusted): 1.67/3.0
+  SV 违规: 0/30 (0.0%)
+  总耗时: 484.4s
+  平均耗时: 16.1s/样本
+
+  📈 语义检索指标:
+    Semantic Hit@1: 0.4667
+    Semantic Hit@3: 0.4667
+    Semantic Hit@5: 0.4667
+    Semantic Hit@10: 0.5333
+    Semantic MRR: 0.4778
+    Semantic NDCG: 0.7820
+
+  📈 按难度:
+    easy: 15 samples, avg=2.00/3.0, violations=0
+    medium: 10 samples, avg=1.70/3.0, violations=0
+    hard: 5 samples, avg=0.60/3.0, violations=0
+
+  📈 按能力:
+    安全合规与风险控制: 4 samples, avg=1.50/3.0, violations=0
+    工程计算与估算: 1 samples, avg=2.00/3.0, violations=0
+    工艺原理与参数影响: 6 samples, avg=2.00/3.0, violations=0
+    故障诊断与排查: 2 samples, avg=1.50/3.0, violations=0
+    标准规范与术语: 7 samples, avg=1.14/3.0, violations=0
+    质量计量与检测: 1 samples, avg=3.00/3.0, violations=0
+    选型与替代: 9 samples, avg=1.78/3.0, violations=0
+
+======================================================================
+
+📄 详细结果已保存: C:\Users\duodu\Desktop\LINS\LINS-Industrial\results\experiments\experiments\recheck_base\detailed_results.json
+📄 实验报告已保存: C:\Users\duodu\Desktop\LINS\LINS-Industrial\results\experiments\experiments\recheck_base\report.md
+📄 CSV 文件已保存: C:\Users\duodu\Desktop\LINS\LINS-Industrial\results\experiments\experiments\recheck_base\results.csv
+[recheck] base done avg= {'avg_raw_score': 1.6666666666666667, 'avg_adjusted_score': 1.6666666666666667, 'avg_time_seconds': 16.146381409962974}
+[recheck] STEP 2/2 organize_v3 (RerankTruncOrganizer) 30 题 ...
+
+======================================================================
+  🏭 Exp1 Agentic RAG [OPTIMIZATION GROUP] | optimization=organize_v3
+  Run ID: recheck_ov3 | Samples: 30
+======================================================================
+
+📂 加载数据集 (与参照组同题库)...
+[INFO] 加载了 30 个问题样本 (格式分布: 问答题=20, 填空题=7, 选择题=2, 计算题=1)
+🤖 初始化优化引擎 (ma opt: mv_hybrid / hybrid)...
+  🏷️  组织档 = organize_v3 (EvidenceOrganizer+L2词法重排截断, signal=lex)
+📊 初始化评分器 (mode=rule)...
+
+──────────────────────────────────────────────────────────────────────
+📝 开始评估 (30 样本)
+──────────────────────────────────────────────────────────────────────
+
+[1/30] 在冶金轧机这类高负载工艺中，若需超过单台SIMOREG DC Master 6RA70装置的输出能力，应采取何种运行方式来满足需求？...
+[INFO] IndustrialRetriever 就绪: 55095 chunks (含 0 篇噪声/干扰文档)
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 22.2s | ✅
+
+[2/30] 在需要频繁插拔或固定安装的影音系统中，应优先选用哪种类型的HDMI接口，并说明其物理尺寸和结构优势？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 21.9s | ✅
+
+[3/30] 在液压系统维护中，若未彻底清除旧油残留物就直接补充新油，可能引发哪些具体问题？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 17.4s | ✅
+
+[4/30] 在升降式高杆照明装置中，若采用单根主钢丝绳作为升降系统的上绳，除需满足设计安全系数不小于8外，还应设置哪些安全装置以防止灯盘意外坠落？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 16.6s | ✅
+
+[5/30] 根据GB/T 19862—2016标准，A级和S级电能质量监测设备在谐波测量能力上有什么具体差异？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 11.9s | ✅
+
+[6/30] 在功率密度极大的场合中，哪种金属材料常被用于高端散热解决方案以提供更优的热导率？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 12.6s | ✅
+
+[7/30] 在工业涂料、粘合剂和医用高分子材料三大应用领域中，甲基丙烯酸羟乙酯分别通过哪些分子结构特性实现其功能价值？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 21.2s | ✅
+
+[8/30] 在高湿或盐雾环境中长期使用3Cr13不锈钢刀片的折叠刀，可能面临哪些材料性能方面的风险，应采取什么维护措施？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 17.5s | ✅
+
+[9/30] 在塑料破碎清洗系统中，为确保破碎机安全稳定运行，启动前应执行什么关键操作？该操作的作用是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 16.1s | ✅
+
+[10/30] 在园林绿化作业中，为何采用四冲程风冷式小型汽油发动机的篱笆剪比常见二冲程机型更适合长时间间歇性作业？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 12.6s | ✅
+
+[11/30] 在采用蒸馏-硝酸钍容量法测定氟化锂中氟含量时，用于标定硝酸钍标准溶液的基准物质是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 11.6s | ✅
+
+[12/30] 在电动机保护用断路器中，哪种附件能够区分人为分闸与故障跳闸，并在多电机系统中提升排障效率？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 12.1s | ✅
+
+[13/30] 在中空玻璃密封体系中，聚异丁烯作为第一道密封材料的主要功能及其优势是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 13.7s | ✅
+
+[14/30] 在需要材料在-70℃下仍保持良好力学性能、且用于制造柔软袋体或拉伸缠绕膜的应用场景中，ULDPE、ABS和POM三种材料中哪一种最适用？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 23.8s | ✅
+
+[15/30] 在高速电机应用中，保持架通常选用哪种材质，其优势是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 12.2s | ✅
+
+[16/30] 在工业电动工具选型中，为何仅参考空载转速或空载往复频率不足以判断角磨机或马刀锯的实际作业性能？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 16.2s | ✅
+
+[17/30] 在基于光学干涉的MEMS微结构应变梯度测量中，若微悬臂梁发生向下弯曲变形，应变梯度的数值应如何表示？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 8.9s | ✅
+
+[18/30] 在储存密度为1.84 g/cm³的浓硫酸时，若需容纳1吨物料，应选择标称容积约为多少升的塑料桶？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 14.2s | ✅
+
+[19/30] 在住宅建筑中，用于展示同层排水系统施工工艺的样板与用于展示砌体抹灰全流程工艺的样板，哪一种更侧重于体现不同基材交界处的防裂处理措施？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 12.0s | ✅
+
+[20/30] 在医用放射防护工程中，为确保铅板接缝处不发生射线泄漏，通常采用哪些结构和材料处理方式？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 19.6s | ✅
+
+[21/30] 根据GB/T 33733—2017标准，哪些类型的水嘴可以通过非肢体接触方式实现启闭和流量控制，并且其中哪些属于恒温控制类型？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 12.9s | ✅
+
+[22/30] 根据GB/T 26467—2011标准，当泄漏介质的毒性危害程度达到什么级别时，生产单位需填写带压密封工程施工安全评估报告并提供相应安全防护措施？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 9.5s | ✅
+
+[23/30] 根据国家标准GB/T 42802—2023，适用于36个月及以下婴童的沐浴座椅必须配备何种类型的束缚系统？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 11.5s | ✅
+
+[24/30] 在潮湿、水汽或化学介质环境中，为提升微型轴承的防水防锈能力，应优先选择哪些材料或结构设计？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 1 | Adjusted: 1.00 | SV: False | Time: 27.1s | ✅
+
+[25/30] 在电路板破碎分选设备中，哪些环节分别利用了物料的密度差异和导电性差异来实现金属与非金属的分离？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 16.0s | ✅
+
+[26/30] 在数据中心资源利用的术语体系中，哪些能源类型属于可再生能源，且其定义强调了在自然过程中可再生的特性？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 13.1s | ✅
+
+[27/30] O-III窄带天文滤镜在光污染环境下能有效提升观测对比度，其核心透射的波长及其对应的天体类型是什么？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 15.1s | ✅
+
+[28/30] 根据国家标准GB/T 20476—2006，松木包装材料采用热处理时，若其厚度为12厘米，应满足怎样的温度和时间要求？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 0 | Adjusted: 0.00 | SV: False | Time: 11.3s | ✅
+
+[29/30] 在安装压力变送器时，若被测介质具有腐蚀性，应采取哪些措施以确保设备正常运行和测量准确性？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 3 | Adjusted: 3.00 | SV: False | Time: 16.6s | ✅
+
+[30/30] 在铁锹的材料选择中，高碳钢相较于普通碳钢或低碳钢在性能上有哪些具体优势使其适用于多石或板结土壤作业？...
+[ExternalRetriever] Retrieved 10 docs (k=10)
+  Score: 2 | Adjusted: 2.00 | SV: False | Time: 15.2s | ✅
+
+======================================================================
+  📊 实验结果汇总 (optimization=organize_v3)
+======================================================================
+  运行 ID: recheck_ov3
+  样本数: 30
+  总分 (raw): 51/90 = 56.67%
+  总分 (adjusted): 51.0/90 = 56.67%
+  平均分 (raw): 1.70/3.0
+  平均分 (adjusted): 1.70/3.0
+  SV 违规: 0/30 (0.0%)
+  总耗时: 462.4s
+  平均耗时: 15.4s/样本
+
+  📈 语义检索指标:
+    Semantic Hit@1: 0.4667
+    Semantic Hit@3: 0.4667
+    Semantic Hit@5: 0.4667
+    Semantic Hit@10: 0.5333
+    Semantic MRR: 0.4778
+    Semantic NDCG: 0.7820
+
+  📈 按难度:
+    easy: 15 samples, avg=2.00/3.0, violations=0
+    medium: 10 samples, avg=1.70/3.0, violations=0
+    hard: 5 samples, avg=0.80/3.0, violations=0
+
+  📈 按能力:
+
+📄 详细结果已保存: C:\Users\duodu\Desktop\LINS\LINS-Industrial\results\experiments\experiments\recheck_ov3\detailed_results.json
+📄 实验报告已保存: C:\Users\duodu\Desktop\LINS\LINS-Industrial\results\experiments\experiments\recheck_ov3\report.md
+📄 CSV 文件已保存: C:\Users\duodu\Desktop\LINS\LINS-Industrial\results\experiments\experiments\recheck_ov3\results.csv
+[recheck] ov3 done avg= {'avg_raw_score': 1.7, 'avg_adjusted_score': 1.7, 'avg_semantic_hit_at_1': 0.4666666666666667, 'avg_semantic_hit_at_3': 0.4666666666666667, 'avg_semantic_hit_at_5': 0.4666666666666667, 'avg_semantic_hit_at_10': 0.5333333333333333, 'avg_semantic_mrr': 0.4777777777777778, 'avg_semantic_ndcg': 0.7819841269841269}
+[recheck] ALL DONE

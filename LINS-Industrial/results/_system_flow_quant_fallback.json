@@ -1,0 +1,406 @@
+{
+  "planner_mode": "fallback",
+  "rows": [
+    {
+      "q": "电磨（直磨机）在高速使用小磨头作业时可能引发哪些",
+      "cap": "安全合规与风险控",
+      "analyzer": {
+        "task": "general",
+        "format": "QA",
+        "confidence": 0.95,
+        "reasoning_complexity": "medium",
+        "requires_multi_source": false,
+        "requires_formula": false,
+        "requires_step_reasoning": false,
+        "preferred_source": "standard",
+        "bool_true": 0
+      },
+      "planner": {
+        "planner_llm_calls": 1,
+        "n_nodes": 4,
+        "node_types": {
+          "retrieve": 1,
+          "organize": 1,
+          "reason": 1,
+          "end": 1
+        },
+        "node_ids": [
+          "retrieve_1",
+          "organize_1",
+          "reason_1",
+          "end"
+        ],
+        "entry_points": [
+          "retrieve_1"
+        ],
+        "has_retrieve_2": false,
+        "has_merge": false,
+        "has_decide": false,
+        "has_verify": false,
+        "task": "general"
+      },
+      "retriever": {
+        "n_chunks": 10,
+        "scores": [
+          0.818,
+          0.7018,
+          0.7016,
+          0.7011,
+          0.7011,
+          0.6922,
+          0.6866,
+          0.6844,
+          0.6631,
+          0.6544
+        ],
+        "score_mean": 0.7004,
+        "score_min": 0.6544,
+        "time_ms": 15.8,
+        "industry_dist": {
+          "机械五金加工": 10
+        },
+        "capability_dist": {
+          "安全合规与风险控制": 10
+        },
+        "source_dist": {
+          "IndustryBench": 10
+        },
+        "query_expanded": "电磨（直磨机）在高速使用小磨头作业时可能引发哪些 直磨机",
+        "retrieval_failed": false
+      },
+      "organizer": {
+        "n_in": 10,
+        "n_after_dedup": 10,
+        "n_dropped_dup": 0,
+        "dup_rate": 0.0,
+        "n_groups": 1,
+        "group_names": [
+          "机械五金加工/安全合规与风险控制"
+        ],
+        "ctx_chars": 1495,
+        "time_ms": 1.0
+      },
+      "executor": {
+        "exec_node_order": [
+          {
+            "type": "retrieve",
+            "node_id": "retrieve_1",
+            "message": "Retrieved 10 documents"
+          },
+          {
+            "type": "organize",
+            "node_id": "organize_1",
+            "message": "Organized into 1 groups: ['机械五金加工/安全合规与风险控制']"
+          },
+          {
+            "type": "reason",
+            "node_id": "reason_1",
+            "message": "Reasoning completed (Standard Prompt + PromptBuilder), answer length: 26"
+          },
+          {
+            "type": "end",
+            "node_id": "end",
+            "message": "Execution complete"
+          }
+        ],
+        "node_count": 4,
+        "second_retrieval_triggers": 0,
+        "used_external_retrieval": null,
+        "llm_calls_this_run": 2,
+        "llm_call_positions": [
+          "reason",
+          "reason"
+        ],
+        "time_ms": 17.36,
+        "answer_is_mock": true,
+        "answer_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+      }
+    },
+    {
+      "q": "在检测实验室中使用乙炔气体时，对输送管道的材质和",
+      "cap": "安全合规与风险控",
+      "analyzer": {
+        "task": "general",
+        "format": "QA",
+        "confidence": 0.95,
+        "reasoning_complexity": "medium",
+        "requires_multi_source": false,
+        "requires_formula": false,
+        "requires_step_reasoning": false,
+        "preferred_source": "standard",
+        "bool_true": 0
+      },
+      "planner": {
+        "planner_llm_calls": 1,
+        "n_nodes": 4,
+        "node_types": {
+          "retrieve": 1,
+          "organize": 1,
+          "reason": 1,
+          "end": 1
+        },
+        "node_ids": [
+          "retrieve_1",
+          "organize_1",
+          "reason_1",
+          "end"
+        ],
+        "entry_points": [
+          "retrieve_1"
+        ],
+        "has_retrieve_2": false,
+        "has_merge": false,
+        "has_decide": false,
+        "has_verify": false,
+        "task": "general"
+      },
+      "retriever": {
+        "n_chunks": 10,
+        "scores": [
+          0.6436,
+          0.6195,
+          0.6072,
+          0.6068,
+          0.6068,
+          0.6028,
+          0.6021,
+          0.5991,
+          0.5988,
+          0.598
+        ],
+        "score_mean": 0.6085,
+        "score_min": 0.598,
+        "time_ms": 15.8,
+        "industry_dist": {
+          "能源储能新能源": 2,
+          "机械五金加工": 3,
+          "化工材料涂料": 5
+        },
+        "capability_dist": {
+          "标准规范与术语": 2,
+          "工艺原理与参数影响": 1,
+          "安全合规与风险控制": 6,
+          "选型与替代": 1
+        },
+        "source_dist": {
+          "IndustryBench": 10
+        },
+        "query_expanded": "在检测实验室中使用乙炔气体时，对输送管道的材质和",
+        "retrieval_failed": false
+      },
+      "organizer": {
+        "n_in": 10,
+        "n_after_dedup": 10,
+        "n_dropped_dup": 0,
+        "dup_rate": 0.0,
+        "n_groups": 6,
+        "group_names": [
+          "化工材料涂料/安全合规与风险控制",
+          "机械五金加工/工艺原理与参数影响",
+          "机械五金加工/标准规范与术语",
+          "机械五金加工/选型与替代",
+          "能源储能新能源/安全合规与风险控制",
+          "能源储能新能源/标准规范与术语"
+        ],
+        "ctx_chars": 1392,
+        "time_ms": 1.0
+      },
+      "executor": {
+        "exec_node_order": [
+          {
+            "type": "retrieve",
+            "node_id": "retrieve_1",
+            "message": "Retrieved 10 documents"
+          },
+          {
+            "type": "organize",
+            "node_id": "organize_1",
+            "message": "Organized into 6 groups: ['化工材料涂料/安全合规与风险控制', '机械五金加工/工艺原理与参数影响', '机械五金加工/标准规范与术语', '机械五金加工/选型与替代', '能源储能新能源/安全合规与风险控制', '能源储能新能源/标准规范与术语']"
+          },
+          {
+            "type": "reason",
+            "node_id": "reason_1",
+            "message": "Reasoning completed (Standard Prompt + PromptBuilder), answer length: 26"
+          },
+          {
+            "type": "end",
+            "node_id": "end",
+            "message": "Execution complete"
+          }
+        ],
+        "node_count": 4,
+        "second_retrieval_triggers": 0,
+        "used_external_retrieval": null,
+        "llm_calls_this_run": 2,
+        "llm_call_positions": [
+          "reason",
+          "reason"
+        ],
+        "time_ms": 17.57,
+        "answer_is_mock": true,
+        "answer_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+      }
+    },
+    {
+      "q": "在潮湿或液体介质环境中使用压电式速度传感器时，应",
+      "cap": "安全合规与风险控",
+      "analyzer": {
+        "task": "general",
+        "format": "QA",
+        "confidence": 0.95,
+        "reasoning_complexity": "medium",
+        "requires_multi_source": false,
+        "requires_formula": false,
+        "requires_step_reasoning": false,
+        "preferred_source": "standard",
+        "bool_true": 0
+      },
+      "planner": {
+        "planner_llm_calls": 1,
+        "n_nodes": 4,
+        "node_types": {
+          "retrieve": 1,
+          "organize": 1,
+          "reason": 1,
+          "end": 1
+        },
+        "node_ids": [
+          "retrieve_1",
+          "organize_1",
+          "reason_1",
+          "end"
+        ],
+        "entry_points": [
+          "retrieve_1"
+        ],
+        "has_retrieve_2": false,
+        "has_merge": false,
+        "has_decide": false,
+        "has_verify": false,
+        "task": "general"
+      },
+      "retriever": {
+        "n_chunks": 10,
+        "scores": [
+          0.7603,
+          0.7199,
+          0.6872,
+          0.68,
+          0.6683,
+          0.6676,
+          0.667,
+          0.6569,
+          0.6488,
+          0.6473
+        ],
+        "score_mean": 0.6803,
+        "score_min": 0.6473,
+        "time_ms": 16.0,
+        "industry_dist": {
+          "电子仪表传感": 10
+        },
+        "capability_dist": {
+          "安全合规与风险控制": 4,
+          "选型与替代": 5,
+          "质量计量与检测": 1
+        },
+        "source_dist": {
+          "IndustryBench": 10
+        },
+        "query_expanded": "在潮湿或液体介质环境中使用压电式速度传感器时，应 在潮湿或液体介质环境中使用压电式速度传感器",
+        "retrieval_failed": false
+      },
+      "organizer": {
+        "n_in": 10,
+        "n_after_dedup": 10,
+        "n_dropped_dup": 0,
+        "dup_rate": 0.0,
+        "n_groups": 3,
+        "group_names": [
+          "电子仪表传感/安全合规与风险控制",
+          "电子仪表传感/质量计量与检测",
+          "电子仪表传感/选型与替代"
+        ],
+        "ctx_chars": 2147,
+        "time_ms": 2.01
+      },
+      "executor": {
+        "exec_node_order": [
+          {
+            "type": "retrieve",
+            "node_id": "retrieve_1",
+            "message": "Retrieved 10 documents"
+          },
+          {
+            "type": "organize",
+            "node_id": "organize_1",
+            "message": "Organized into 3 groups: ['电子仪表传感/安全合规与风险控制', '电子仪表传感/质量计量与检测', '电子仪表传感/选型与替代']"
+          },
+          {
+            "type": "reason",
+            "node_id": "reason_1",
+            "message": "Reasoning completed (Standard Prompt + PromptBuilder), answer length: 26"
+          },
+          {
+            "type": "end",
+            "node_id": "end",
+            "message": "Execution complete"
+          }
+        ],
+        "node_count": 4,
+        "second_retrieval_triggers": 0,
+        "used_external_retrieval": null,
+        "llm_calls_this_run": 2,
+        "llm_call_positions": [
+          "reason",
+          "reason"
+        ],
+        "time_ms": 20.7,
+        "answer_is_mock": true,
+        "answer_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+      }
+    }
+  ],
+  "aggregated": {
+    "n_questions": 3,
+    "analyzer": {
+      "task_general_rate": 1.0,
+      "format_dist": {
+        "QA": 3
+      },
+      "avg_bool_true": 0,
+      "confidence_all_equal": true
+    },
+    "planner": {
+      "avg_nodes": 4,
+      "retrieve2_rate": 0.0,
+      "decide_rate": 0.0,
+      "verify_rate": 0.0,
+      "all_same_topology": true
+    },
+    "retriever": {
+      "avg_n_chunks": 10,
+      "score_mean": 0.6631,
+      "score_min_avg": 0.6332,
+      "avg_time_ms": 15.8667,
+      "failures": 0
+    },
+    "organizer": {
+      "avg_n_in": 10,
+      "avg_n_after": 10,
+      "avg_dropped": 0,
+      "avg_dup_rate": 0.0,
+      "avg_groups": 3.3333,
+      "avg_ctx_chars": 1678
+    },
+    "executor": {
+      "avg_llm_calls": 2,
+      "call_kinds_union": {
+        "reason": 6
+      },
+      "second_retry_triggers_total": 0,
+      "avg_time_ms": 18.5433,
+      "all_answer_mock": true
+    }
+  }
+}

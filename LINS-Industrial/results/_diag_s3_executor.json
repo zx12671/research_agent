@@ -1,0 +1,234 @@
+{
+  "summary": {
+    "n": 12,
+    "node_hits": {
+      "retrieve": 12,
+      "organize": 12,
+      "reason": 12,
+      "end": 12
+    },
+    "node_hit_rates": {
+      "retrieve": 1.0,
+      "organize": 1.0,
+      "reason": 1.0,
+      "end": 1.0
+    },
+    "llm_call_positions": {
+      "planner": 12,
+      "reason": 24
+    },
+    "llm_call_positions_rate": {
+      "planner": 1.0,
+      "reason": 2.0
+    },
+    "solver_touched(should_be_false)": false,
+    "solver_access_rate": 0.0
+  },
+  "rows": [
+    {
+      "q": "在爆炸性环境中使用的胶管接头需要满足哪些认证要求",
+      "cap": "安全合规与风险控",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在制冷压缩机系统维修后，为确保系统内部干燥洁净，",
+      "cap": "故障诊断与排查",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在配制用于容量分析的亚甲基蓝摩尔浓度溶液时，应依",
+      "cap": "质量计量与检测",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在380V线电压的三相整流电路中，为确保安全裕度",
+      "cap": "工程计算与估算",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "根据GB/T 7350—1999标准，若某工业产",
+      "cap": "标准规范与术语",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在铸铁V型铁的制造中，为何其工作面硬度被控制在H",
+      "cap": "工艺原理与参数影",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在喷涂加工中，为了确保橡胶漆在塑料、橡胶及复合材",
+      "cap": "工艺原理与参数影",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在适配22至26AWG标准双绞线并支持千兆以太网",
+      "cap": "选型与替代",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在变频器控制单元中，若要通过外部电位器实现连续可",
+      "cap": "工艺原理与参数影",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在纺织材料性能测试中，若要表征测量结果的离散程度",
+      "cap": "质量计量与检测",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在GB/T 2423.59—2008标准中，若需",
+      "cap": "标准规范与术语",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    },
+    {
+      "q": "在高低温循环装置 GDSZ-5/20 与 GDS",
+      "cap": "选型与替代",
+      "node_types": {
+        "retrieve": 1,
+        "organize": 1,
+        "reason": 1,
+        "end": 1
+      },
+      "llm_kinds": [
+        "planner",
+        "reason",
+        "reason"
+      ],
+      "n_llm_calls": 3,
+      "ans_head": "【MOCK】占位推理答案：综合给定证据后给出的结论。"
+    }
+  ],
+  "verdict": "FAIL(EVIDENCE): reason 现实执行但 TaskSolver 接入率=0 → 需裁决接入/移除"
+}

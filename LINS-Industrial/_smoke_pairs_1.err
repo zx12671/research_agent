@@ -1,0 +1,284 @@
+[INFO] Loading faiss with AVX2 support.
+[INFO] Successfully loaded faiss with AVX2 support.
+[INFO] \u2705 索引已加载: knowledge_corpus/index/industrybench_bge-small_flat.faiss
+[INFO]    向量数: 55095
+[INFO]   已加载 55095 个块元数据
+[INFO] \u2705 开放域检索器就绪
+[INFO]    索引: knowledge_corpus/index/industrybench_bge-small_flat.faiss (55095 向量)
+[INFO]    块: 55095 个
+[INFO]    模型: bge-small
+[INFO] \u2705 索引已加载: knowledge_corpus/index/industrybench_bge-small_flat.faiss
+[INFO]    向量数: 55095
+[INFO]   已加载 55095 个块元数据
+[INFO] \u2705 开放域检索器就绪
+[INFO]    索引: knowledge_corpus/index/industrybench_bge-small_flat.faiss (55095 向量)
+[INFO]    块: 55095 个
+[INFO]    模型: bge-small
+[INFO] \u2705 索引已加载: knowledge_corpus/index/industrybench_bge-small_flat.faiss
+[INFO]    向量数: 55095
+[INFO]   已加载 55095 个块元数据
+[INFO] \u2705 开放域检索器就绪
+[INFO]    索引: knowledge_corpus/index/industrybench_bge-small_flat.faiss (55095 向量)
+[INFO]    块: 55095 个
+[INFO]    模型: bge-small
+[INFO] Loading model: BAAI/bge-small-zh-v1.5
+[INFO] Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+D:\Anaconda\envs\LINS\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[INFO] Model loaded: BAAI/bge-small-zh-v1.5 (dim=384, device=cpu)
+[INFO] Task Analysis: general (conf=0.95)
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] Execution Graph: 8 nodes, entry: ['retrieve_1']
+[INFO] [GraphExecutor] Using pre-retrieved evidence: 10 documents (skip internal retrieve)
+[INFO] Executing graph with 8 nodes: ['retrieve_1', 'organize_1', 'decide_1', 'reason_1', 'retrieve_2', 'verify_1', 'merge_1', 'end']
+[INFO] [retrieve_1] Retrieving k=15, multi_query=True, fusion=True, ked=False
+[INFO] [retrieve_1] Using multi_query_retrieve (k=15, fusion=True)
+[INFO] Loading model: BAAI/bge-small-zh-v1.5
+[INFO] Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+D:\Anaconda\envs\LINS\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[INFO] Model loaded: BAAI/bge-small-zh-v1.5 (dim=384, device=cpu)
+[INFO] [retrieve_1·DIAGNOSE] Retriever 正常返回 15 条 (failed=False, reason='')。 Organizer【收到】15 条原始证据 —— 后续若最终答案丢关键信息，责任在 Organizer/PromptBuilder，非 Retriever。
+[INFO] ================================================================================
+[INFO] [DEBUG] Retrieve Node: retrieve_1
+[INFO] Retrieved docs: 15
+[INFO] [Doc 0] score=0.832 len=90 电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+[INFO] [Doc 1] score=0.704 len=103 电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+[INFO] [Doc 2] score=0.699 len=118 电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+[INFO] [DEBUG] Evidence keys in context after retrieve: ['__external_retrieval__', 'retrieve_1']
+[INFO] context.evidence['retrieve_1'] count=15
+[INFO] ================================================================================
+[INFO] [organize_1] Organizing evidence by topic
+[INFO] ================================================================================
+[INFO] [DEBUG] Organize Node: organize_1
+[INFO] Organize Input Docs: 15
+[INFO] [Input Doc 0] score=0.832 len=90 电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+[INFO] [Input Doc 1] score=0.704 len=103 电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+[INFO] [Input Doc 2] score=0.699 len=118 电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+[INFO] ================================================================================
+[INFO] [Organizer] Input: 15 docs → After dedup: 15 (removed 0 duplicates)
+[INFO] ================================================================================
+[INFO] [DEBUG] Organize Output - organize_1
+[INFO] Groups (3):
+[INFO]   机械五金加工/安全合规与风险控制: 11 docs
+[INFO]   机械五金加工/工艺原理与参数影响: 1 docs
+[INFO]   机械五金加工/标准规范与术语: 3 docs
+[INFO] Formatted Evidence Length: 2140 chars
+[INFO] ================================================================================
+[INFO] [decide_1] Evaluating condition: is_evidence_sufficient
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] [reason_1] Reasoning type=synthesize, using Standard Prompt + PromptBuilder
+[INFO] ================================================================================
+[INFO] [DEBUG] Reason Node: reason_1
+[INFO] Evidence Length = 2140
+[INFO] Evidence preview (first 1000 chars):
+[INFO] 
+## [机械五金加工/安全合规与风险控制]
+[1] (score=0.832)
+电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[2] (score=0.704)
+电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[3] (score=0.699)
+电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[4] (score=0.694)
+电磨（直磨机）使用锯片时需严格遵守刀具的正反方向安装要求，并确保设备转速不超过每分钟20000转。该转速限制旨在防止刀具超速运行时产生离心破裂或振动失控。建议搭配调速器，根据材料硬度与工艺需求调整至适宜速度，以获得最佳加工效果。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[5] (score=0.691)
+电磨（直磨机）采用加粗纯铜芯线电机作为动力核心，其线圈导电效率高、耐高温性能优越，可在长时间高负载工作中保持稳定输出，同时减少能量损耗。此类电机结构紧凑、散热良好，能够在持续运转环境下维持均匀扭矩输出，为精密加工提供稳定的动力支持。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[6] (score=0.686)
+电磨（直磨机）两侧设有碳刷槽，选用耐磨碳刷并便于更换，确保在长期使用过程中电机保持良好导电性能与稳定转速。碳刷设计易于用户自行维护，降低因磨损导致的性能波动。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[7] (score=0.685)
+电磨（直磨机）配备6D精钢钻夹头，夹持范围为0.6至6.5毫米，对多种规格的磨头、钻头及其它附件均能牢固固定，防止加工过程中的
+[INFO] ================================================================================
+[INFO] ================================================================================
+[INFO] [DEBUG] Prompt Length = 3937
+[INFO] Prompt preview (first 1500 chars):
+[INFO] You are an industrial domain expert. Answer in Chinese (中文).
+
+Your answer is graded against a reference containing specific industrial limits (temperatures, voltages, times, pressures, model numbers, standard IDs like GB/T). You maximize your score by:
+- Covering EVERY key fact supported by the evidence; omit nothing the evidence supports.
+- When the evidence states an industrial standard/spec limit, repeat the value EXACTLY as written (do not paraphrase numbers).
+- Prefer a partially-supported answer over "insufficient evidence": answer every part the evidence supports, and only note uncertainty where the evidence is truly silent.
+- NEVER refuse to answer when at least one retrieved chunk is relevant.
+- Never invent specifications.
+- Always preserve safety warnings (e.g. 禁止/必须/严禁/不得) from the evidence; do not omit safety constraints.
+
+
+## Retrieved Evidence:
+
+## [机械五金加工/安全合规与风险控制]
+[1] (score=0.832)
+电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[2] (score=0.704)
+电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[3] (score=0.699)
+电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[4] (score=0.694)
+电磨（直磨机）使用锯片时需严格遵守刀具的正反方向安装要求，并确保设备转速不超过每分钟20000转。该转速限制旨在防止刀具超速运行时产生离心破裂或振动失控。建议搭配调速器，根据材料硬度与工艺需求调整至适宜速度，以获得最佳加工效果。
+---
+
+## [机械五金加工/安全合规与风险
+[INFO] ================================================================================
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] [verify_1] Verifying with criteria: answer_completeness_and_citation
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] [end] Graph execution complete
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] \u2705 索引已加载: knowledge_corpus/index/industrybench_bge-small_flat.faiss
+[INFO]    向量数: 55095
+[INFO]   已加载 55095 个块元数据
+[INFO] \u2705 开放域检索器就绪
+[INFO]    索引: knowledge_corpus/index/industrybench_bge-small_flat.faiss (55095 向量)
+[INFO]    块: 55095 个
+[INFO]    模型: bge-small
+[INFO] Loading model: BAAI/bge-small-zh-v1.5
+[INFO] Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+[INFO] Model loaded: BAAI/bge-small-zh-v1.5 (dim=384, device=cpu)
+[INFO] Task Analysis: general (conf=0.95)
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] Execution Graph: 8 nodes, entry: ['retrieve_1']
+[INFO] [GraphExecutor] Using pre-retrieved evidence: 10 documents (skip internal retrieve)
+[INFO] Executing graph with 8 nodes: ['retrieve_1', 'organize_1', 'decide_1', 'reason_1', 'retrieve_2', 'verify_1', 'merge_1', 'end']
+[INFO] [retrieve_1] Retrieving k=15, multi_query=True, fusion=True, ked=False
+[INFO] [retrieve_1] Using multi_query_retrieve (k=15, fusion=True)
+[INFO] Loading model: BAAI/bge-small-zh-v1.5
+[INFO] Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+[INFO] Model loaded: BAAI/bge-small-zh-v1.5 (dim=384, device=cpu)
+[INFO] [retrieve_1·DIAGNOSE] Retriever 正常返回 15 条 (failed=False, reason='')。 Organizer【收到】15 条原始证据 —— 后续若最终答案丢关键信息，责任在 Organizer/PromptBuilder，非 Retriever。
+[INFO] ================================================================================
+[INFO] [DEBUG] Retrieve Node: retrieve_1
+[INFO] Retrieved docs: 15
+[INFO] [Doc 0] score=0.832 len=90 电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+[INFO] [Doc 1] score=0.704 len=103 电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+[INFO] [Doc 2] score=0.699 len=118 电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+[INFO] [DEBUG] Evidence keys in context after retrieve: ['__external_retrieval__', 'retrieve_1']
+[INFO] context.evidence['retrieve_1'] count=15
+[INFO] ================================================================================
+[INFO] [organize_1] Organizing evidence by topic
+[INFO] ================================================================================
+[INFO] [DEBUG] Organize Node: organize_1
+[INFO] Organize Input Docs: 15
+[INFO] [Input Doc 0] score=0.832 len=90 电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+[INFO] [Input Doc 1] score=0.704 len=103 电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+[INFO] [Input Doc 2] score=0.699 len=118 电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+[INFO] ================================================================================
+[INFO] [Organizer] Input: 15 docs → After dedup: 15 (removed 0 duplicates)
+[INFO] ================================================================================
+[INFO] [DEBUG] Organize Output - organize_1
+[INFO] Groups (3):
+[INFO]   机械五金加工/安全合规与风险控制: 11 docs
+[INFO]   机械五金加工/工艺原理与参数影响: 1 docs
+[INFO]   机械五金加工/标准规范与术语: 3 docs
+[INFO] Formatted Evidence Length: 2140 chars
+[INFO] ================================================================================
+[INFO] [decide_1] Evaluating condition: is_evidence_sufficient
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] [reason_1] Reasoning type=general, using Standard Prompt + PromptBuilder
+[INFO] ================================================================================
+[INFO] [DEBUG] Reason Node: reason_1
+[INFO] Evidence Length = 2140
+[INFO] Evidence preview (first 1000 chars):
+[INFO] 
+## [机械五金加工/安全合规与风险控制]
+[1] (score=0.832)
+电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[2] (score=0.704)
+电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[3] (score=0.699)
+电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[4] (score=0.694)
+电磨（直磨机）使用锯片时需严格遵守刀具的正反方向安装要求，并确保设备转速不超过每分钟20000转。该转速限制旨在防止刀具超速运行时产生离心破裂或振动失控。建议搭配调速器，根据材料硬度与工艺需求调整至适宜速度，以获得最佳加工效果。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[5] (score=0.691)
+电磨（直磨机）采用加粗纯铜芯线电机作为动力核心，其线圈导电效率高、耐高温性能优越，可在长时间高负载工作中保持稳定输出，同时减少能量损耗。此类电机结构紧凑、散热良好，能够在持续运转环境下维持均匀扭矩输出，为精密加工提供稳定的动力支持。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[6] (score=0.686)
+电磨（直磨机）两侧设有碳刷槽，选用耐磨碳刷并便于更换，确保在长期使用过程中电机保持良好导电性能与稳定转速。碳刷设计易于用户自行维护，降低因磨损导致的性能波动。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[7] (score=0.685)
+电磨（直磨机）配备6D精钢钻夹头，夹持范围为0.6至6.5毫米，对多种规格的磨头、钻头及其它附件均能牢固固定，防止加工过程中的
+[INFO] ================================================================================
+[INFO] ================================================================================
+[INFO] [DEBUG] Prompt Length = 3937
+[INFO] Prompt preview (first 1500 chars):
+[INFO] You are an industrial domain expert. Answer in Chinese (中文).
+
+Your answer is graded against a reference containing specific industrial limits (temperatures, voltages, times, pressures, model numbers, standard IDs like GB/T). You maximize your score by:
+- Covering EVERY key fact supported by the evidence; omit nothing the evidence supports.
+- When the evidence states an industrial standard/spec limit, repeat the value EXACTLY as written (do not paraphrase numbers).
+- Prefer a partially-supported answer over "insufficient evidence": answer every part the evidence supports, and only note uncertainty where the evidence is truly silent.
+- NEVER refuse to answer when at least one retrieved chunk is relevant.
+- Never invent specifications.
+- Always preserve safety warnings (e.g. 禁止/必须/严禁/不得) from the evidence; do not omit safety constraints.
+
+
+## Retrieved Evidence:
+
+## [机械五金加工/安全合规与风险控制]
+[1] (score=0.832)
+电磨（直磨机）在高速状态下配合小磨头时，因其质量轻易引发全机振动，可能会影响切削精度并增加操作者的风险。因此在此类高速作业时，应选择匹配质量和尺寸的刀具，并加强工件固定与操作防护。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[2] (score=0.704)
+电磨（直磨机）在使用过程中需严格遵守用电安全规程，配合防护眼镜、手套等个人防护装备操作，并确保工作场所远离儿童及其他无关人员。设备应根据产品说明书进行安装、调试与维护，避免因不当使用造成安全事故或机械损伤。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[3] (score=0.699)
+电磨（直磨机）在安装连接杆时应确保插入至极限位置，防止因插入不充分造成传动轴跳动或断裂，影响加工精度并带来安全隐患。对于更换锯片的操作，应在连接杆顶端螺丝完全拧紧的状态下进行，以确保刀具在高速旋转时保持牢固定位，避免松动造成偏摆或脱落。
+---
+
+## [机械五金加工/安全合规与风险控制]
+[4] (score=0.694)
+电磨（直磨机）使用锯片时需严格遵守刀具的正反方向安装要求，并确保设备转速不超过每分钟20000转。该转速限制旨在防止刀具超速运行时产生离心破裂或振动失控。建议搭配调速器，根据材料硬度与工艺需求调整至适宜速度，以获得最佳加工效果。
+---
+
+## [机械五金加工/安全合规与风险
+[INFO] ================================================================================
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] [verify_1] Verifying with criteria: answer_completeness_and_citation
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+[INFO] [end] Graph execution complete
+[INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"

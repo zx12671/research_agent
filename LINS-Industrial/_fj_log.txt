@@ -1,0 +1,114 @@
+[INFO] 全量 2049 题; capability = {'选型与替代': 649, '故障诊断与排查': 31, '安全合规与风险控制': 116, '标准规范与术语': 610, '工艺原理与参数影响': 528, '质量计量与检测': 93, '工程计算与估算': 22}
+[走查] task分布={'general': 40} format分布={'QA': 37, 'Calculation': 3} conf=0.950 LLM=False
+  [1/40] 在既有建筑玻璃安全防护改造中，若需兼顾高透光性、抗冲击性能及成本效益，应.. fmt:QA(0.95) task:selection(0.95)
+  [2/40] 在高湿度环境或长距离输气管道的应用场景中，为防止水分积聚影响气动工具运行.. fmt:QA(0.90) task:procedure(0.90)
+  [3/40] 在使用千斤顶进行车辆升降作业时，为确保操作安全应采取哪些关键措施？.. fmt:QA(1.00) task:procedure(0.95)
+  [4/40] 依据 GB/T 6543—2008 标准，瓦楞纸箱的耐破强度试验应采用哪.. fmt:MultipleChoice(0.90) task:standard_interpretation(0.90)
+  [5/40] 在餐饮行业清洗厨房织物时，若需高效去除米饭、面食类残渣，应选择含有哪种酶.. fmt:FillBlank(0.90) task:selection(0.90)
+  [6/40] 1500型气动喷枪在喷涂不同粘度涂料时，通过什么机制实现涂料输出量的灵活.. fmt:QA(0.95) task:explanation(0.90)
+  [7/40] LH-221光学透过率测量仪在评估太阳膜性能时，分别通过哪三个光谱波段的.. fmt:FillBlank(0.90) task:explanation(0.80)
+  [8/40] 依据《中低压配电网能效评估导则》（GB/T 31367—2015），开展.. fmt:QA(1.00) task:standard_interpretation(0.95)
+  [9/40] 在MP500系列四款型号中，哪一款仪器同时具备pH与溶解氧测量功能，并且.. fmt:MultipleChoice(0.90) task:selection(0.90)
+  [10/40] 在工业应用中，吐温80常与哪种物质复配以调节乳化剂的HLB值，并适配不同.. fmt:FillBlank(0.90) task:selection(0.90)
+  [11/40] 在为一台功率为1500W、工作电压为220V的加热管选型固态电压调节器时.. fmt:Calculation(0.90) task:selection(0.95)
+  [12/40] 在制备高球形度、高纯度的铜基合金粉末时，若需避免坩埚引入杂质，应优先考虑.. fmt:MultipleChoice(0.90) task:selection(0.90)
+  [13/40] 在进行500kV特高压环境下带电核相作业时，依据相关标准，操作人员与带电.. fmt:QA(0.90) task:procedure(0.90)
+  [14/40] 在桌上型车床选型时，若需加工最大直径为180mm的回转工件，其对应的中心.. fmt:Calculation(0.90) task:selection(0.90)
+  [15/40] 在MBS 3100电源模块中，当输出电流信号低于4 mA时，通常表示什么.. fmt:QA(0.95) task:diagnosis(0.90)
+  [16/40] 在采用高效液相色谱-质谱法测定纺织染整助剂中烷基苯酚和烷基苯酚聚氧乙烯醚.. fmt:QA(0.90) task:selection(0.90)
+  [17/40] 根据GB 34660—2017标准，采用10米法和3米法测试时，车辆在3.. fmt:Calculation(0.90) task:calculation(0.90)
+  [18/40] 根据GB/T 7350—1999标准，若某工业产品在运输过程中可能短时间.. fmt:MultipleChoice(0.90) task:selection(0.90)
+  [19/40] 在潮湿环境或人员密集的工作区域使用线盘时，应优先选择哪种类型以提升电气安.. fmt:MultipleChoice(0.90) task:selection(0.90)
+  [20/40] 在对颗粒材料进行质量一致性评价时，若关注的是各物理特性参数组合向量的方向.. fmt:MultipleChoice(0.90) task:selection(0.90)
+  [21/40] 在为50kWh电池容量的电动汽车进行20%至100%充电时，30kW和4.. fmt:QA(0.90) task:comparison(0.90)
+  [22/40] 在静音无油压缩机中，若未正确安装进气口的消音过滤一体式空气过滤器，可能引.. fmt:QA(1.00) task:diagnosis(0.90)
+  [23/40] 在显示仪表中，若第一报警值AL1设为800℃、第一报警回差AH1设为10.. fmt:Calculation(0.90) task:calculation(0.90)
+  [24/40] 在依据GB/T 33353—2016标准测定电子电气产品中三丁基锡和三苯.. fmt:Calculation(0.90) task:calculation(0.90)
+  [25/40] 卡特彼勒3306型发动机在持续满负荷运行时的额定输出功率和转速分别是多少.. fmt:QA(0.90) task:calculation(0.90)
+  [26/40] 在北方寒冷地区进行外墙施工时，应优先选择哪类聚合物胶粉，并依据其哪些性能.. fmt:QA(0.95) task:selection(0.90)
+  [27/40] 在切削塑性材料如不锈钢或铝合金时，若出现表面鳞片状痕迹和尺寸波动，可能与.. fmt:QA(0.95) task:diagnosis(0.95)
+  [28/40] 防爆除尘风机在处理打磨过程中产生的高温火星时，采用什么机制来防止其成为点.. fmt:QA(0.90) task:explanation(0.90)
+  [29/40] ZX-II型救生衣在24小时连续浸水后浮力损失率不超过多少，其内部浮力材.. fmt:QA(0.90) task:standard_interpretation(0.90)
+  [30/40] 在空间受限的紧凑型设备中，DFS60编码器可通过哪些轴型选项实现灵活安装.. fmt:QA(0.90) task:selection(0.90)
+  [31/40] 再生涤纶纤维的原料来源包括哪些类型，其预处理工艺如何确保最终切片满足纺丝.. fmt:QA(1.00) task:explanation(0.90)
+  [32/40] 在砌体结构工程中，若使用百格网进行砂浆饱满度检测，依据相关规范，砂浆饱满.. fmt:QA(0.90) task:standard_interpretation(0.90)
+  [33/40] 根据GB/T 3714—2017标准，碳酸锰矿的一级品与四级品在锰含量、.. fmt:QA(0.95) task:standard_interpretation(0.95)
+  [34/40] 在对碳钢进行干磨作业时，若需兼顾磨削效率与砂布使用寿命，应选择以何种磨料.. fmt:MultipleChoice(0.90) task:selection(0.90)
+  [35/40] 在木屑制棒机生产过程中，原料内部的何种成分在高温高压条件下起到天然粘结作.. fmt:QA(0.90) task:explanation(0.90)
+  [36/40] 在涤氨抓毛布的批量生产中，如何根据其克重和门幅计算每公斤可裁出的布料长度.. fmt:Calculation(0.95) task:calculation(0.95)
+  [37/40] 在冷鲜肉、熟肉制品、新鲜果蔬和即食快餐四类食品中，哪一类在气调包装中使用.. fmt:MultipleChoice(0.90) task:comparison(0.90)
+  [38/40] 在燃气轮机润滑油系统中，若主润滑油泵和辅助润滑油泵均失效且交流电源中断，.. fmt:QA(0.95) task:diagnosis(0.90)
+  [39/40] 在手动位移平台的选型中，若标注行程为6.5mm，用户实际可获得的最大往返.. fmt:Calculation(0.90) task:selection(0.90)
+  [40/40] 在使用断管取出器时，如何判断其刃口已成功咬入断管内壁？.. fmt:QA(1.00) task:diagnosis(0.90)
+==========================================================================
+任务一 前端任务判定量化（Analyzer ≥ format/task 判定）
+抽样 40 题 / 全量 2049 题 | 模型 deepseek-chat | 20260807_205321
+==========================================================================
+
+【0】系统走查：生产 TaskAnalyzer 当前实际行为
+  - task 维度：analyze() 恒返回 GENERAL（中性化单点），LLM 不调用。
+      task 分布: {'general': 40}  → task 判定【零启用】
+  - format 维度：pipeline 未传 format；analyze() 内 normalize_format('',q) 走 heuristic。
+      format 分布: {'QA': 37, 'Calculation': 3}
+  - mean_confidence=0.950; LLM 调用=False（0=纯确定性，零延迟）
+  - 结论：前端判定（尤其 task）生产中为【中性化/降级】状态。
+
+【1】format(题型) 判定准确率（gt=CSV `_format`）
+                   acc      加权F1
+  heuristic(生产)   30.0%     17.0%
+  LLM 直判          70.0%     66.6%
+
+  混淆矩阵(行=真值, 列=预测; heuristic/生产):
+  真实\预测         问答题           填空题           选择题           计算题           
+  问答题           11            0             0             1             
+  填空题           12            0             0             1             
+  选择题           8             0             0             0             
+  计算题           6             0             0             1             
+
+  分层 acc(heuristic → LLM):
+    选型与替代            heur=25%   llm=88%
+    故障诊断与排查          heur=40%   llm=40%
+    安全合规与风险控制        heur=40%   llm=60%
+    标准规范与术语          heur=33%   llm=50%
+    工艺原理与参数影响        heur=29%   llm=86%
+    质量计量与检测          heur=20%   llm=80%
+    工程计算与估算          heur=25%   llm=75%
+    diff:medium      heur=50%   llm=83%
+    diff:hard        heur=15%   llm=54%
+    diff:easy        heur=11%   llm=67%
+
+【2】task(推理任务) 判定准确率（gt=capability→TaskType 专家映射代理）
+                   acc      加权F1
+  生产(恒GENERAL)     0.0%      0.0%
+  LLM 判8类         57.5%     57.6%
+
+  LLM task 混淆矩阵(行=真值代理, 列=预测):
+  真实\预测           comparison    diagnosis     selection     calculation   standard_interpretationprocedure     explanation   general       
+  对比              0             0             0             0             0             0             0             0             
+  诊断              0             4             2             1             1             1             1             0             
+  选型              0             0             8             0             0             0             0             0             
+  计算              1             0             1             2             0             0             0             0             
+  标准解读            0             0             1             1             4             0             0             0             
+  流程/规程           0             1             1             0             0             2             1             0             
+  解释              1             0             2             1             0             0             3             0             
+  通用              0             0             0             0             0             0             0             0             
+
+  每类 P/R/F1 (LLM task 判定):
+    对比           n=0   P=0% R=0% F1=0.00
+    诊断           n=10  P=80% R=40% F1=0.53
+    选型           n=8   P=53% R=100% F1=0.70
+    计算           n=4   P=40% R=50% F1=0.44
+    标准解读         n=6   P=80% R=67% F1=0.73
+    流程/规程        n=5   P=67% R=40% F1=0.50
+    解释           n=7   P=60% R=43% F1=0.50
+    通用           n=0   P=0% R=0% F1=0.00
+
+【3】结论与决策提示
+  - format: LLM 判定明显优于生产 heuristic => 前端 format 判定有被浪费的容量。
+  - format: LLM 判定本身 acc<80% => 前端判定不可靠，应优先靠 CSV 真值。
+  - task: 生产恒 GENERAL；LLM 判 8 类可达能力仅作参考（真值为 capability 代理）。
+  - 注意: capability 与推理任务不严格一一对应，task 真值存在固有噪声。
+
+明细JSON: results/frontend_judgment\frontend_judgment_20260807_205321.json
+
+[SAVED] results/frontend_judgment\frontend_judgment_20260807_205321.md

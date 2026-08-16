@@ -1,0 +1,24 @@
+{
+  "n": 40,
+  "merge_direct_prompt_inflation": {
+    "accumulated_over_organize_only_avg": 1.04,
+    "accumulated_over_organize_only_max": 1.08,
+    "share_above_1.5x": 0.0,
+    "dup_char_ratio_avg": 0.0
+  },
+  "completeness": {
+    "organized_chunks_100pct_present_in_accumulated": true,
+    "new_chunk_count_min_kept_over_all_samples": 0
+  },
+  "note": "S5-P0 修复(迁移至生产 pipeline.py._handle_merge)：raw 段按 chunk_id 跳过已被 organized 覆盖的 chunk。修复前 2.63×/100%≥1.5×；修复后至 1.04×/0%≥1.5×，RAW-organized 内容重叠 0.0（无重复并入），organized 全量 100% 保留（Recall-Safe,0 缺失）、第二跳新增 chunk 不丢。基线见 results/s5_merge_inflate_BEFORE.json。",
+  "detail_examples": [
+    1.03,
+    1.03,
+    1.04,
+    1.05,
+    1.03,
+    1.04,
+    1.04,
+    1.03
+  ]
+}

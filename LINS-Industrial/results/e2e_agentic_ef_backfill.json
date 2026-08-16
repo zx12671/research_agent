@@ -1,0 +1,38 @@
+{
+  "在相同体积下，纤维滤料与传统滤砂相比": {
+    "flag": "DEGRADE",
+    "note": "光纤滤料截污",
+    "n_total": 13,
+    "n_extra": 3
+  },
+  "在污水池专用聚脲防水防腐涂料的施工中": {
+    "flag": "DEGRADE",
+    "note": "聚脲防水涂料",
+    "n_total": 34,
+    "n_extra": 24
+  },
+  "插座端子在冲压成型后、电镀前的质量控制": {
+    "flag": "DEGRADE",
+    "note": "插座端子",
+    "n_total": 13,
+    "n_extra": 3
+  },
+  "在切削塑性材料如不锈钢或铝合金时": {
+    "flag": "CTRL_UP",
+    "note": "切削鳞片",
+    "n_total": 23,
+    "n_extra": 13
+  },
+  "在安装新45型电压表时": {
+    "flag": "CTRL_UP2",
+    "note": "电压表",
+    "n_total": 64,
+    "n_extra": 54
+  },
+  "桥式整流器规格标识中的IF(av)参数": {
+    "flag": "CTRL_UP3",
+    "note": "桥式整流器",
+    "n_total": 29,
+    "n_extra": 19
+  }
+}

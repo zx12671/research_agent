@@ -1,0 +1,384 @@
+﻿id,question,reference,prediction,difficulty,capability,industry,domain,format,score_raw,score_adjusted,has_violation,violation_detail,explanation,time_seconds,semantic_hit@1,semantic_hit@3,semantic_hit@5,semantic_hit@10,semantic_mrr,semantic_ndcg,matched_count,semantic_threshold
+1,在冶金轧机这类高负载工艺中，若需超过单台SIMOREG DC Master 6RA70装置的输出能力，应采取何种运行方式来满足需求？,采用多台装置整流并联运行。,"根据提供的证据，在冶金轧机这类高负载工艺中，若需超过单台SIMOREG DC Master 6RA70装置的输出能力，应采取**多台装置整流并联运行**的方式。
+
+证据[1]明确指出：“当多台装置采用整流并联运行时，其输出能力可进一步叠加，满足冶金轧机、大型起重机、电解槽驱动等高负载工艺的需求。” 这表明并联运行是官方推荐且已验证的扩容方案，能够通过叠加各装置的电流输出能力来满足更高的负载要求。
+
+此外，证据[4]提供了该系列整流单元的具体电流等级（如600 A、850 A、1200 A、2200 A及3000 A），并强调选型时需依据电机额定电流和系统冗余要求进行匹配。在并联运行时，工程师需综合考虑各装置的电流等级、散热设计、母线结构及保护配置，以确保系统安全可靠。
+
+**总结**：通过多台SIMOREG DC Master 6RA70装置整流并联运行，可叠加输出能力，满足冶金轧机等高负载工艺的超大功率需求。选型时需依据电机额定电流和冗余要求匹配装置等级，并注意散热、母线及保护设计。
+
+**引用来源**：[1], [4]",easy,选型与替代,冶金钢铁矿产,工业采购领域,问答题,2,2.0,False,,rule-based coverage score,28.33,1.0,1.0,1.0,1.0,1.0,2.45,6,0.15
+2,在需要频繁插拔或固定安装的影音系统中，应优先选用哪种类型的HDMI接口，并说明其物理尺寸和结构优势？,应优先选用标准HDMI接口，其物理尺寸约为14毫米宽、4.5毫米高，具备更大的机械强度和更稳固的接触结构。,"根据提供的证据，在需要频繁插拔或固定安装的影音系统中，应优先选用**标准HDMI接口**（全尺寸标准型HDMI插头）。
+
+**物理尺寸**：标准HDMI接口的物理接插件外形尺寸约为 **14毫米宽、4.5毫米高** [3]。
+
+**结构优势**：
+1.  **机械强度高**：标准HDMI接口相较于Mini HDMI和Micro HDMI接口，具备更大的机械强度和更稳固的接触结构，能够承受频繁插拔带来的机械应力，适合固定安装或频繁插拔的场景，例如会议室影音系统、家庭影院主机端口等 [2]。
+2.  **接触可靠性**：优质HDMI线缆的插头外壳通常采用镀金处理，以降低接触电阻并延缓端子氧化，从而在长期使用中保持稳定的传输质量 [1]。
+3.  **布线适应性**：采用全尺寸标准HDMI的线缆在布线时，需结合接口方向、设备间距与线径柔软度进行规划，避免锐角弯折以保证内部多股屏蔽导体不受损 [1]。这表明其结构设计允许在合理规划下实现可靠的长距离或固定安装布线。
+
+**结论**：基于上述证据，标准HDMI接口因其较大的物理尺寸（14mm×4.5mm）和更坚固的机械结构，是频繁插拔或固定安装场景下的首选接口类型 [2][3]。",medium,选型与替代,电子仪表传感,工业采购领域,问答题,3,3.0,False,,rule-based coverage score,8.355,1.0,1.0,1.0,1.0,1.0,1.8333,3,0.15
+3,在液压系统维护中，若未彻底清除旧油残留物就直接补充新油，可能引发哪些具体问题？,可能引发油品乳化、堵塞过滤器、加剧泵阀磨损，显著缩短新油使用寿命并影响液压系统稳定性。,"根据提供的证据，若在液压系统维护中未彻底清除旧油残留物就直接补充新油，可能引发以下具体问题：
+
+1. **油品乳化与过滤器堵塞**：残留的旧油、油泥、金属磨屑及切屑与冷却液混合物会进入新油体系，迅速引发油品乳化，并堵塞过滤器，影响系统过滤效率。[1]
+
+2. **加剧泵阀磨损**：污染物（如金属颗粒、杂质）会显著加快液压泵、阀等摩擦副的损伤速率，缩短关键部件（如配油盘、柱塞缸体）的使用寿命。[1][7]
+
+3. **缩短新油使用寿命**：污染物会加速新油的氧化劣化，导致其粘度下降、抗泡性恶化，使新油在短期内失效，无法维持正常工况寿命（通常为3至6个月）。[2]
+
+4. **降低系统运行效率**：油品劣化后，液压响应迟滞，系统运行效率可能降低20%以上，影响动力传递与执行机构稳定性。[2]
+
+5. **引发气蚀与压力波动**：若残留空气未排尽（如旧油中混入空气），会导致油液压缩性增加、压力波动，严重时引发气蚀损伤泵芯。[5]
+
+**注意**：证据中未直接提及“未清除残留物直接补油”对散热或防锈功能的具体影响，但根据[2]中液压油的四大功能，可推断污染物会间接削弱散热冷却与防锈封存能力。如需更全面的分析，建议补充关于散热性能衰减或防锈失效的专项证据。",easy,故障诊断与排查,机械五金加工,工业通用领域,问答题,2,2.0,False,,rule-based coverage score,6.887,1.0,1.0,1.0,1.0,1.0,1.5,2,0.15
+4,在升降式高杆照明装置中，若采用单根主钢丝绳作为升降系统的上绳，除需满足设计安全系数不小于8外，还应设置哪些安全装置以防止灯盘意外坠落？,应设置防止灯盘意外坠落制动装置或自动卸载装置。,"根据提供的证据，在升降式高杆照明装置中，若采用单根主钢丝绳作为升降系统的上绳，除需满足设计安全系数不小于8外，还应设置以下安全装置以防止灯盘意外坠落：
+
+**应设置防止灯盘意外坠落制动装置**，或**设置自动卸载装置**。  
+- 证据[1]明确要求：“升降系统采用单根主钢丝绳时，应设置防止灯盘意外坠落制动装置或设置自动卸载装置。”  
+- 此外，证据[4]和[7]进一步规定了该制动装置的试验要求（100次试验，坠落距离不大于1.5 m）以及自动卸载装置在可靠性试验后的动作要求（灯盘升至工作位置后自动使钢丝绳卸载，下降时平稳脱离）。
+
+因此，对于单根主钢丝绳的升降系统，必须至少配置上述两种装置之一，以确保安全。",medium,安全合规与风险控制,电工电器电力,工业通用领域,问答题,3,3.0,False,,rule-based coverage score,7.849,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+5,根据GB/T 19862—2016标准，A级和S级电能质量监测设备在谐波测量能力上有什么具体差异？,A级监测设备要求能够测量到50次谐波，S级监测设备要求能够测量到40次谐波。,"根据GB/T 19862—2016标准，A级和S级电能质量监测设备在谐波测量能力上的具体差异主要体现在**谐波测量次数范围**和**谐波电压总畸变率（THD）及间谐波的测量范围**上。以下是基于证据的详细对比：
+
+| 对比项目 | A级监测设备 | S级监测设备 | 依据来源 |
+|----------|-------------|-------------|----------|
+| **谐波测量次数** | 要求能够测量到**50次谐波** | 要求能够测量到**40次谐波** | [2]、[3] |
+| **谐波电压总畸变率（THD）测量范围** | 范围为**10%~200%**，并符合GB/T 18039.4—2003中第3类规定值 | 范围为**10%~100%**，并符合GB/T 18039.4—2003中第3类规定值 | [1]、[10] |
+| **间谐波测量范围** | 范围为**10%~200%**，并符合GB/T 18039.4—2003中第3类规定值 | 范围为**200%**（但未明确下限，证据中显示“S级范围为200%”，且未列出具体下限值） | [1]、[10] |
+| **准确度等级** | 符合GB/T 17626.30—2012中**A级准确度**测量方法，适用于精确测量（如解决纠纷、验证标准） | 符合GB/T 17626.30—2012中**S级准确度**测量方法，适用于常规测试、调查统计、排除故障 | [4]、[8] |
+| **暂态电压幅值测量误差** | 事件过程中电压幅值测量误差不应超过公称输入电压的**±0.2%** | 事件过程中电压幅值测量误差不应超过公称输入电压的**±1%** | [1] |
+
+### 关键差异总结：
+1. **谐波次数**：A级设备可测量至50次谐波，而S级设备仅至40次谐波，A级覆盖更广的高次谐波。
+2. **谐波电压总畸变率范围**：A级设备可测量高达200%的畸变率，S级设备上限为100%，A级适用于更严重的畸变工况。
+3. **间谐波范围**：A级设备明确为10%~200%，S级设备仅给出200%的上限，未明确下限（证据中未提供S级间谐波下限值）。
+4. **应用场景**：A级用于高精度需求（如合同纠纷、标准验证），S级用于常规调查和故障排查。
+
+### 补充说明：
+- 证据中未明确S级间谐波测量范围的下限，若需完整对比，建议查阅GB/T 17626.30—2012标准中关于S级间谐波的具体规定。
+- 所有设备均需满足GB/T 17626.30—2012中对应等级的测量方法要求，且谐波电流测试需按表13（证据[9]）进行设定，但该表未直接对比A/S级差异，仅列出不同设定值。",hard,标准规范与术语,电工电器电力,工业通用领域,问答题,2,2.0,False,,rule-based coverage score,11.976,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+6,在功率密度极大的场合中，哪种金属材料常被用于高端散热解决方案以提供更优的热导率？,铜材,"根据提供的证据，在功率密度极大的场合中，**铜材**常被用于高端散热解决方案以提供更优的热导率。
+
+证据[1]明确指出：“铜材虽成本较高，但在功率密度极大的场合中，可提供更优热导率，常用于高端散热解决方案。” 这直接回答了问题。
+
+此外，证据[2]和[3]也提到铝型材或铝合金是散热片的常用核心材质，但针对高功率密度场景，铜材因其更高的导热性能成为优选。",easy,选型与替代,通用跨行业,工业通用领域,填空题,3,3.0,False,,rule-based coverage score,5.732,1.0,1.0,1.0,1.0,1.0,1.8333,3,0.15
+7,在工业涂料、粘合剂和医用高分子材料三大应用领域中，甲基丙烯酸羟乙酯分别通过哪些分子结构特性实现其功能价值？,工业涂料：碳碳双键参与共聚，羟基参与聚氨酯交联，提升交联密度与机械性能；粘合剂：羟基与双键提供底材润湿性与反应性，增强内聚强度与耐热老化；医用高分子材料：羟基调节亲水性与降解性，分子结构具生物相容性。,"根据提供的证据，甲基丙烯酸羟乙酯（HEMA，CAS 868-77-9）在工业涂料、粘合剂和医用高分子材料三大应用领域中，主要通过其分子结构中同时存在的**碳碳双键**和**羟基官能团**实现功能价值。具体分析如下：
+
+### 1. 工业涂料领域
+- **分子结构特性**：HEMA分子中的**羟基（—OH）**可进一步参与酯化、醚化或与异氰酸酯反应形成聚氨酯结构[1]；同时，其**碳碳双键**能通过自由基引发机制参与共聚反应[5]。
+- **功能价值**：
+  - 用于合成丙烯酸树脂、聚氨酯改性树脂及UV固化涂料，提升涂层的**交联密度**与**机械性能**[1]。
+  - 显著改善材料的**硬度、附着力和耐化学性**[5]。
+  - 在高端涂料（如汽车漆、工业防护漆、高光泽面漆）中，通过构建稳定的三维网络结构实现耐久性[1][3]。
+
+### 2. 粘合剂领域
+- **分子结构特性**：HEMA的**羟基**赋予其良好的底材润湿性和反应性，而**双键**提供共聚交联能力[3][5]。
+- **功能价值**：
+  - 作为结构胶、压敏胶和反应型热熔胶的关键改性单体，有效增强胶粘剂的**内聚强度**与**耐热老化性能**[3]。
+  - 在电子封装胶和建筑结构胶等长期耐久性应用中，有助于构建**稳定的三维网络结构**[3]。
+
+### 3. 医用高分子材料领域
+- **分子结构特性**：HEMA的**羟基**可调节材料的亲水性与降解性，**双键**则用于共聚反应控制材料性能[2]。
+- **功能价值**：
+  - 因其**生物相容性良好**，且可通过控制共聚比例调节亲水性与降解性，用于制备隐形眼镜、牙科树脂、药物缓释载体及组织工程支架材料[2]。
+  - 在医疗器械级聚合物生产中，需严格控制纯度、残留单体及金属离子杂质，以满足医药应用标准[2]。
+
+### 综合对比与替代性
+- 相比丙烯酸羟乙酯（HEA，热稳定性较差）和甲基丙烯酸羟丙酯（HPMA，反应活性略低），HEMA在**反应速率、交联效率与综合性能**之间实现了较优平衡，因此在高端涂料与医用材料领域具有不可替代地位[6]。
+
+### 证据充分性说明
+现有证据已充分覆盖三大应用领域的功能机制，无需额外信息。如需进一步了解具体合成工艺或质量控制标准，可参考[7]中关于气相色谱法（GC）分析及减压精馏处理的内容。",easy,工艺原理与参数影响,化工材料涂料,工业通用领域,问答题,2,2.0,False,,rule-based coverage score,10.962,1.0,1.0,1.0,1.0,1.0,1.7,3,0.15
+8,在高湿或盐雾环境中长期使用3Cr13不锈钢刀片的折叠刀，可能面临哪些材料性能方面的风险，应采取什么维护措施？,在高湿或盐雾环境中，3Cr13不锈钢刀片可能发生点蚀；应保持刀具干燥并定期上油养护。,"Based solely on the provided evidence, I can address the risks related to corrosion and environmental factors, but I cannot provide a complete answer regarding the specific metallurgical performance of **3Cr13 stainless steel** because this material is not mentioned in the evidence.
+
+Here is the analysis based on the available information:
+
+**Identified Risks (Based on Evidence):**
+
+1.  **Corrosion and Surface Degradation:** In high-humidity or salt-spray environments, metal components are susceptible to corrosion. The evidence indicates that **salt spray testing (NSS)** is used to evaluate corrosion resistance, with a typical requirement of 48 to 96 hours without significant oxidation or plating loss [9]. While 3Cr13 offers some corrosion resistance, the evidence suggests that in aggressive environments, the surface may still be at risk.
+2.  **Moisture-Induced Damage:** The evidence on cold-rolled steel storage states that surfaces are highly susceptible to rust from moisture, especially in coastal or humid environments [8]. Although 3Cr13 is a stainless steel, it is not fully immune to pitting or staining in high-chloride (salt) environments, and the evidence warns against prolonged storage in high-humidity or corrosive gas atmospheres [8].
+
+**Recommended Maintenance Measures (Based on Evidence):**
+
+1.  **Environmental Isolation:** Following the storage guidelines for metal components, the knife should be stored in a dry environment. If stored for extended periods, it should be sealed in a **plastic bag or a dry container** to isolate it from moisture and corrosive gases [8].
+2.  **Surface Protection:** The evidence mentions that a **PTFE (Teflon) coating** can provide a low-friction barrier that isolates metal from moisture and mild chemical corrosion [10]. If the blade is uncoated, applying a light film of oil (a common practice not explicitly stated but implied by the need to prevent oxidation) would be a logical extension of the principle of isolating the metal from the environment.
+
+**Critical Missing Information (What is needed for a complete answer):**
+
+The evidence does not contain any information about **3Cr13 stainless steel** specifically. To provide a definitive answer, the following information is required:
+
+- **Specific corrosion resistance data for 3Cr13** (e.g., its performance in standard salt spray tests like ASTM B117).
+- **Heat treatment and hardness data for 3Cr13** (e.g., typical HRC range) to assess if the blade is prone to hydrogen embrittlement or stress corrosion cracking in a salt environment.
+- **Specific maintenance protocols for 3Cr13** from a manufacturer's manual or materials standard.
+
+**Conclusion:**
+
+Based on the evidence, the primary risk in a high-humidity or salt-spray environment is **corrosion and surface oxidation** [8][9]. The recommended maintenance is to **store the knife in a sealed, dry environment** [8] and consider applying a protective barrier (like oil or a coating) to isolate the metal from moisture [10]. However, a full risk assessment for **3Cr13 stainless steel** cannot be completed without specific material property data.",easy,故障诊断与排查,机械五金加工,工业通用领域,问答题,0,0.0,False,,rule-based coverage score,14.569,1.0,1.0,1.0,1.0,1.0,1.0,1,0.15
+9,在塑料破碎清洗系统中，为确保破碎机安全稳定运行，启动前应执行什么关键操作？该操作的作用是什么？,启动前应执行手动盘车操作：人力搬动传动轮一周以上，确认无卡滞、无内部异物；作用为规避电机带载启动损坏风险。,"根据提供的证据，关于塑料破碎清洗系统中破碎机启动前的关键操作，证据[4]明确指出：“设备的启动、停止、清洗、维护应按照操作规程进行。” 然而，该证据并未具体描述启动前应执行的关键操作及其作用。
+
+证据[8]和[10]描述了锤片破碎机和电路板破碎分选设备的一般工作原理，但未涉及启动前的具体操作步骤。证据[9]涉及锂电池破碎系统，提到“一级撕碎机”通过低速高扭矩避免热失控，但同样未提供启动前操作细节。
+
+**结论：** 现有证据不足以回答该问题。要准确回答，需要补充以下信息：
+- 塑料破碎清洗系统（如锤片式破碎机）的**具体操作规程**，特别是启动前检查清单（如润滑系统、紧固件、防护装置、空载试运行等）。
+- 该操作的作用，例如：确保机械部件正常润滑、防止异物卡阻、避免电机过载、保障操作人员安全等。
+
+建议查阅相关设备制造商的操作手册或行业标准（如《塑料破碎机安全操作规程》）。",hard,安全合规与风险控制,机械五金加工,工业通用领域,问答题,0,0.0,False,,rule-based coverage score,7.357,0.0,0.0,0.0,1.0,0.1667,0.1667,1,0.15
+10,在园林绿化作业中，为何采用四冲程风冷式小型汽油发动机的篱笆剪比常见二冲程机型更适合长时间间歇性作业？,四冲程风冷发动机在低速扭矩、燃油经济性、使用寿命方面优于二冲程机型；风冷设计无需液冷部件，结构轻便、维护简便，且在连续高温环境下散热稳定。,"根据提供的证据，采用四冲程风冷式小型汽油发动机的篱笆剪比常见二冲程机型更适合长时间间歇性作业，主要原因如下：
+
+1. **低速扭矩与燃油经济性更优**：四冲程发动机在低速扭矩、燃油经济性和寿命方面均优于常见的二冲程机型，适合长时间间歇性作业 [1]。其燃油消耗控制较好（例如同类四冲程发动机燃油消耗约0.89升/小时），配合280毫升油箱可延长单次加油后的有效工作时间 [3][8]。
+
+2. **散热能力稳定**：风冷设计依靠空气流动带走热量，在连续高温环境下具备稳定的散热能力，无需额外的液冷部件，整体重量更轻，维护更为简便 [1]。这对于长时间户外作业尤为重要。
+
+3. **润滑系统更可靠**：四冲程发动机配备独立的润滑油箱（容量50毫升），用于发动机内部零件的主动润滑，对曲轴、连杆及气缸壁的寿命至关重要。正确的润滑可显著降低摩擦与热积累，保持长时间高负荷作业的稳定性 [3]。相比之下，二冲程发动机若使用劣质机油易产生积碳，导致活塞环粘连、密封失效甚至拉缸等故障 [7]。
+
+4. **维护频率低**：燃油和润滑系统容量匹配实际作业周期，减少停机维护频率 [2]。四冲程结构无需混合燃油，操作更简便，适合追求低维护、高耐用性的专业园艺作业 [2]。
+
+**对比二冲程机型**：虽然二冲程发动机动力响应迅速（如8马力二冲程泵），适合间断性高负荷运转 [4]，但其润滑方式（混合燃油）易导致积碳和磨损，且燃油经济性较差，不适合长时间间歇性作业。四冲程机型在低速扭矩、燃油经济性、散热稳定性和润滑可靠性方面均更优，因此更适合此类工况 [1][2][3]。
+
+**证据充分性说明**：现有证据已明确支持上述结论。若需更详细的对比数据（如具体二冲程机型在长时间作业中的故障率或油耗），可补充相关技术手册或测试报告。",easy,工艺原理与参数影响,机械五金加工,工业采购领域,问答题,2,2.0,False,,rule-based coverage score,10.151,1.0,1.0,1.0,1.0,1.0,1.9167,4,0.15
+11,在采用蒸馏-硝酸钍容量法测定氟化锂中氟含量时，用于标定硝酸钍标准溶液的基准物质是什么？,氟化钠（基准）,"Based on the retrieved evidence, the answer is as follows:
+
+- **The benchmark substance used to calibrate the thorium nitrate standard solution is sodium fluoride (NaF).**
+    - The evidence explicitly states: ""称取 0.2000 g 预先在 600 ℃灼烧并置于干燥器中冷却的氟化钠(基准)"" (Weigh 0.2000 g of sodium fluoride (benchmark) pre-dried at 600°C and cooled in a desiccator) [6].
+- **Practical implications:**
+    - The sodium fluoride must be of ""基准"" (benchmark grade), meaning it is a primary standard with high purity and known composition.
+    - It must be pre-treated by heating at 600°C to remove any moisture or adsorbed impurities before weighing.
+    - The calibration process involves dissolving the sodium fluoride, performing the full distillation procedure, and then titrating with the thorium nitrate solution. A blank test is also required to correct for any reagent impurities [6].",easy,质量计量与检测,化工材料涂料,工业通用领域,填空题,1,1.0,False,,rule-based coverage score,6.742,0.0,0.0,0.0,1.0,0.1667,0.1667,1,0.15
+12,在电动机保护用断路器中，哪种附件能够区分人为分闸与故障跳闸，并在多电机系统中提升排障效率？,故障信号触点,"Based on the retrieved evidence, the answer is as follows:
+
+- **附件：故障信号触点**
+- **依据**：根据证据[2]，故障信号触点专用于指示断路器因过载或短路而发生的保护性跳闸事件。该触点为机械保持型，仅在故障跳闸后闭合并保持，直至手动复位断路器后才恢复原始状态。这一特性可有效区分“人为分闸”与“故障跳闸”，便于运维人员快速判断故障来源，在多电机系统中提升排障效率。",medium,标准规范与术语,电工电器电力,工业采购领域,填空题,3,3.0,False,,rule-based coverage score,7.667,1.0,1.0,1.0,1.0,1.0,1.8333,3,0.15
+13,在中空玻璃密封体系中，聚异丁烯作为第一道密封材料的主要功能及其优势是什么？,聚异丁烯在中空玻璃密封体系中作为第一道密封（阻隔密封层），主要功能是阻止外部水汽侵入玻璃空腔，防止内部干燥剂失效和玻璃起雾；其优势包括极低的水汽透过率（MVTR）、长期稳定性、不挥发、不产烟、不污染硅酮结构胶，以及与铝隔条和玻璃界面粘接牢固。,"Based on the retrieved evidence, the primary function and advantages of polyisobutylene (PIB) as the first sealant in insulating glass (IG) units are as follows:
+
+**Primary Function:**
+Polyisobutylene serves as the **primary (barrier) seal** in the IG unit. Its core function is to **prevent external water vapor from penetrating the glass cavity**, thereby protecting the internal desiccant from premature saturation and preventing the glass from fogging [1].
+
+**Key Advantages:**
+1.  **Extremely Low Moisture Vapor Transmission Rate (MVTR):** PIB exhibits a very low MVTR, which is critical for maintaining the long-term dryness of the airspace between the glass panes [1].
+2.  **Long-Term Stability:** It demonstrates excellent long-term stability, does not volatilize, and does not produce smoke or fumes that could contaminate the secondary structural silicone sealant [1].
+3.  **Strong Adhesion:** It provides a strong, durable bond to both the aluminum spacer bar and the glass surface, ensuring the integrity of the seal [1].
+4.  **Compliance with Standards:** Its use is recommended by major international standards for insulating glass, such as EN 1279 [1].
+
+**Supporting Material Properties:**
+These functional advantages are underpinned by PIB's inherent material properties. As a highly saturated hydrocarbon polymer, it possesses excellent resistance to oxidation and UV radiation, and maintains stable physical performance under harsh environmental conditions like heat and humidity [2]. This low gas permeability is a direct result of its molecular structure [2].
+
+**Conclusion:**
+In summary, polyisobutylene is the material of choice for the primary seal in IG units because its exceptionally low moisture permeability and chemical stability directly fulfill the critical requirement of preventing water vapor ingress, thereby ensuring the long-term performance and clarity of the sealed unit.",medium,工艺原理与参数影响,化工材料涂料,工业通用领域,问答题,0,0.0,False,,rule-based coverage score,8.561,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+14,在需要材料在-70℃下仍保持良好力学性能、且用于制造柔软袋体或拉伸缠绕膜的应用场景中，ULDPE、ABS和POM三种材料中哪一种最适用？,ULDPE,"Based on the provided evidence, **ULDPE (Ultra Low Density Polyethylene)** is the most applicable material for this application.
+
+The evidence explicitly states that ULDPE ""在-70℃仍能保持优良的力学性能"" (maintains excellent mechanical properties at -70°C) and is ""常用于制造柔软袋体、拉伸缠绕膜"" (commonly used for manufacturing soft bags and stretch wrap films) [1].
+
+In contrast:
+- **ABS** is described as a general-purpose material for ""壳体、把手等结构件"" (housings, handles, and structural parts) and is not mentioned as having low-temperature flexibility or suitability for film applications [15].
+- **POM (Polyoxymethylene)** is characterized as having ""自润滑与高刚性"" (self-lubrication and high rigidity) for applications like ""齿轮、滑块"" (gears and sliders), which is the opposite of the soft, flexible film requirement [15].
+
+Therefore, ULDPE is the only material among the three that satisfies both the low-temperature performance requirement and the specific application as a flexible film.",easy,选型与替代,化工材料涂料,工业采购领域,选择题,3,3.0,False,,rule-based coverage score,7.064,1.0,1.0,1.0,1.0,1.0,1.0,1,0.15
+15,在高速电机应用中，保持架通常选用哪种材质，其优势是什么？,高速电机保持架常用聚酰胺（PA66）等工程塑料，优势为质量轻、自润滑性好。,"Based on the provided evidence, I **cannot** answer the question regarding the material selection for a cage (保持架) in high-speed motor applications.
+
+**Reasoning:**
+The retrieved evidence contains information on:
+- Pipe installation support requirements [9]
+- General characteristics of frame circuit breakers in low-voltage distribution systems [8]
+
+Neither of these documents addresses electric motor components, bearing cages, or high-speed rotating machinery materials. The evidence is entirely outside the domain of motor design or tribology.
+
+**What additional information is needed:**
+To answer this question accurately, evidence from relevant sources is required, such as:
+- Bearing or motor design standards (e.g., ISO 281, IEC 60034)
+- Material specifications for high-speed applications (e.g., phenolic resin, polyether ether ketone (PEEK), brass, or steel cages)
+- Technical manuals discussing cage material properties (e.g., thermal stability, wear resistance, low inertia, and self-lubrication characteristics)
+
+Without such evidence, any answer would be speculative and could lead to incorrect engineering decisions, particularly regarding safety and reliability in high-speed rotating equipment.",hard,选型与替代,电工电器电力,工业通用领域,问答题,0,0.0,False,,rule-based coverage score,6.076,1.0,1.0,1.0,1.0,1.0,1.0,1,0.15
+16,在工业电动工具选型中，为何仅参考空载转速或空载往复频率不足以判断角磨机或马刀锯的实际作业性能？,因为实际有效输出取决于负载工况、电池输出能力、电控系统响应速度以及散热设计水平，空载参数仅作为参考基准。,"根据提供的证据，在工业电动工具选型中，仅参考空载转速（如角磨机的rpm）或空载往复频率（如马刀锯的SPM）不足以判断实际作业性能，主要原因如下：
+
+1. **空载参数仅为基准，实际输出受负载工况影响**：证据[1]明确指出，工具的空载参数仅作为参考基准，实际有效输出取决于负载工况、电池输出能力、电控系统响应速度以及散热设计水平。例如，高转速角磨机若缺乏有效冷却或防护结构，在高强度作业下易出现热衰减甚至电机烧毁；马刀锯在厚材切断时，虽标称冲程频率较低，但依赖高往复力与稳健的机械导向结构保证切削稳定性。
+
+2. **需综合考量持续功率输出、振动控制与人机工程**：证据[1]进一步强调，专业用户在选择电动工具时，不应仅关注空载指标，还需综合考量工具的持续功率输出、振动控制性能、人机工程设计以及是否符合GB 3883系列电动工具安全标准等关键因素。
+
+3. **转速与扭矩的权衡关系**：证据[2]说明，角磨机存在不同转速规格（如7000rpm、3000rpm、1280rpm），分别对应不同尺寸砂轮和加工需求。低转速机型（如1280rpm）通过降低转速提升输出力矩，适用于厚壁金属构件的高强度磨削任务。这表明，单纯比较空载转速无法反映工具在重负荷下的扭矩输出能力。
+
+4. **安全与匹配性风险**：证据[9]和[10]指出，角磨机使用锯片时需严格遵守转速限制（如不超过20000r/min），且超高转速（如71000r/min）会带来爆片风险，不符合安全规范。此外，证据[3]和[8]强调，电磨（直磨机）在高速状态下需匹配质量和尺寸合适的刀具，否则易引发振动、影响精度并增加操作风险。
+
+**结论**：空载转速或往复频率仅反映工具在无负载状态下的理论速度，而实际作业性能取决于负载下的功率输出、扭矩特性、散热能力、振动控制、刀具匹配性及安全合规性。因此，选型时必须结合具体工况、持续功率、安全标准及人机工程等多维度参数进行综合评估。
+
+**证据来源**：[1]、[2]、[3]、[8]、[9]、[10]",easy,选型与替代,电工电器电力,工业采购领域,问答题,3,3.0,False,,rule-based coverage score,9.769,1.0,1.0,1.0,1.0,1.0,1.5,2,0.15
+17,在基于光学干涉的MEMS微结构应变梯度测量中，若微悬臂梁发生向下弯曲变形，应变梯度的数值应如何表示？,应变梯度取负值。,"Based on the provided evidence, the representation of the strain gradient value for a downward bending deformation is clearly defined.
+
+**Answer:**
+
+In the context of the provided standard, when a micro-cantilever beam undergoes a downward bending deformation, the calculated strain gradient value should be represented as a **negative value**.
+
+This is explicitly stated in the evidence: ""当微悬臂梁呈向下弯曲变形时，上述计算的应变梯度取负值"" (When the micro-cantilever beam is deformed by bending downward, the strain gradient calculated above takes a negative value) [1].
+
+Therefore, the sign convention is:
+- **Upward bending deformation:** Positive strain gradient [1].
+- **Downward bending deformation:** Negative strain gradient [1].",medium,工艺原理与参数影响,电子仪表传感,工业通用领域,填空题,2,2.0,False,,rule-based coverage score,4.738,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+18,在储存密度为1.84 g/cm³的浓硫酸时，若需容纳1吨物料，应选择标称容积约为多少升的塑料桶？,约543升,"Based on the provided evidence, I can answer your question, but a critical safety limitation must be addressed first.
+
+**Answer:**
+
+1.  **Calculate the required volume:**
+    - Mass of sulfuric acid: 1 tonne = 1000 kg = 1,000,000 g
+    - Density of sulfuric acid: 1.84 g/cm³
+    - Required volume (V) = Mass / Density = 1,000,000 g / 1.84 g/cm³ = **543,478 cm³**
+
+2.  **Convert to liters:**
+    - 1 liter = 1000 cm³
+    - Required volume = 543,478 cm³ / 1000 = **543.5 liters**
+
+3.  **Select the appropriate tank based on evidence:**
+    - The evidence provides tank sizes in liters (e.g., PT-250L [4], PT-2000L [3], PT-50000L [5]).
+    - A tank with a nominal capacity of **600 liters** or **1000 liters** would be required to safely contain 543.5 liters of liquid, as standard practice dictates filling a tank to no more than 90-95% of its nominal capacity.
+    - **However, the evidence explicitly states a critical limitation:** According to source [2], the maximum volume for a **plastic tank** is **60 L**. Source [1] confirms that large plastic tanks (e.g., 30,000 L) are used for water-like densities, but source [2] specifically limits plastic tank capacity to 60 L.
+
+**Conclusion:**
+
+While the volume calculation indicates a need for a ~544-liter container, the provided evidence **contradicts the feasibility** of using a plastic tank for this application. Source [2] explicitly limits plastic tanks to 60 L. Therefore, based strictly on the evidence, **no suitable plastic tank exists** for storing 1 tonne of concentrated sulfuric acid.
+
+**Safety and Technical Recommendation:**
+
+To store 1 tonne of concentrated sulfuric acid (density 1.84 g/cm³), you must use a **steel tank** or a **fiberglass-reinforced plastic (FRP) tank** specifically rated for sulfuric acid service. The evidence provided does not cover these materials. Additional information required would be:
+- Specifications for steel or FRP tanks rated for concentrated sulfuric acid.
+- Material compatibility data for sulfuric acid at the required concentration and temperature.",medium,工程计算与估算,化工材料涂料,工业通用领域,计算题,1,1.0,False,,rule-based coverage score,10.039,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+19,在住宅建筑中，用于展示同层排水系统施工工艺的样板与用于展示砌体抹灰全流程工艺的样板，哪一种更侧重于体现不同基材交界处的防裂处理措施？,砌体抹灰样板,"Based on the provided evidence, the **砌体抹灰样板 (masonry plastering sample)** is the one that specifically focuses on anti-crack treatment measures at the interface of different substrates.
+
+The evidence states that the masonry plastering sample ""集成展示了...不同基材交界处的挂网防裂措施"" (integrates and displays... mesh anti-crack measures at the junctions of different base materials) [1]. This directly addresses the question.
+
+In contrast, the evidence for the **同层排水样板 (same-floor drainage sample)** describes its focus on ""排水管道的布设路径、地漏定位、防水处理及检修口设置"" (layout of drainage pipes, floor drain positioning, waterproofing treatment, and inspection port settings) [2]. It does not mention any specific measures for crack prevention at substrate junctions.
+
+Therefore, the answer is the masonry plastering sample.
+
+**Procedure for Anti-Crack Treatment at Substrate Junctions (as inferred from evidence):**
+
+Based on the evidence, the standard procedure for preventing cracks at the junction of different substrates (e.g., between lightweight blocks and concrete beams/columns) involves the following steps:
+
+1.  **Surface Preparation:** Ensure the base material (e.g., lightweight block, concrete) is clean and sound. For high-absorption substrates like aerated concrete blocks, apply a **concrete interface treatment agent** to reduce the risk of the plaster layer drying out too quickly and causing shrinkage cracks [3].
+2.  **Mesh Installation:** Install a **mesh (grid cloth)** across the junction of the different substrates. This is the primary anti-crack measure, as specifically highlighted in the sample [1]. The mesh should be properly embedded to bridge the two different materials.
+3.  **Layered Plastering:** Apply the plaster in multiple layers (分层抹压) [1]. This allows each layer to cure properly and reduces the risk of delamination or cracking from a single, thick application.
+4.  **Material Selection:** For areas requiring high impermeability and crack resistance (such as exterior walls or basements), use a **micro-expansion cement** in the mortar. This compensates for drying shrinkage and enhances the density and waterproofing of the plaster layer [4][10].
+5.  **Curing:** Follow a controlled **curing cycle** (养护周期控制) to ensure the plaster hydrates properly and gains strength without developing drying cracks [1].",easy,工艺原理与参数影响,通用跨行业,工业采购领域,选择题,3,3.0,False,,rule-based coverage score,11.058,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+20,在医用放射防护工程中，为确保铅板接缝处不发生射线泄漏，通常采用哪些结构和材料处理方式？,采用阶梯式搭接并辅以铅泥密封。,"根据提供的证据，在医用放射防护工程中，为确保铅板接缝处不发生射线泄漏，通常采用以下结构和材料处理方式：
+
+1. **阶梯式搭接结构**：铅板接缝处采用阶梯式搭接方式，以增加射线穿透路径的曲折度，防止射线沿直线缝隙泄漏。[1]
+
+2. **铅泥密封材料**：在阶梯式搭接的接缝处辅以铅泥进行密封，确保接缝区域的屏蔽连续性，进一步阻断射线泄漏路径。[1]
+
+3. **保护层覆盖**：暴露在空气中的铅板常覆有不锈钢、彩涂板或铝板作为保护层，这不仅能提升机械强度和耐久性，也有助于维持接缝处屏蔽结构的完整性。[1]
+
+此外，在整体防护室（如铅房）中，顶棚、地面均需做防泄漏处理，且整舱出厂前需经射线泄漏检测，确保各接缝、接口处符合GBZ 130标准限值要求。[2]
+
+**注意**：当前证据未提供关于接缝处具体焊接工艺、搭接宽度或铅泥配比等更详细的施工参数。如需进一步指导，建议补充相关施工规范或标准（如GBZ 130或具体安装手册）中的详细规定。",medium,安全合规与风险控制,安防消防防爆,工业通用领域,问答题,2,2.0,False,,rule-based coverage score,6.385,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+21,根据GB/T 33733—2017标准，哪些类型的水嘴可以通过非肢体接触方式实现启闭和流量控制，并且其中哪些属于恒温控制类型？,可通过非肢体接触方式实现启闭和流量控制的水嘴类型包括非接触式水嘴和感应恒温水嘴；其中，感应恒温水嘴属于恒温控制类型。,"Based on the provided evidence from industrial standards, the following types of water faucets (水嘴) can achieve opening/closing and flow control without physical contact, and which of those are specifically thermostatic types:
+
+**1. Faucets achieving non-contact operation (启闭和流量控制无需肢体接触):**
+
+- **非接触式水嘴 (Sensor faucet):** This is the primary category defined as a faucet that opens, closes, and controls outlet flow without limb contact [2][3]. This is the general term for all non-contact faucets.
+- **感应恒温水嘴 (Sensor automatic thermostatic faucet):** This is a specific type that uses an induction switch for control and an electric valve for on/off, with the outlet temperature automatically controlled by a pre-selected temperature [1]. This is a non-contact thermostatic faucet.
+- **触控式水嘴 (Touch-sensitive faucet):** While this requires direct touch of the faucet or a screen/button, it is explicitly listed as a non-contact category in the evidence [3]. However, it is **not** a non-contact type in the strictest sense (it requires physical touch). The evidence groups it under non-contact definitions, but the user's question specifies ""non-physical contact"" (非肢体接触). Therefore, **触控式水嘴** is excluded from the answer as it requires physical touch.
+- **触控式恒温水嘴 (Touch-sensitive thermostatic faucet):** Similar to the above, this requires direct touch of the faucet or a screen/button [1][8]. It is therefore **not** a non-contact type and is excluded.
+
+**2. Non-contact faucets that are also thermostatic (恒温控制类型):**
+
+- **感应恒温水嘴 (Sensor automatic thermostatic faucet):** This is the only type from the evidence that is both non-contact (using an induction switch) and thermostatic (automatically controlling outlet temperature) [1].
+
+**Summary of findings:**
+
+- **Non-contact (non-physical touch) faucets:** **非接触式水嘴 (Sensor faucet)** [2][3] and **感应恒温水嘴 (Sensor automatic thermostatic faucet)** [1].
+- **Thermostatic among non-contact types:** Only **感应恒温水嘴 (Sensor automatic thermostatic faucet)** [1].
+
+**Practical Implications:**
+- **Sensor automatic thermostatic faucets** are ideal for hygiene-sensitive environments (e.g., hospitals, public restrooms, food processing) where both hands-free operation and precise temperature control are required.
+- **General sensor faucets** (非接触式水嘴) provide hands-free flow control but do not inherently regulate temperature; they require a separate mixing valve or a thermostatic mixing valve downstream to achieve temperature stability.
+- The evidence does not provide a specific standard clause number (e.g., ""GB/T 33733—2017, clause X.X"") for these definitions. The terms are extracted from a glossary/terminology section of the standard. To confirm the exact clause numbers, the full standard document would be needed.
+
+**If additional information is needed:** The exact clause numbers within GB/T 33733—2017 for each definition would clarify the hierarchical relationship between these terms and confirm if any other non-contact thermostatic types (e.g., infrared, capacitive) are defined elsewhere in the standard.",medium,标准规范与术语,机械五金加工,工业通用领域,问答题,1,1.0,False,,rule-based coverage score,12.014,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+22,根据GB/T 26467—2011标准，当泄漏介质的毒性危害程度达到什么级别时，生产单位需填写带压密封工程施工安全评估报告并提供相应安全防护措施？,泄漏介质毒性危害程度大于高度危害（含高度危害）,"Based on the retrieved evidence from GB/T 26467—2011, here is the precise answer:
+
+- **Required Toxicity Level:** The standard specifies that the requirement applies when the leakage medium's toxicity hazard level is **greater than ""highly hazardous"" (高度危害) or includes ""highly hazardous"" (含高度危害)**. This is explicitly stated in clause 4.2.10 [1].
+
+- **Practical Implications:**
+    - **Safety Assessment Report:** The production unit (生产单位) is responsible for filling out and signing the ""Appendix B On-line Leak Sealing Engineering Safety Assessment Report"" (带压密封工程施工安全评估报告) [1].
+    - **Safety Equipment:** The production unit must also provide the necessary on-site safety protective equipment, materials, and protective measures [1].
+    - **Contractor Confirmation:** Furthermore, clause 4.3.7 [2] requires that when the toxicity level is ""highly hazardous"" (高度危害), the construction unit (施工单位) must confirm the engineering safety assessment report issued by the production unit.
+
+**Summary:** The trigger is a toxicity hazard level of **""highly hazardous"" (高度危害) or above**. This mandates the production unit to complete the formal safety assessment report and provide all required safety protections.",easy,安全合规与风险控制,通用跨行业,工业通用领域,填空题,1,1.0,False,,rule-based coverage score,7.262,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+23,根据国家标准GB/T 42802—2023，适用于36个月及以下婴童的沐浴座椅必须配备何种类型的束缚系统？,被动式跨部束缚系统,"Based on the retrieved evidence from the relevant standard (GB/T 42802—2023), the answer is as follows:
+
+- **Required System Type:** A **passive crotch restraint system** (被动式跨部束缚系统).
+    - Evidence [1] and [2] explicitly state that for bathing seats intended for children up to 36 months, a passive restraint system is mandatory.
+- **Definition of Passive System:** The system must be designed so that the caregiver does **not** need to perform any operation to release the child in an emergency.
+    - Evidence [1] prohibits ""active restraint systems"" that require caregiver action to release, as this could delay rescue in an accident.
+    - Evidence [9] defines a passive system as one that is ""not removable during normal use"" and requires ""no operation by the caregiver"" to secure the child.
+- **Practical Implication:** The restraint must be a fixed, non-removable component (e.g., a rigid crotch post or a fixed strap) that automatically positions the child. It cannot be a buckle, clip, or latch that the caregiver must manually unfasten to remove the child.
+
+**Summary:** For children aged 36 months and under, the standard mandates a **passive crotch restraint system** that requires no caregiver action to release, ensuring rapid egress in an emergency [1][2][9].",hard,标准规范与术语,通用跨行业,工业通用领域,填空题,3,3.0,False,,rule-based coverage score,9.53,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+24,在潮湿、水汽或化学介质环境中，为提升微型轴承的防水防锈能力，应优先选择哪些材料或结构设计？,应优先选择不锈钢材质（如SUS304、SUS440C）或加装双面密封结构的型号，其中橡胶密封（如2RS）能有效阻挡液体渗透。,"Based on the retrieved evidence, to enhance the waterproof and rust-proof capabilities of miniature bearings in humid, vaporous, or chemically aggressive environments, the following materials and structural designs should be prioritized:
+
+| **Selection Criteria** | **Recommended Material / Design** | **Technical Justification & Evidence** |
+| :--- | :--- | :--- |
+| **Material Selection** | **Stainless Steel (e.g., SUS304, SUS440C)** | These materials offer inherent corrosion resistance. SUS304 provides general resistance, while SUS440C offers higher hardness and moderate corrosion resistance. They are specifically recommended for applications in food machinery, medical devices, and outdoor equipment [1]. |
+| **Structural Design** | **Double-sided Sealed Structure (Rubber Seals - NBR)** | Rubber seals (typically Nitrile Butadiene Rubber, NBR) provide a dual function: they block liquid penetration and prevent lubricant leakage. This design is superior to metal shields in wet environments [1]. |
+| **Alternative Material** | **Stainless Steel (304 or 316)** | For extreme environments (e.g., pharmaceutical, marine, chemical), 304 or 316 austenitic stainless steel is recommended. These materials offer strong resistance to chloride ion corrosion and have high surface finish, meeting cleanroom standards (GMP, ISO 14644) [8]. |
+
+**Summary:** For miniature bearings in wet or chemical environments, the primary recommendation is to use **stainless steel (SUS304/SUS440C)** as the bearing material combined with a **double-sided rubber seal (NBR)** design. For the most aggressive conditions (e.g., high chloride exposure), **316 stainless steel** is the preferred material [1][8].",medium,选型与替代,机械五金加工,工业采购领域,问答题,1,1.0,False,,rule-based coverage score,8.179,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+25,在电路板破碎分选设备中，哪些环节分别利用了物料的密度差异和导电性差异来实现金属与非金属的分离？,气流比重选机利用密度差异进行初步分离，静电分选机利用导电性差异进行精细分离。,"Based on the retrieved evidence, the separation of metals from non-metals in the circuit board crushing and sorting equipment is achieved through two distinct physical principles: **density difference** and **conductivity difference**. The specific stages are as follows:
+
+| Separation Principle | Equipment / Stage | Mechanism & Application | Evidence Source |
+| :--- | :--- | :--- | :--- |
+| **Density Difference** | **Airflow Classifier** | Utilizes the density difference between lightweight non-metals (e.g., PP/PE separator paper) and heavier electrode materials. A negative-pressure pneumatic network carries light plastic films into a cyclone collector, while dense electrode particles fall into the next crushing stage. | [4] |
+| **Conductivity Difference** | **Electrostatic Separator** | Applies a high-voltage electrostatic field to exploit the inherent difference in electrical conductivity between metals and non-metals. This method separates residual metal particles from non-metal powder, achieving high separation efficiency for fine particles. | [3] |
+
+**Summary:** The **airflow classifier** leverages density differences to remove lightweight non-metallic films, while the **electrostatic separator** leverages conductivity differences to achieve high-purity recovery of fine metal particles.",easy,工艺原理与参数影响,电子仪表传感,工业通用领域,问答题,0,0.0,False,,rule-based coverage score,6.182,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+26,在数据中心资源利用的术语体系中，哪些能源类型属于可再生能源，且其定义强调了在自然过程中可再生的特性？,可再生能源包括太阳能、水能、风能、生物质能、海洋能和地热能。,"根据提供的证据，在数据中心资源利用的术语体系中，**可再生能源（renewable energy）** 属于一次能源的一类，其定义明确强调了“在自然过程中再生”的特性。具体定义来自证据[1]：
+
+> **可再生能源** renewable energy：一次能源的一类，在一定程度上，地球上此类能源可在自然过程中再生。  
+> 注：此类能源包括例如太阳能、水能、风能、生物质能、海洋能和地热能等。[1]
+
+因此，符合该定义的能源类型包括：**太阳能、水能、风能、生物质能、海洋能和地热能**。这些能源均可在自然过程中循环再生，区别于“非再生能源”（如化石燃料）[7]。
+
+此外，证据[2]、[4]、[6]、[8]进一步将“可再生能源利用率（REF）”作为数据中心的关键绩效指标（KPI），用于衡量数据中心对可再生能源的利用水平，但未扩展定义之外的能源类型。
+
+**结论**：基于现有证据，可再生能源的定义及其包含的能源类型已明确。无需额外信息。",easy,标准规范与术语,能源储能新能源,工业通用领域,问答题,3,3.0,False,,rule-based coverage score,5.36,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+27,O-III窄带天文滤镜在光污染环境下能有效提升观测对比度，其核心透射的波长及其对应的天体类型是什么？,O-III窄带天文滤镜核心透射495.9nm和500.7nm两条波长，适用于行星状星云、超新星遗迹以及其他富含氧发射的星云。,"根据检索到的证据，O-III窄带天文滤镜的核心透射波长及其对应的天体类型如下：
+
+| 核心透射波长 | 对应天体类型 | 证据来源 |
+|--------------|--------------|----------|
+| 495.9 nm 和 500.7 nm | 富含二次电离氧（O-III）发射的星云，包括：<br>- 行星状星云<br>- 超新星遗迹<br>- 其他富含氧发射的星云（如M42猎户座大星云） | [1][2] |
+
+**详细说明：**
+- **透射波长**：O-III滤镜专门透过二次电离氧原子发出的两条强辐射谱线，即 **495.9 nm** 和 **500.7 nm**。证据[1]指出其透射带宽精确锁定在50nm范围，确保这两条波长的高透过率；证据[2]则进一步明确半带宽（FWHM）通常控制在约20nm，以有效抑制其他波段。
+- **天体类型**：该滤镜主要用于观测 **富含氧发射的星云**，特别是 **行星状星云** 和 **超新星遗迹**。证据[2]明确列举了这些天体类型，并举例说明在光污染环境下（如都市附近）观测M42猎户座大星云时，能大幅减少汞灯、钠灯等干扰，提升对比度。
+- **性能优势**：通过选择性透过特定波长并抑制其他波段，O-III滤镜能显著提升目标天体与背景天空的对比度，减少长时间曝光下的背景噪声，使弱结构清晰显现[1][2]。
+
+**注意**：证据[3]和[4]主要涉及滤镜的机械结构（铝合金镜框、1.25英寸尺寸）和光学基片（Schott B270玻璃、镀膜工艺），与核心透射波长及天体类型无直接关联，故未在表中引用。",medium,标准规范与术语,电子仪表传感,工业通用领域,填空题,2,2.0,False,,rule-based coverage score,8.333,1.0,1.0,1.0,1.0,1.0,2.0833,4,0.15
+28,根据国家标准GB/T 20476—2006，松木包装材料采用热处理时，若其厚度为12厘米，应满足怎样的温度和时间要求？,木材中心温度应达到65℃以上，并持续热处理8小时以上。,"Based on the retrieved evidence, the required heat treatment parameters for a 12 cm thick pine packaging material are as follows:
+
+- **Temperature Requirement:** The wood must be heated to achieve a **core temperature of at least 65°C** [2].
+- **Time Requirement:** The material must be held at this temperature for **8 hours or more** [1].
+- **Standard Reference:** This requirement is derived from the specific thickness range of **10 cm to 15 cm** [1]. Since 12 cm falls within this range, the longer treatment time of 8 hours applies, rather than the 5-hour minimum for materials under 10 cm [1][2].
+
+**Practical Implications:**
+- The treatment must ensure that the **center** of the 12 cm thick material reaches 65°C, not just the surface.
+- The 8-hour duration begins only after the core temperature has stabilized at 65°C.
+- This process is classified as **HT (Heat Treatment)** and must be documented accordingly [2].
+- The evidence does not specify the ambient oven temperature required to achieve this core temperature; additional information from the standard's Appendix A would be needed for precise oven settings.",hard,标准规范与术语,包装印刷,工业通用领域,问答题,0,0.0,False,,rule-based coverage score,9.431,0.0,0.0,0.0,0.0,0.0,0.0,0,0.15
+29,在安装压力变送器时，若被测介质具有腐蚀性，应采取哪些措施以确保设备正常运行和测量准确性？,必须选用具备防腐设计的专用型号，并在订货时明确提出防腐要求。,"根据提供的证据，在安装压力变送器时，若被测介质具有腐蚀性，为确保设备正常运行和测量准确性，应采取以下措施：
+
+1. **选用防腐专用型号**：必须选用具备防腐设计的专用型号，并在订货时明确提出防腐要求，以避免因材质不匹配导致测量失效或壳体泄漏 [1]。
+
+2. **考虑特殊环境优化设计**：对于腐蚀性介质环境，可选用防腐型投入式陶瓷电容压力变送器。该型号针对腐蚀性介质进行了专项优化设计，采用全灌封封装工艺对投入探头进行密封处理，有效防止湿气侵入和冷凝水形成，提升在高湿、多尘及户外露天工况下的运行可靠性 [5]。
+
+3. **注意安装操作规范**：在安装过程中，严禁使用金属棒、螺丝刀等硬质异物插入或触压膜片（尤其是平膜隔膜系列），以防敏感元件永久损伤 [1]。同时，应核对被测管路或设备的螺纹接口规格与产品接口是否匹配，避免因接口不符造成无法密封或安装松动 [3]。
+
+4. **通电预热与检查**：在测量之前，应先为变送器通电预热约10分钟，以稳定内部敏感元件及信号处理电路的工作状态，并检查输出信号是否正常，确保其测量性能符合使用要求 [2]。
+
+**补充说明**：证据中未明确提及腐蚀性介质的具体选材标准（如材质耐腐蚀等级、密封材料要求）或安装后的定期维护周期。如需进一步指导，建议补充相关标准（如GB/T 30439.2关于安全要求的部分 [8]）或制造商提供的防腐选型手册。",easy,选型与替代,电子仪表传感,工业采购领域,问答题,3,3.0,False,,rule-based coverage score,7.903,1.0,1.0,1.0,1.0,1.0,1.8333,3,0.15
+30,在铁锹的材料选择中，高碳钢相较于普通碳钢或低碳钢在性能上有哪些具体优势使其适用于多石或板结土壤作业？,高碳钢经合理热处理后，表面硬度高且保持韧性，能有效应对碎石土壤和板结地层的反复冲击，不易崩口或卷边，从而延长使用寿命并减少塑性变形导致的功能衰减。,"Based on the provided evidence, high-carbon steel offers specific performance advantages over ordinary or low-carbon steel for use in rocky or compacted soil conditions.
+
+| Performance Advantage | Explanation | Evidence |
+| :--- | :--- | :--- |
+| **Superior Strength & Wear Resistance** | High-carbon steel provides excellent strength and wear resistance, which is critical for withstanding repeated impacts against gravel, stones, and hardpan layers. | [1] |
+| **Enhanced Surface Hardness** | Through proper heat treatment, high-carbon steel achieves increased surface hardness, preventing the blade edge from chipping or rolling over during aggressive digging. | [1] |
+| **Maintained Toughness** | Despite its hardness, the material retains a degree of toughness, allowing it to absorb shock without fracturing. This prevents functional degradation from plastic deformation over time. | [1] |
+| **Longer Service Life** | The combination of hardness and toughness results in a longer operational lifespan compared to lower-carbon alternatives, especially in the demanding cycle of penetrating and extracting soil. | [1] |
+
+**Conclusion:** High-carbon steel is the preferred material for the shovel body in demanding applications because its heat-treated properties (high hardness with retained toughness) directly counter the failure modes (chipping, deformation, breakage) common when working in rocky or compacted soil.",easy,选型与替代,机械五金加工,工业采购领域,问答题,0,0.0,False,,rule-based coverage score,10.373,1.0,1.0,1.0,1.0,1.0,1.6429,3,0.15

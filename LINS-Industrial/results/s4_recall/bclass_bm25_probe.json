@@ -1,0 +1,1503 @@
+{
+  "n_B_std": 187,
+  "n_checked": 187,
+  "n_bm25_recover": 5,
+  "rows": [
+    {
+      "id": "5",
+      "q": "根据GB/T 19862—2016标准，A级和S级电能质量监测设备在谐波测量能力",
+      "std": "GB/T 19862—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "21",
+      "q": "根据GB/T 33733—2017标准，哪些类型的水嘴可以通过非肢体接触方式实现",
+      "std": "GB/T 33733—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "23",
+      "q": "根据国家标准GB/T 42802—2023，适用于36个月及以下婴童的沐浴座椅必",
+      "std": "GB/T 42802—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "28",
+      "q": "根据国家标准GB/T 20476—2006，松木包装材料采用热处理时，若其厚度为",
+      "std": "GB/T 20476—2006",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "40",
+      "q": "根据国家标准GB 27900—2011，消防员呼救器在完成交变湿热试验后，其绝缘",
+      "std": "GB 27900—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "52",
+      "q": "根据GB 19306—2003标准，工业固体氰化钠优等品中除氰化钠外，其他成分（",
+      "std": "GB 19306—2003",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "57",
+      "q": "根据GB/T 16942—2009标准，电子工业用氢气的纯度等级与其对应的最大总",
+      "std": "GB/T 16942—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "58",
+      "q": "在依据GB/T 38596—2020标准测定催化剂生产废水中重金属含量时，若采用",
+      "std": "GB/T 38596—2020",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "68",
+      "q": "根据国家标准GB/T 34552—2017，当入炉混合燃料的低位发热量达到600",
+      "std": "GB/T 34552—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "75",
+      "q": "根据GB/T 39899—2021标准，哪些类型的自动变速器适用于再制造，而哪一",
+      "std": "GB/T 39899—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "89",
+      "q": "根据标准GB/T 32380—2015，F/F双层罐和S/F双层罐在结构上都设有",
+      "std": "GB/T 32380—2015",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "90",
+      "q": "根据GB/T 13869—2017标准，0类设备和I类设备在防电击保护机制上存在",
+      "std": "GB/T 13869—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "95",
+      "q": "根据GB/T 20779.1—2006标准，电力防护用橡胶材料在不超过30℃条件",
+      "std": "GB/T 20779",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "96",
+      "q": "在GB/T 21617—2023标准中，用于判断固体氧化性物质是否属于Ⅰ类包装的",
+      "std": "GB/T 21617—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "97",
+      "q": "根据《铅酸蓄电池环保设施运行技术规范》（GB/T 32068.3—2015），在",
+      "std": "GB/T 32068",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "98",
+      "q": "根据GB/T 27868—2011标准，用于生产片材类产品的可部分生物降解淀粉树",
+      "std": "GB/T 27868—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "108",
+      "q": "根据GB/T 40219—2021标准，用于评估拉曼光谱仪光谱分辨率的测试方法中",
+      "std": "GB/T 40219—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "109",
+      "q": "根据GB/T 9813.1—2016，台式微型计算机在计算典型能源消耗（TEC）",
+      "std": "GB/T 9813",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "123",
+      "q": "在依据GB/T 8803—2001标准对注射成型PVC-U、PVC-C、ABS或",
+      "std": "GB/T 8803—2001",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "135",
+      "q": "在GB/T 6726—2008标准中，对于边长B为50 mm的方形空心型钢，当壁",
+      "std": "GB/T 6726—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "176",
+      "q": "根据GB/T 35611—2017标准，绿色纺织产品中助剂的重金属砷含量限值与染",
+      "std": "GB/T 35611—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "201",
+      "q": "根据GB 30077—2023，第一类危险化学品单位的应急救援队伍在配备正压空气",
+      "std": "GB 30077—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "222",
+      "q": "在GB893.1标准中，适用于φ8.7～φ15.1孔径范围且用于轴向尺寸受限的精",
+      "std": "GB893",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "233",
+      "q": "在依据GB/T 28987—2012测试结构用规格材的力学性能时，若某树种在全国",
+      "std": "GB/T 28987—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "241",
+      "q": "根据GB/T 8028—2010标准，对于使用SG、SH、SJ（SI/GF-2）",
+      "std": "GB/T 8028—2010",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "258",
+      "q": "在依据GB/T 36798—2018标准进行浸胶线绳、帘线或纱线直径测定时，若采",
+      "std": "GB/T 36798—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "259",
+      "q": "根据GB/T 12350—2022，小功率电动机铭牌上必须包含哪些核心信息，即使",
+      "std": "GB/T 12350—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "263",
+      "q": "根据《节约型企业评价通则》（GB/T 29725—2013），企业在评价是否为节",
+      "std": "GB/T 29725—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "266",
+      "q": "在依据GB/T 23774—2009测定无机化工产品白度时，白度计的照明和观测条",
+      "std": "GB/T 23774—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "275",
+      "q": "根据GB/T 12754—2019标准，用于建筑外用的彩色涂层钢板在订货时若需明",
+      "std": "GB/T 12754—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "288",
+      "q": "根据GB/T 18751—2002标准，磁性防伪油墨的防伪安全期若为8个月，应被",
+      "std": "GB/T 18751—2002",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "299",
+      "q": "根据GB/T 18136—2008标准，适用于750 kV交流输电线路作业的静电",
+      "std": "GB/T 18136—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "300",
+      "q": "根据GB/T 24292—2009标准，卫生用品用无尘纸中哪些类型的产品不需要考",
+      "std": "GB/T 24292—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "305",
+      "q": "在GB/T 3461—2016标准中，若一批FMo-1牌号钼粉的费氏粒度为1.8",
+      "std": "GB/T 3461—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "310",
+      "q": "根据GB 26851—2011标准，住宅内使用的室内型火灾声警报器在启动过程中，",
+      "std": "GB 26851—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "326",
+      "q": "在GB/T 30053—2013标准中，用于测定粗苯中三苯含量的气相色谱法定量分",
+      "std": "GB/T 30053—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "332",
+      "q": "根据GB/T 13667.1—2015标准，一个双面书架若属于载重类别3类，其每",
+      "std": "GB/T 13667",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "344",
+      "q": "根据GB/T 10440—2008标准，内径为83.2 mm的圆柱形复合罐在进行",
+      "std": "GB/T 10440—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "348",
+      "q": "根据国家标准GB/T 30091—2013，有压力点和无压力点薄膜键盘在寿命指标",
+      "std": "GB/T 30091—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "354",
+      "q": "根据GB/T 3795—2014标准，电炉冶炼的高碳锰铁中，牌号FeMn78C8",
+      "std": "GB/T 3795—2014",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "374",
+      "q": "根据GB 14866—2023标准，适用于道路驾驶的眼面部防护产品在水平方向颞侧",
+      "std": "GB 14866—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "378",
+      "q": "根据GB/T 25422—2010标准，草地潜松犁的犁铧应采用何种材料制造，且其",
+      "std": "GB/T 25422—2010",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "391",
+      "q": "根据《能源管理绩效评价导则》（GB/T 39775—2021），用能单位在开展能",
+      "std": "GB/T 39775—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "394",
+      "q": "在电真空器件用无氧铜板和带标准GB/T 14594—2014中，对于厚度为0.0",
+      "std": "GB/T 14594—2014",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "408",
+      "q": "根据GB/T 8330—2008标准，在测定离子交换树脂湿真密度时，若试验温度为",
+      "std": "GB/T 8330—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "443",
+      "q": "根据GB/T 30406—2013标准，若某植物纤维模塑制品宣称具有生物分解性能",
+      "std": "GB/T 30406—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "452",
+      "q": "在GB/T 2423.59—2008标准中，若需对电工电子产品进行温度（低温、高",
+      "std": "GB/T 2423",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "454",
+      "q": "在制造汽车副车架等结构件时，若选用符合GB/T 20887.7—2017标准的液",
+      "std": "GB/T 20887",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "460",
+      "q": "根据GB/T 42272—2022标准，用于评价水泥胶砂抗氯离子渗透能力为“高”",
+      "std": "GB/T 42272—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "461",
+      "q": "根据国家标准GB/T 6046—2016，指针式石英钟在进行平均瞬时日差测试时，",
+      "std": "GB/T 6046—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "471",
+      "q": "根据GB/T 35383—2017标准，播种监测系统在田间正常作业时，哪些性能指",
+      "std": "GB/T 35383—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "488",
+      "q": "根据国家标准GB/T 36363—2018，对于厚度规格大于25微米的锂离子电池",
+      "std": "GB/T 36363—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "529",
+      "q": "根据GB/T 32710.3—2016，使用可燃性液体作为传热介质的低温恒温槽，",
+      "std": "GB/T 32710",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "547",
+      "q": "在依据GB/T 3074.1—2021测定炭素材料抗折强度时，对于未在GB/T ",
+      "std": "GB/T 3074",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "562",
+      "q": "根据国家标准GB/T 41724—2022，边缘智能网关在从IT系统和OT系统分",
+      "std": "GB/T 41724—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "563",
+      "q": "根据GB/T 2812—2024标准，若某头部防护装备的佩戴高度为90 mm，在",
+      "std": "GB/T 2812—2024",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "567",
+      "q": "在国家标准GB/T 4324.2—2023中，所规定测定的对象包括哪些元素？",
+      "std": "GB/T 4324",
+      "r_dense50": null,
+      "r_bm25": 1,
+      "recover": true
+    },
+    {
+      "id": "600",
+      "q": "根据GB/T 304.1—2017，公称接触角为25°的关节轴承属于哪一类，并适",
+      "std": "GB/T 304",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "607",
+      "q": "根据GB/T 22258—2008标准，模压全息防伪标识在特性指标中对衍射效率和",
+      "std": "GB/T 22258—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "664",
+      "q": "根据GB 12463—2009标准，盛装液体危险货物的塑料桶在进行跌落试验前，试",
+      "std": "GB 12463—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "666",
+      "q": "根据GB/T 24520—2009标准，采用电感耦合等离子体原子发射光谱法测定铸",
+      "std": "GB/T 24520—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "670",
+      "q": "根据国家标准GB/T 3519—2023，固定碳含量为93.00%的微晶石墨产品",
+      "std": "GB/T 3519—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "695",
+      "q": "在依据GB/T 34724—2017测定金属与防腐木材接触时的腐蚀速率时，若防腐",
+      "std": "GB/T 34724—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "698",
+      "q": "在GB/T 20887.6—2017标准中，厚度不小于3.0 mm的HR720/",
+      "std": "GB/T 20887",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "706",
+      "q": "在依据GB/T 33829—2017标准进行轿车轮胎雪地抓着性能测试时，若试验轮",
+      "std": "GB/T 33829—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "751",
+      "q": "根据GB 19157—2003标准，若某远控消防炮型号为PLKY64，其喷射介质",
+      "std": "GB 19157—2003",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "770",
+      "q": "根据国家标准GB/T 43611—2023，对于导热系数为20.0 W/(m·K",
+      "std": "GB/T 43611—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "771",
+      "q": "根据GB/T 33092—2016标准，皮带运输机清扫器聚氨酯刮刀在热空气老化试",
+      "std": "GB/T 33092—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "773",
+      "q": "根据GB/T 23001—2017标准，组织在确定两化融合管理体系范围时应综合考",
+      "std": "GB/T 23001—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "777",
+      "q": "根据国家标准GB/T 41553—2022，用于纺织加工的竹纤维中，麻型与棉型在",
+      "std": "GB/T 41553—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "801",
+      "q": "根据GB/T 38814—2020标准，钢丝绳索具疲劳试验中，哪些类型的索具属于",
+      "std": "GB/T 38814—2020",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "805",
+      "q": "根据GB/T 24347—2021标准，电动汽车中低压输出DC/DC变换器的加权",
+      "std": "GB/T 24347—2021",
+      "r_dense50": null,
+      "r_bm25": 15,
+      "recover": true
+    },
+    {
+      "id": "807",
+      "q": "根据GB/T 10586—2006标准，湿热试验箱的Ⅰ类和Ⅱ类在温度和相对湿度的",
+      "std": "GB/T 10586—2006",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "810",
+      "q": "根据GB/T 706—2016标准，对于高度为250 mm的热轧工字钢，其高度、",
+      "std": "GB/T 706—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "836",
+      "q": "根据GB 40165—2021标准，大型锂离子电池组在温度循环试验中暴露于极端温",
+      "std": "GB 40165—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "837",
+      "q": "根据GB/T 4498.2—2017，测定混炼胶灰分时，在切换为氧气或空气气氛后",
+      "std": "GB/T 4498",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "855",
+      "q": "根据GB 10494—2018标准，当铁路道口同时通行机动车和非机动车时，计算列",
+      "std": "GB 10494—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "862",
+      "q": "根据GB/T 34521—2017标准，室外型小型风力发电机组用控制器在环境温度",
+      "std": "GB/T 34521—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "868",
+      "q": "根据GB/T 30298—2013标准，野外应急饮用水膜处理装置中，以纳滤或反渗",
+      "std": "GB/T 30298—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "879",
+      "q": "根据GB/T 41420—2022标准，如何通过塑形角和回复率的数值范围综合判断",
+      "std": "GB/T 41420—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "880",
+      "q": "根据国家标准GB/T 26942—2011，环形线圈车辆检测器在不同使用环境温度",
+      "std": "GB/T 26942—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "884",
+      "q": "根据GB 28881—2023标准，A型、B型和C型化学品防护手套在抗渗透性能测",
+      "std": "GB 28881—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "891",
+      "q": "根据国家标准GB/T 38143—2019，分散型和集束型耐碱玻璃纤维在耐碱强力",
+      "std": "GB/T 38143—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "900",
+      "q": "根据GB 30000.25—2013，在缺乏人类数据的情况下，如何利用动物实验数",
+      "std": "GB 30000",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "913",
+      "q": "根据国家标准GB/T 23963—2023，工业用二乙胺中允许存在的杂质组分及其",
+      "std": "GB/T 23963—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "924",
+      "q": "根据国家标准GB/T 33278—2016，哪些类型的粘扣带在结构上具有钩面和圈",
+      "std": "GB/T 33278—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "934",
+      "q": "根据国家标准GB/T 29724—2013，哪些类型的太阳能热水系统适用于该标准",
+      "std": "GB/T 29724—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "941",
+      "q": "根据GB/T 21097.1—2007标准，家用电器在满足哪些条件后可以作为旧器",
+      "std": "GB/T 21097",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "954",
+      "q": "在GB/T 23615.2—2017标准中，用于建筑幕墙或风压大于2000 Pa",
+      "std": "GB/T 23615",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "961",
+      "q": "根据GB/T 4294-2010标准，用于干法氟化铝原料的氢氧化铝在物理性能方面",
+      "std": "GB/T 4294-2010",
+      "r_dense50": null,
+      "r_bm25": 3,
+      "recover": true
+    },
+    {
+      "id": "993",
+      "q": "根据标准GB/T 37123—2018，名义制冷量大于9000 W的超低温型汽车",
+      "std": "GB/T 37123—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "995",
+      "q": "根据国家标准GB/T 28298—2012，焦化重油的发热量技术指标最低要求是多",
+      "std": "GB/T 28298—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "997",
+      "q": "根据GB/T 39405—2020标准，若一个机器人用于在深海执行专业检测任务，",
+      "std": "GB/T 39405—2020",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1004",
+      "q": "根据GB 16809—2024标准，活动式防火窗在耐火试验中窗扇自动关闭时间的最",
+      "std": "GB 16809—2024",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1005",
+      "q": "根据GB/T 12803—2015标准，实验室量杯在标定容量时所依据的标准温度是",
+      "std": "GB/T 12803—2015",
+      "r_dense50": null,
+      "r_bm25": 21,
+      "recover": true
+    },
+    {
+      "id": "1012",
+      "q": "根据GB/T 3003—2017标准，耐火纤维制品中哪些类型在加热永久线变化测试",
+      "std": "GB/T 3003—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1021",
+      "q": "根据GB/T 8894—2014标准，对于壁厚为2.50 mm的圆形铜波导管，其",
+      "std": "GB/T 8894—2014",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1022",
+      "q": "根据GB/T 30952—2014标准，对于水位变幅为5米的水位试验台，若其准确",
+      "std": "GB/T 30952—2014",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1047",
+      "q": "根据GB/T 39860—2021标准，胶乳制品表面残余矿物粉末的快速鉴别适用于",
+      "std": "GB/T 39860—2021",
+      "r_dense50": null,
+      "r_bm25": 33,
+      "recover": true
+    },
+    {
+      "id": "1073",
+      "q": "在GB/T 25176—2010标准中，对于Ⅰ类粗规格再生细骨料，其再生胶砂需水",
+      "std": "GB/T 25176—2010",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1099",
+      "q": "在依据GB/T 34160—2017标准检测地面用光伏组件光电转换效率时，若要计",
+      "std": "GB/T 34160—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1100",
+      "q": "根据国家标准GB 14287.2—2014，当被保护线路的剩余电流达到报警设定值",
+      "std": "GB 14287",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1115",
+      "q": "根据GB 15744—2019标准，对于发动机排量在125～150 mL之间的两",
+      "std": "GB 15744—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1121",
+      "q": "根据GB 11209-89标准，测定永磁性橡胶的最大磁能积时，采用的近似计算方法",
+      "std": "GB 11209-89",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1123",
+      "q": "根据国家标准GB/T 40355—2021，公称容积为1.0升的不锈钢真空保温杯",
+      "std": "GB/T 40355—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1152",
+      "q": "根据GB/T 2449.2—2015标准，液体工业硫磺中哪些质量指标在优等品、一",
+      "std": "GB/T 2449",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1155",
+      "q": "根据GB/T 30487—2014标准，船用安全救生操作指示图在室外使用时，其耐",
+      "std": "GB/T 30487—2014",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1161",
+      "q": "根据国家标准GB/T 38871—2020，移动操作臂复合机器人在进行平台重复定",
+      "std": "GB/T 38871—2020",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1175",
+      "q": "在GB/T 4324.17—2012中，对钠含量测定采用火焰原子吸收光谱法时，工",
+      "std": "GB/T 4324",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1176",
+      "q": "根据GB/T 35576—2017标准，啤酒企业要达到节水型企业技术考核要求，其",
+      "std": "GB/T 35576—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1185",
+      "q": "根据GB/T 18744—2002标准，塑料三维土工网垫EM₅型号的单位面积质量",
+      "std": "GB/T 18744—2002",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1189",
+      "q": "根据GB/T 32082—2015标准，用于船舶管路中区分介质类型和指示介质流动",
+      "std": "GB/T 32082—2015",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1193",
+      "q": "在GB/T 19608.3—2004标准中，表示海拔4000米、有气候防护场所使",
+      "std": "GB/T 19608",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1195",
+      "q": "根据国家标准GB/T 22173—2021，噁草酮原药在出厂检验时是否必须检测丙",
+      "std": "GB/T 22173—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1215",
+      "q": "在GB/T 28907—2021标准中，Q355NS牌号的耐硫酸露点腐蚀钢板在公",
+      "std": "GB/T 28907—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1218",
+      "q": "根据GB/T 7928—2003标准，当地铁列车在正线最大坡度上运行且丧失一半动",
+      "std": "GB/T 7928—2003",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1220",
+      "q": "根据国家标准GB/T 32366—2015，生物降解聚对苯二甲酸-己二酸丁二酯（",
+      "std": "GB/T 32366—2015",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1252",
+      "q": "根据GB/T 36602—2018标准，塑料材料在电子商务产品信息描述中被划分为",
+      "std": "GB/T 36602—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1284",
+      "q": "根据国家标准GB/T 40687—2021，面向物联网应用的生命体征感知设备在进",
+      "std": "GB/T 40687—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1285",
+      "q": "根据GB 20074—2017标准，当摩托车外部凸出物的接触角α为30°时，该凸",
+      "std": "GB 20074—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1293",
+      "q": "根据国家标准GB/T 39952—2021，紫外光响应型和可见光响应型二氧化钛基",
+      "std": "GB/T 39952—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1312",
+      "q": "根据GB/T 5613—2014标准，如何从牌号ZG15Cr2MoV推断出其中铬",
+      "std": "GB/T 5613—2014",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1342",
+      "q": "在电动汽车非车载传导式充电过程中，若BMS在充电阶段未收到充电机发送的CCS报文",
+      "std": "GB/T 34658—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1351",
+      "q": "根据国家标准GB/T 28217—2011，眼镜片磨边机在完成加工后，同种材料、",
+      "std": "GB/T 28217—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1364",
+      "q": "根据国家标准GB 32047—2015，新建啤酒企业单位产品能耗的准入值与现有企",
+      "std": "GB 32047—2015",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1372",
+      "q": "根据GB/T 20857—2012标准，Ⅱ型、Ⅲ型和Ⅳ型除冰液在100:00原液",
+      "std": "GB/T 20857—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1400",
+      "q": "根据国家标准 GB/T 29891—2013，荔枝和龙眼干燥设备在型式检验中，若",
+      "std": "GB/T 29891—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1405",
+      "q": "根据标准GB/T 14108—2011，用于A1型和A2型罗经柜的磁罗经度盘直径",
+      "std": "GB/T 14108—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1409",
+      "q": "根据GB/T 23999—2009标准，水性木器涂料中哪一类产品需同时满足耐磨性",
+      "std": "GB/T 23999—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1420",
+      "q": "根据GB/T 40586—2021，汽轮发电机组的过频保护、电网高频切机装置与汽",
+      "std": "GB/T 40586—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1424",
+      "q": "根据GB/T 13861—2022，若某工业设备的传感器存在精度不够的问题，该问",
+      "std": "GB/T 13861—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1444",
+      "q": "根据GB/T 38784—2020标准，悬空步道及栈道玻璃在抗冲击性能试验中，对",
+      "std": "GB/T 38784—2020",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1450",
+      "q": "在GB/T 15342—2023标准中，哪些类别的滑石粉在出厂检验时必须检测石棉",
+      "std": "GB/T 15342—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1458",
+      "q": "根据GB/T 21544—2008标准，移动通信手持机用锂离子电源充电器的外壳材",
+      "std": "GB/T 21544—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1463",
+      "q": "根据GB/T 36680—2018标准，若一家公司近三年在多个行业中的营业收入和",
+      "std": "GB/T 36680—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1467",
+      "q": "根据GB/T 34442—2017标准，测定纸浆纤维粗度时，哪些长度的纤维不计入",
+      "std": "GB/T 34442—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1487",
+      "q": "在依据GB/T 38912—2020进行铟管室温闭端爆破试验时，若未在相关产品标",
+      "std": "GB/T 38912—2020",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1488",
+      "q": "在GB/T 30397—2013标准中，用于测定整鞋透湿性时，干燥剂托盘的面积和",
+      "std": "GB/T 30397—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1492",
+      "q": "根据GB/T 3475—2008标准，对于精度等级为1的船用柴油发电机组，在突加",
+      "std": "GB/T 3475—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1505",
+      "q": "根据GB/T 13164—2003标准，当埋弧焊机采用下降特性电源且焊接电流达到",
+      "std": "GB/T 13164—2003",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1520",
+      "q": "在依据GB/T 38408—2019标准进行皮革材质显微镜鉴别时，若样品表面涂饰",
+      "std": "GB/T 38408—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1527",
+      "q": "根据《燃气服务导则》（GB/T 28885—2012），当用户对管道燃气计量表的",
+      "std": "GB/T 28885—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1538",
+      "q": "根据国家标准GB/T 26799—2011，点胶机在进行注胶重复性试验时，应采用",
+      "std": "GB/T 26799—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1541",
+      "q": "根据GB/T 14619—2013标准，若某氧化铝陶瓷基片的标识为A 96-02",
+      "std": "GB/T 14619—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1569",
+      "q": "根据GB/T 38264—2019标准，若某建筑幕墙需满足室内侧耐软重物撞击性能",
+      "std": "GB/T 38264—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1571",
+      "q": "根据GB/T 11405—2006标准，工业邻苯二甲酸二丁酯（DBP）在优等品、",
+      "std": "GB/T 11405—2006",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1583",
+      "q": "根据GB/T 8075—2017标准，减水率不小于25%、坍落度保持性能优于高效",
+      "std": "GB/T 8075—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1610",
+      "q": "根据GB/T 40479—2021标准，通用半托盘在进行底铺板抗弯刚度试验（试验",
+      "std": "GB/T 40479—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1611",
+      "q": "在GB/T 32969—2016标准中，公称直径为180 mm的系泊链钢，其公称",
+      "std": "GB/T 32969—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1614",
+      "q": "根据GB/T 37318—2019标准，当船舶电力谐波滤波器处理的负载电流畸变率",
+      "std": "GB/T 37318—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1624",
+      "q": "根据GB 30439.1—2013，在工业自动化产品安全要求中，当设备在单一故障",
+      "std": "GB 30439",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1631",
+      "q": "根据GB/T 25383—2010标准，风力发电机组风轮叶片在结构强度分析中，对",
+      "std": "GB/T 25383—2010",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1639",
+      "q": "在GB/T 16596—2019标准中，晶片背面坐标系与正面坐标系在坐标轴方向上",
+      "std": "GB/T 16596—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1653",
+      "q": "根据GB 24436—2009标准，康复训练器械中用于承载的环形手握持件和杆状手",
+      "std": "GB 24436—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1654",
+      "q": "在型钢冲击试验首次结果不满足标准要求但未完全失效的情况下，依据GB/T 2101",
+      "std": "GB/T 2101—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1656",
+      "q": "在GB/T 33426—2016标准中，用于测定胶鞋中有机锡化合物的衍生化试剂是",
+      "std": "GB/T 33426—2016",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1664",
+      "q": "根据GB/T 29112—2012标准，船舶上用于处理机器处所含油舱底水、使其排",
+      "std": "GB/T 29112—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1675",
+      "q": "根据GB/T 10209.4—2010标准，颗粒状磷酸一铵和磷酸二铵的粒度是如何",
+      "std": "GB/T 10209",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1695",
+      "q": "在GB/T 712—2022标准中，对于以TMCP状态交货、厚度为60 mm的A",
+      "std": "GB/T 712—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1696",
+      "q": "根据国家标准GB/T 29772—2024，哪些类型的电池更换站具备在站内为电池",
+      "std": "GB/T 29772—2024",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1703",
+      "q": "根据国家标准GB/T 41957—2022，用于炭黑生产的石油炼制催化油浆在BM",
+      "std": "GB/T 41957—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1739",
+      "q": "根据国家标准GB/T 18488—2024，对于直流母线电压为B级电压的集成式驱",
+      "std": "GB/T 18488—2024",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1743",
+      "q": "根据GB/T 36138—2018标准，适用于液体除菌的聚四氟乙烯平板式微滤膜有",
+      "std": "GB/T 36138—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1749",
+      "q": "根据GB/T 10515—2012标准，硝酸磷肥粒度测定中用于计算粒度质量分数的",
+      "std": "GB/T 10515—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1753",
+      "q": "根据国家标准GB/T 25696—2010，沥青路面加热机按照加热方式可以分为哪",
+      "std": "GB/T 25696—2010",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1778",
+      "q": "在GB/T 26982—2022标准中，若原油试样中胶质和沥青质的质量分数大于1",
+      "std": "GB/T 26982—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1795",
+      "q": "根据GB/T 37991—2019标准，超薄玻璃再热线收缩率测试中，若3个试样的",
+      "std": "GB/T 37991—2019",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1813",
+      "q": "根据国家标准GB/T 24966—2023，光栅车辆检测器在进行车高和车宽检测时",
+      "std": "GB/T 24966—2023",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1816",
+      "q": "根据国家标准GB/T 20165—2012，用于显示器玻璃基板抛光的稀土抛光粉中",
+      "std": "GB/T 20165—2012",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1822",
+      "q": "根据GB/T 10479—2009标准，铝制铁道罐车在制造过程中，若采用以批代台",
+      "std": "GB/T 10479—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1833",
+      "q": "根据GB/T 28264—2017标准，哪些类型的起重机械在安全监控管理系统中必",
+      "std": "GB/T 28264—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1864",
+      "q": "根据GB/T 24249—2009标准，耐洗涤型防静电洁净织物在完成规定次数的洗",
+      "std": "GB/T 24249—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1881",
+      "q": "在GB/T 33008.1—2016标准中，针对PLC系统经由非可信网络进行远程",
+      "std": "GB/T 33008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1886",
+      "q": "根据GB/T 14992—2005标准，若某变形高温合金牌号为GH4xxx系列，",
+      "std": "GB/T 14992—2005",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1904",
+      "q": "在GB/T 41063—2021标准中，若需对玻璃纤维密度测定结果进行仲裁，应采",
+      "std": "GB/T 41063—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1911",
+      "q": "根据国家标准GB/T 41547—2022，地采暖用浸渍纸层压木质地板与其他类型",
+      "std": "GB/T 41547—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1964",
+      "q": "在依据GB/T 23462—2009标准进行化学防护材料渗透性能测试时，开路系统",
+      "std": "GB/T 23462—2009",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1969",
+      "q": "根据国家标准GB/T 40397—2021，户式新风除湿机在额定工况下送风含湿量",
+      "std": "GB/T 40397—2021",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1974",
+      "q": "根据GB/T 3287—2011标准，可锻铸铁管路连接件适用于哪些介质的输送？",
+      "std": "GB/T 3287—2011",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "1993",
+      "q": "根据GB/T 31783—2015标准，对于经化学药剂处理的商用木材与木制品，其",
+      "std": "GB/T 31783—2015",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2014",
+      "q": "根据GB/T 29878—2013标准，硝化纤维素-水混合物和硝化纤维素-乙醇混",
+      "std": "GB/T 29878—2013",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2019",
+      "q": "根据GB/T 24186—2022标准，NM500和NM600牌号的高强度耐磨钢",
+      "std": "GB/T 24186—2022",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2027",
+      "q": "根据国家标准GB/T 19565—2017，工作级热电式总辐射表在进行室外灵敏度",
+      "std": "GB/T 19565—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2029",
+      "q": "根据GB/T 3714—2017标准，碳酸锰矿的一级品与四级品在锰含量、全铁（T",
+      "std": "GB/T 3714—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2030",
+      "q": "根据GB 34660—2017标准，采用10米法和3米法测试时，车辆在30～75",
+      "std": "GB 34660—2017",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2033",
+      "q": "根据国家标准GB/T 16566—2018，若某铁路隧道全长为8,500米，且其",
+      "std": "GB/T 16566—2018",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    },
+    {
+      "id": "2049",
+      "q": "依据 GB/T 6543—2008 标准，瓦楞纸箱的耐破强度试验应采用哪种试验方",
+      "std": "GB/T 6543—2008",
+      "r_dense50": null,
+      "r_bm25": null,
+      "recover": false
+    }
+  ]
+}

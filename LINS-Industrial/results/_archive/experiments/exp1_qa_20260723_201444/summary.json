@@ -1,0 +1,45 @@
+{
+  "experiment": "exp1_qa",
+  "mode": "standard_rag",
+  "mode_info": {
+    "name": "标准 RAG Baseline (无 PRM)",
+    "desc": "Question → Industrial Retriever → Top-k → Standard RAG Prompt → chat() 直接回答。\n与 rag 模式共享完全相同的检索管线，但使用纯 LLM 而非 MAIRAG。\n用于消融实验：衡量 MAIRAG(PRM+Rerank) 相对于普通 RAG 的提升。",
+    "topk": 5,
+    "use_retriever": true,
+    "if_PRA": false,
+    "if_SKA": false,
+    "if_QDA": false,
+    "if_PCA": false,
+    "recall_top_k": 10,
+    "prompt_extra": "",
+    "retrieval_k": 10
+  },
+  "num_samples": 100,
+  "num_errors": 0,
+  "qa_metrics": {
+    "avg_raw_score": 2.28,
+    "avg_adjusted_score": 2.28,
+    "sv_count": 0,
+    "sv_rate": 0.0,
+    "score_distribution": {
+      "2": 37,
+      "3": 48,
+      "1": 10,
+      "0": 5
+    }
+  },
+  "retrieval_metrics": {
+    "avg_semantic_hit@1": 0.46,
+    "avg_semantic_hit@3": 0.53,
+    "avg_semantic_hit@5": 0.55,
+    "avg_semantic_hit@10": 0.59,
+    "avg_semantic_mrr": 0.5059285714285715,
+    "avg_semantic_ndcg": 0.815654761904762
+  },
+  "format_distribution": {
+    "问答题": 58,
+    "填空题": 32,
+    "选择题": 7,
+    "计算题": 3
+  }
+}

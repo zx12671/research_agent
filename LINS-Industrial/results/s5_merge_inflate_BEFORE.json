@@ -1,0 +1,20 @@
+{
+  "n": 40,
+  "merge_direct_prompt_inflation": {
+    "accumulated_over_organize_only_avg": 2.63,
+    "accumulated_over_organize_only_max": 2.79,
+    "share_above_1.5x": 100.0,
+    "dup_char_ratio_avg": 1.0
+  },
+  "note": "仅 assess【merge 分支】时的膨胀；直接 reason（不 merge）路径无此二次并入，见 _diag_evidence_s5。",
+  "detail_examples": [
+    2.72,
+    2.72,
+    2.61,
+    2.51,
+    2.76,
+    2.67,
+    2.65,
+    2.7
+  ]
+}
