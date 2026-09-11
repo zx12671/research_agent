@@ -1,14 +1,7 @@
 # LINS 项目复现工作整理报告
 
-> 基于 zx12671/research_agent master 分支的 LINS 原版复现工作
-> 报告范围：LINS-main 及其相关复现、DeepSeek 适配与医学评测工作
-> 说明：LINS-Industrial、IndustryBench、IHER 等工业方向内容不纳入本报告
-
----
 
 ## 一、项目概况
-
-本报告对当前仓库 `zx12671/research_agent` master 分支中的 LINS 原版复现工作进行整理，并对附件《LINS 项目复现工作阶段性报告》中的结论进行**实证核对与数据补充**。
 
 原版 LINS 来自 [WangSheng21s/LINS](https://github.com/WangSheng21s/LINS)，论文为 *LINS: A Multi-Agent Retrieval-Augmented Framework for Enhancing the Quality and Credibility of LLMs' Medical Responses*（Nature Communications 2025）。其核心是 **MAIRAG**（多智能体迭代检索增强生成）、**KED**（关键词提取退化检索）与 **Link-Eval**（基于引用的自动化评估）。
 
@@ -27,10 +20,6 @@
 | `eval_results_lins_full/` | LINS（含 RAG）评测输出 | 纳入 |
 | `eval_results_llm_baseline/` | 纯 LLM 零样本对照组输出 | 纳入 |
 | `LINS/` | 原版 LINS 参考仓库（含 `add_dataset/oncokb`） | 仅作对照基线 |
-| `LINS-Industrial/` | 工业方向二次研究项目 | **排除** |
-| `LINS_industry_img/` 等 | 工业方向配套资料 | **排除** |
-| IHER / IndustryBench 相关实验 | 工业检索研究内容 | **排除** |
-
 ---
 
 ## 三、总体进展
@@ -104,8 +93,6 @@ LINS-main/
 | `model/prompts.py` | 356 | 356 | **0** | **完全未动** |
 | `Link_Eval.py` | 147 | 147 | **0** | **完全未动** |
 
-**关键结论：Prompt 模板与 LinkEval 原文件零改动，证明"算法是原版的，只换了 LLM 后端与评测驱动"。**
-
 具体改动点：
 
 1. **`chat_llms.py` 新增 `DeepSeek` 类**，并在 `chatllms.__init__` 增加分支：
@@ -119,9 +106,6 @@ LINS-main/
 
 2. **`model_LINS.py` 新增 `get_llm_key()` 路由函数**，按模型名自动选择 key（`DeepSeek_keys` / `Gemini_keys` / `QianWen_keys` / `LLM_keys`）。
 3. **`LINS.__init__` 新增参数** `QianWen_keys`、`DeepSeek_keys`，并将 `retriever` / `database` 初始化前置，使 key 异常时检索器仍可先行建立。
-
-> ⚠️ 需注意：当前 `test_deepseek.py`、`test_deepseek_lins_full.py`、`Link_Eval_DeepSeek.py` 中仍存在**明文硬编码的 API Key**。git 历史显示曾专门做过"移除硬编码、改用环境变量"的提交（`1ec5eb1`），但随后被 revert（`6f7c08c`）。这属于必须整改的安全项，详见 7.4。
-
 
 ### 4.4 LINS 核心流程恢复
 
@@ -384,42 +368,13 @@ DeepSeek 适配、依赖修复、接口兼容与测试工具重构属于 **Engin
 | **P2** | 结果入库 | 关键 JSON 汇总提交版本库 | 可追溯结果集 |
 | **P2** | 形成最终汇报材料 | 总结复现结果与差异原因 | LINS Reproduction Report |
 
----
 
-## 九、建议的最终实验组织方式
-
-为避免 master 分支中的工业方向代码影响 LINS baseline，后续实验建议**以 `LINS-main` 为唯一复现代码范围**。实验记录按"代码版本—环境—模型—数据集—配置—运行结果—统计结果"的顺序保存。
-
-推荐的实验结构：
-
-```
-LINS Baseline
-├── Original LINS 配置（如可获得）
-├── DeepSeek-LINS 配置
-├── PubMedQA          (1000 条，正式规模)
-├── MedQA-US          (1273 条，正式规模)
-├── MedQA-Mainland    (3426 条，正式规模)
-├── LLM-Baseline 对照 (no-RAG, 同规模)
-└── LinkEval          (CP / CR / F1 / SC / SF)
-```
-
-后续其他研究方法应在该 baseline 固定后独立加入，避免将工程适配与算法改进混在同一实验结果中。
-
----
-
-## 十、阶段性结论
+## 九、阶段性结论
 
 截至目前，LINS 原版复现工作已完成从代码恢复到可运行系统的主要建设工作。`LINS-main` 的核心模型、Retriever、Database、KED、MAIRAG、HERD、多源医学检索以及 LinkEval 等主要模块均已具备较完整实现；DeepSeek API 适配与主要环境兼容问题也已处理，并已上 CI 保障可复现性。
 
 **当前项目已具备作为后续实验基线的基本条件。下一阶段核心任务应从"继续修代码"转向"严格做实验"**：固定配置、实际运行、保存原始结果、重复验证、与原论文设置逐项对照，并最终形成一套可追溯、可复核的 LINS reproduction baseline。
 
-同时需强调三点：
-
-1. 本报告有意**排除** LINS-Industrial、IndustryBench、IHER 及工业场景相关内容，上述内容属后续独立研究方向，不应与当前 LINS 原版复现工作的进度和成果混合统计。
-2. 当前已积累的实验数字**不足以支撑"RAG 提升回答质量"的结论**（样本量小 / PubMedQA 失效 / MedQA-Mainland 全量上 RAG 不及 no-RAG），需按第八章 P0 项整改后再下判断。
-3. 所有指标数字均取自实际结果文件，README 与测试脚本中的示例输出不作为实验依据。
-
----
 
 ## 附：当前工作状态速览
 
@@ -439,8 +394,3 @@ LINS Baseline
 | 重复运行/稳定性验证 | 🔴 待完成 |
 | 论文级复现核验 | 🟡 进行中 |
 | 最终 Baseline 冻结 | 🔴 待完成 |
-| LINS-Industrial / IHER | ⚪ 本报告排除 |
-
----
-
-*报告生成依据：`LINS-main/` 源码与行数比对、`eval_results*/` 结果文件实测统计、git 提交历史、`.github/workflows/test_imports.yml`、以及附件《LINS 项目复现工作阶段性报告》。*
