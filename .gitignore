@@ -1,4 +1,17 @@
-# Python
+# ============================================================
+# LINS Reproduction Baseline — 工作区边界
+# ============================================================
+# 本仓库以 LINS-main/ 作为 LINS 原版复现的唯一基线范围。
+# LINS-Industrial、IndustryBench、IHER 等工业方向内容属独立研究方向，
+# 已从版本库中移除，不再纳入 LINS baseline 的统计与实验边界。
+
+# --- 工业方向代码与材料（已从版本库移除，此处防止再次误入）---
+/LINS-Industrial/
+/LINS_industry_img/
+/LINS_Industrial_Project_Summary.md
+/task_progress.md
+
+# --- Python ---
 __pycache__/
 *.py[cod]
 *$py.class
@@ -38,11 +51,6 @@ LINS-main/evaluate/search_results/
 # IDE
 .vscode/
 
-# LINS-Industrial large model / binary files (excluded to avoid GitHub 100MB limit)
-LINS-Industrial/model/retriever/bge/bge-m3/
-LINS-Industrial/LINS-main/model/retriever/bge/bge-m3/
-LINS-Industrial/knowledge_corpus/embeddings/
-LINS-Industrial/knowledge_corpus/index/
 .idea/
 
 # OS
